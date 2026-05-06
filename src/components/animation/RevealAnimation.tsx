@@ -139,17 +139,22 @@ const RevealAnimation = ({
     }
   }, [duration, delay, offset, instant, start, end, direction, useSpring, rotation, animationType]);
 
-  // Early return if children is not valid (after all hooks)
-  if (!children || !React.isValidElement(children)) {
-    return null;
-  }
+  const [isMounted, setIsMounted] = React.useState(false);
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
-  // Clone the child element and add the ref, className, and data-ns-animate attribute
-  return cloneElement(children, {
-    ref: elementRef,
-    className: cn(children?.props?.className, className),
-    'data-ns-animate': true,
-  });
+  // Use a stable wrapper div for both server and client to avoid hydration mismatch
+  return (
+    <div
+      ref={elementRef as any}
+      className={cn(isMounted ? 'reveal-animation' : '', className)}
+      data-ns-animate={isMounted ? 'true' : undefined}
+      style={{ opacity: 0 }} // Keep it hidden until GSAP takes over or until mounted
+    >
+      {children}
+    </div>
+  );
 };
 
 export default RevealAnimation;
