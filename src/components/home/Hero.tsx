@@ -1,6 +1,5 @@
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
-import HeroFeatures from './HeroFeatures';
 import HeroImages from './HeroImages';
 
 const Hero = () => {
@@ -98,7 +97,6 @@ const Hero = () => {
           <HeroImages />
         </div>
       </div>
-      <HeroFeatures />
     </section>
   );
 };

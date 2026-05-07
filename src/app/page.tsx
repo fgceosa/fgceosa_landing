@@ -3,6 +3,7 @@ import Blog from '@/components/home/Blog';
 import CTA from '@/components/home/CTA';
 import FAQ from '@/components/home/FAQ';
 import Hero from '@/components/home/Hero';
+import HeroFeatures from '@/components/home/HeroFeatures';
 import Services from '@/components/home/Services';
 import Statistics from '@/components/home/Statistics';
 import Testimonials from '@/components/home/Testimonials';
@@ -17,8 +18,13 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main className="dark:bg-background-7 bg-white">
-      <Hero />
+    <main className="dark:bg-background-7 bg-white overflow-x-hidden">
+      <div className="relative">
+        <Hero />
+        <div className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 translate-y-1/2 z-20">
+          <HeroFeatures />
+        </div>
+      </div>
       <Statistics />
       <WhyUs />
       <Services />
