@@ -4,7 +4,7 @@ import HeroImages from './HeroImages';
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden pt-[130px] pb-[100px] lg:pb-[200px]">
+    <section className="relative overflow-hidden pt-[130px] pb-[100px] lg:pb-[100px]">
       {/* Background Gradients */}
       <div className="absolute top-0 right-0 -z-1 h-full w-full opacity-40 blur-[100px]">
         <div className="bg-secondary absolute top-0 right-0 h-[700px] w-[700px] rounded-full translate-x-1/4 -translate-y-1/4"></div>
