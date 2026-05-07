@@ -3,20 +3,22 @@ import fgcBuildingImg from '@public/images/fgce-hero.png';
 import logoImg from '@public/images/fgceosa_logo.jpeg';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
+import AboutFeatures from './AboutFeatures';
 import LinkButton from '../ui/button/LinkButton';
 
 const AboutUs = () => {
   const bulletPoints = [
     'Promoting life long connections.',
     'Supporting the alma mater.',
-    'Empowering members.',
-    'Giving back to the community.',
+    'Fostering professional and personal growth.',
+    'Preserving the rich history of FGCE.',
   ];
 
   return (
-    <section className="dark:bg-background-6 pt-14 pb-14 md:pt-16 md:pb-16 lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
+    <section className="relative dark:bg-background-6 pt-6 pb-20 md:pt-8 md:pb-32 lg:pt-10 lg:pb-[50px] xl:pt-12 xl:pb-[50px]">
+
       <div className="main-container">
-        <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px]">
+        <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px] mb-20 md:mb-32">
           {/* LHS Content */}
           <div className="lg:order-1">
             <RevealAnimation delay={0.1}>
@@ -95,24 +97,24 @@ const AboutUs = () => {
                         <span className="pl-4 md:pl-8 block">United by our past. Inspired to build the future.</span>
                       </p>
                     </div>
-                    
+
                     {/* Desktop Logo (Absolute & Overflowing) */}
                     <div className="absolute -right-4 md:-right-10 top-1/2 -translate-y-1/2 bg-white p-2 md:p-3 rounded-full shadow-2xl z-10 hidden sm:block border-[6px] md:border-[10px] border-secondary">
-                      <Image 
-                        src={logoImg} 
-                        alt="Logo" 
-                        className="size-28 md:size-40 lg:size-48 object-cover rounded-full" 
+                      <Image
+                        src={logoImg}
+                        alt="Logo"
+                        className="size-28 md:size-40 lg:size-48 object-cover rounded-full"
                       />
                     </div>
                   </div>
-                  
+
                   {/* Mobile Logo (Positioned below the box for better responsiveness) */}
                   <div className="flex justify-center -mt-6 sm:hidden">
                     <div className="bg-white p-1 rounded-full shadow-xl border-4 border-secondary z-20">
-                      <Image 
-                        src={logoImg} 
-                        alt="Logo" 
-                        className="size-20 object-cover rounded-full" 
+                      <Image
+                        src={logoImg}
+                        alt="Logo"
+                        className="size-20 object-cover rounded-full"
                       />
                     </div>
                   </div>
@@ -126,9 +128,13 @@ const AboutUs = () => {
 
         </div>
       </div>
+
+      {/* Floating Features Section */}
+      <div className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 translate-y-1/2 z-20">
+        <AboutFeatures />
+      </div>
     </section>
   );
 };
 
 export default AboutUs;
-
