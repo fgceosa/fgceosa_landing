@@ -1,17 +1,31 @@
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import HeroFeatures from './HeroFeatures';
 import HeroImages from './HeroImages';
 
 const Hero = () => {
   return (
     <section className="relative overflow-hidden pt-[130px] pb-[100px] lg:pb-[200px]">
-      <div className="absolute top-0 right-0 -z-1 h-full w-full opacity-30 blur-[100px]">
-        <div className="bg-secondary absolute top-0 right-0 h-[600px] w-[600px] rounded-full translate-x-1/3 -translate-y-1/3"></div>
+      {/* Background Gradients */}
+      <div className="absolute top-0 right-0 -z-1 h-full w-full opacity-40 blur-[100px]">
+        <div className="bg-secondary absolute top-0 right-0 h-[700px] w-[700px] rounded-full translate-x-1/4 -translate-y-1/4"></div>
       </div>
+      <div className="absolute top-0 left-0 -z-1 h-full w-full opacity-50 blur-[120px]">
+        <div className="bg-secondary absolute bottom-0 left-0 h-[600px] w-[600px] rounded-full -translate-x-1/4 translate-y-1/4"></div>
+      </div>
+
+      {/* Central Divider Glow */}
+      <div className="absolute top-1/2 left-[55%] -z-1 h-full w-full -translate-x-1/2 -translate-y-1/2 opacity-60 blur-[120px]">
+        <div
+          style={{ backgroundColor: '#CA9B9C' }}
+          className="absolute top-1/2 left-1/2 h-[900px] w-[350px] -translate-x-1/2 -translate-y-1/2 rounded-full"
+        ></div>
+      </div>
+
       <div className="main-container">
-        <div className="grid grid-cols-1 max-sm:space-y-18 md:grid-cols-2 2xl:gap-x-[100px]">
-          <div>
-            <div className="space-y-14">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 lg:gap-x-12">
+          <div className="md:pr-10 lg:pr-16">
+            <div className="space-y-10 md:space-y-14">
               <div className="space-y-5 text-center md:text-left">
                 <RevealAnimation delay={0.1}>
                   <span className="badge border-secondary bg-white text-secondary uppercase border-2 font-bold rounded-md">
@@ -20,29 +34,28 @@ const Hero = () => {
                 </RevealAnimation>
                 <div className="space-y-4">
                   <RevealAnimation delay={0.2}>
-                    <h1 className="text-black">
+                    <h2 className="text-3xl font-bold text-black md:text-4xl lg:text-5xl xl:text-6xl">
                       Stronger Together.{' '}
                       <br />
                       United Forever.{' '}
                       <br />
-                      <span className="text-secondary">Pro Unitate.</span>
-                    </h1>
+                      <span className="font-bold text-secondary">Pro Unitate.</span>
+                    </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
-                    <p className="max-w-[550px] text-black">
-                      The Federal Government College Enugu Old Students Association (FGCEOSA) is a vibrant community of
-                      alumni dedicated to fostering lifelong connections, supporting our alma mater, and empowering each
-                      other through networking and collective impact.
+                    <p className="mx-auto max-w-[550px] text-sm text-black md:mx-0 md:text-base">
+                      FGCEOSA is a global community of proud alumni of Federal Government College Enugu, connecting
+                      generations, empowering members and creating lasting impact.
                     </p>
                   </RevealAnimation>
                 </div>
               </div>
               <RevealAnimation delay={0.4}>
-                <div className="flex flex-nowrap items-center justify-center gap-3 md:justify-start">
+                <div className="flex flex-wrap items-center justify-center gap-3 md:flex-nowrap md:justify-start">
                   <LinkButton
                     href="/signup"
                     insideSpan={false}
-                    className="btn btn-secondary btn-lg flex shrink-0 items-center gap-2 rounded-md font-bold px-6">
+                    className="btn btn-secondary btn-md flex shrink-0 items-center gap-2 rounded-md font-bold px-5 md:btn-lg md:px-6">
                     <div className="flex items-center gap-2 whitespace-nowrap">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +98,7 @@ const Hero = () => {
           <HeroImages />
         </div>
       </div>
+      <HeroFeatures />
     </section>
   );
 };
