@@ -19,89 +19,92 @@ import PartnershipMenu from './PartnershipMenu';
 import PeopleAndCultureMenu from './PeopleAndCultureMenu';
 import ResourcesMenu from './ResourcesMenu';
 
-const dropdownNavItems = [
-  { label: 'Company', dataMenu: 'company-mega-menu', MenuComponent: CompanyMenu },
-  { label: 'Collaborate', dataMenu: 'partnership-dropdown-menu', MenuComponent: PartnershipMenu },
-  { label: 'Resources', dataMenu: 'resources-mega-menu', MenuComponent: ResourcesMenu },
-  { label: 'People & Culture', dataMenu: 'people-dropdown-menu', MenuComponent: PeopleAndCultureMenu },
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Membership', href: '/membership' },
+  { label: 'Events', href: '/events' },
+  { label: 'News & Announcements', href: '/blog' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Contact Us', href: '/contact-us' },
 ];
 
 const Navbar = () => {
-  const [menuDropdownId, setMenuDropdownId] = useState<string | null>(null);
-
   const { isScrolled } = useNavbarScroll(150);
-
-  const handleMenuHover = (dropdownId?: string | null) => {
-    setMenuDropdownId(dropdownId || null);
-  };
 
   return (
     <MobileMenuProvider>
       <header
-        onMouseLeave={() => handleMenuHover(null)}
         className={cn(
-          'lp:!max-w-[1290px] fixed top-5 left-1/2 z-50 mx-auto w-full max-w-[350px] -translate-x-1/2 transition-all duration-500 min-[425px]:max-w-[375px] min-[500px]:max-w-[450px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px]',
-          isScrolled && 'top-2',
+          'lp:!max-w-[1440px] fixed top-0 left-1/2 z-50 mx-auto w-full -translate-x-1/2 transition-all duration-500',
+          isScrolled ? 'bg-secondary py-3 shadow-lg' : 'bg-secondary/90 py-5',
         )}>
         <RevealAnimation direction="up" offset={100} delay={0.1} instant>
-          <div
-            className={cn(
-              'border-stroke-2 dark:border-stroke-6 bg-accent dark:bg-background-9 mx-auto flex items-center justify-between rounded-full border px-2.5 py-2.5 xl:py-0',
-            )}>
+          <div className="main-container flex items-center justify-between">
             <div className="flex items-center justify-center">
-              <Link href="/" className="inline-flex items-center">
-                <span className="sr-only">Home</span>
-                <figure className="hidden lg:block lg:max-w-[198px]">
-                  <Image src={mainLogo} alt="NextSaaS" className="h-auto w-full dark:invert" priority />
+              <Link href="/" className="flex items-center gap-3">
+                <figure className="size-12 shrink-0 overflow-hidden rounded-full border-2 border-accent/20 bg-white">
+                  <Image
+                    src="/images/fgceosa_logo.jpeg"
+                    alt="FGCEOSA Logo"
+                    width={60}
+                    height={60}
+                    className="size-full object-contain"
+                    priority
+                  />
                 </figure>
-                <figure className="block max-w-[44px] lg:hidden">
-                  <Image src={logoIcon} alt="NextSaaS" className="block h-auto w-full dark:hidden" priority />
-                  <Image src={logoDark} alt="NextSaaS" className="hidden h-auto w-full dark:block" priority />
-                </figure>
+                <div className="flex flex-col leading-tight">
+                  <span className="text-heading-6 font-bold tracking-tight text-accent">FGCEOSA</span>
+                  <span className="text-tagline-3 font-medium tracking-wider text-accent/80 uppercase">
+                    FGC Enugu Ex-students association
+                  </span>
+                </div>
               </Link>
             </div>
-            <nav className="hidden items-center xl:flex">
-              <ul className="flex items-center">
-                {dropdownNavItems.map(({ label, dataMenu, MenuComponent }) => (
-                  <li
-                    key={label}
-                    className="group/item relative cursor-pointer py-2.5"
-                    data-menu={dataMenu}
-                    onMouseEnter={() => handleMenuHover(dataMenu)}>
-                    <button
-                      type="button"
-                      className="hover:border-stroke-2 dark:hover:border-stroke-7 text-tagline-1 text-secondary/60 hover:text-secondary dark:text-accent/60 dark:hover:text-accent flex cursor-pointer items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200">
-                      <span>{label}</span>
-                      <span className="block origin-center translate-y-px transition-all duration-300 group-hover/item:rotate-180">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="size-4">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </span>
-                    </button>
-                    <MenuComponent menuDropdownId={menuDropdownId} setMenuDropdownId={setMenuDropdownId} />
+
+            <nav className="hidden items-center lg:flex">
+              <ul className="flex items-center gap-1">
+                {navItems.map(({ label, href }) => (
+                  <li key={label}>
+                    <Link
+                      href={href}
+                      className="text-tagline-2 text-accent/80 hover:text-accent px-2 py-2 font-medium transition-all duration-200">
+                      {label}
+                    </Link>
                   </li>
                 ))}
-                <li className="relative cursor-pointer py-2.5">
-                  <Link
-                    href="/pricing"
-                    className="hover:border-stroke-2 dark:hover:border-stroke-7 text-tagline-1 text-secondary/60 hover:text-secondary dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200">
-                    <span>Pricing</span>
-                  </Link>
-                </li>
               </ul>
             </nav>
-            <div className="hidden items-center justify-center xl:flex">
-              <Link href="/signup" className="btn btn-md btn-primary hover:btn-white-dark dark:hover:btn-white">
-                <span>Get started</span>
+
+            <div className="hidden items-center gap-3 lg:flex">
+              <Link
+                href="/login"
+                className="text-tagline-2 text-accent border-white/60 hover:border-white flex items-center gap-1.5 rounded-md border-1 px-3 py-1.5 font-medium transition-all duration-200">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                  className="size-4">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                  />
+                </svg>
+                <span>Login</span>
+              </Link>
+              <Link
+                href="/signup"
+                className="btn btn-sm btn-primary bg-white text-secondary hover:bg-accent rounded-md border-none font-bold px-4 py-1.4">
+                <span className="capitalize">Join Now</span>
               </Link>
             </div>
-            <MobileMenuButton />
+
+            <div className="lg:hidden">
+              <MobileMenuButton />
+            </div>
           </div>
         </RevealAnimation>
       </header>

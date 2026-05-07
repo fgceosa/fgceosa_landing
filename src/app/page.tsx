@@ -12,7 +12,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Wealth Management - NextSaaS',
+  title: 'Home - FGCEOSA',
 };
 
 const page = () => {

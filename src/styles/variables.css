@@ -5,18 +5,18 @@ All the varaiables are added here
   /* =============== FONTS =============== */
   --font-inter-tight: 'Inter Tight', sans-serif;
   /* =============== COLORS =============== */
-  --color-primary-50: #f4f2fe;
-  --color-primary-100: #ece8ff;
-  --color-primary-200: #dcd4ff;
-  --color-primary-300: #c3b1ff;
-  --color-primary-400: #a585ff;
-  --color-primary-500: #864ffe;
-  --color-primary-600: #7c31f6;
-  --color-primary-700: #6d1fe2;
-  --color-primary-800: #5a19be;
-  --color-secondary: #1a1a1c;
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #ef4444;
+  --color-primary-600: #dc2626;
+  --color-primary-700: #6c0209;
+  --color-primary-800: #5a0208;
+  --color-secondary: #6c0209;
   --color-accent: #fcfcfc;
-  --color-split-text: #1a1a1c;
+  --color-split-text: #6c0209;
   --color-background-1: #fcfcfd;
   --color-background-2: #f9fafb;
   --color-background-3: #f4f5f8;
@@ -38,13 +38,13 @@ All the varaiables are added here
   --color-stroke-7: #2a333e;
   --color-stroke-8: #303b49;
   --color-stroke-9: var(--color-background-8);
-  --color-ns-yellow: #f9eb57;
-  --color-ns-green: #c6f56f;
-  --color-ns-red: #ffb9a2;
-  --color-ns-cyan: #83e7ee;
-  --color-ns-green-light: #e8fbc6;
-  --color-ns-cyan-light: #cdf5f8;
-  --color-ns-yellow-light: #fdf7bc;
+  --color-ns-yellow: #d4af37;
+  --color-ns-green: #1b4332;
+  --color-ns-red: #6c0209;
+  --color-ns-cyan: #a33b3b;
+  --color-ns-green-light: #e8f5e9;
+  --color-ns-cyan-light: #fbe9e9;
+  --color-ns-yellow-light: #fff8e1;
 
   --color-gradient-1: linear-gradient(135deg, #a585ff 0%, #ffc2ad 100%);
   --color-gradient-2: linear-gradient(135deg, #f9eb57 0%, #f99988 100%);
