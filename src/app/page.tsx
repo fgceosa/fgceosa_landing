@@ -1,3 +1,4 @@
+import AboutUs from '@/components/home/AboutUs';
 import Accessibility from '@/components/home/Accessibility';
 import Blog from '@/components/home/Blog';
 import CTA from '@/components/home/CTA';
@@ -7,7 +8,6 @@ import HeroFeatures from '@/components/home/HeroFeatures';
 import Services from '@/components/home/Services';
 import Statistics from '@/components/home/Statistics';
 import Testimonials from '@/components/home/Testimonials';
-import WhyUs from '@/components/home/WhyUs';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
 
@@ -26,8 +26,9 @@ const page = () => {
         </div>
       </div>
       <Statistics />
-      <WhyUs />
+      <AboutUs />
       <Services />
+
       <Accessibility />
       <Testimonials />
       <Blog />
