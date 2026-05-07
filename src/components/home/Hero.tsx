@@ -13,11 +13,11 @@ const Hero = () => {
         <div className="bg-secondary absolute bottom-0 left-0 h-[600px] w-[600px] rounded-full -translate-x-1/4 translate-y-1/4"></div>
       </div>
 
-      {/* Central Divider Glow */}
-      <div className="absolute top-1/2 left-[55%] -z-1 h-full w-full -translate-x-1/2 -translate-y-1/2 opacity-60 blur-[120px]">
+      {/* Central Divider Shade / Glow */}
+      <div className="absolute top-1/2 left-[50%] z-10 h-[800px] w-[300px] -translate-x-1/4 -translate-y-1/2 opacity-30 blur-[100px] pointer-events-none hidden md:block">
         <div
-          style={{ backgroundColor: '#CA9B9C' }}
-          className="absolute top-1/2 left-1/2 h-[900px] w-[350px] -translate-x-1/2 -translate-y-1/2 rounded-full"
+          style={{ backgroundColor: '#BE908F' }}
+          className="h-full w-full rounded-full"
         ></div>
       </div>
 
