@@ -14,70 +14,36 @@ import Link from 'next/link';
 import ThemeToggle from '../ThemeToggle';
 import FooterDivider from './FooterDivider';
 
+import logoImg from '@public/images/fgceosa_logo.jpeg';
+
 const Footer = ({ className }: { className?: string }) => {
   return (
-    <footer className={cn('bg-secondary dark:bg-background-8 relative z-0 overflow-hidden', className)}>
-      <RevealAnimation delay={0.3} offset={50} direction="up">
-        <figure className="pointer-events-none absolute -top-[1320px] left-1/2 -z-1 size-[1635px] -translate-x-1/2 select-none">
-          <Image src={gradientImg} alt="footer-four-gradient" className="size-full object-cover" />
-        </figure>
-      </RevealAnimation>
+    <footer className={cn('bg-[#3a0104] dark:bg-background-9 relative z-0 overflow-hidden text-white', className)}>
       <div className="main-container px-5">
         <div className="grid grid-cols-12 justify-between gap-x-0 gap-y-16 pt-16 pb-12 xl:pt-[90px]">
           <RevealAnimation delay={0.1}>
-            <div className="col-span-12 xl:col-span-4">
+            <div className="col-span-12 xl:col-span-3">
               <div className="max-w-[306px]">
-                <figure>
-                  <Image src={darkLogo} alt="NextSass Logo" />
+                <figure className="mb-6">
+                  <Image src={logoImg} alt="FGCEOSA Logo" className="size-20 rounded-full object-cover border-2 border-white/10" />
                 </figure>
-                <p className="text-accent/60 text-tagline-1 mt-4 mb-7 font-normal">
-                  Build better products with flexible tools, helpful documentation, and a team that champions your
-                  growth.
+                <p className="text-white/60 text-sm mt-4 mb-7 font-normal leading-relaxed">
+                  Connecting generations of FGC Enugu alumni, fostering unity, and driving impactful change for our alma mater and community.
                 </p>
-                <div className="flex items-center gap-3">
-                  <Link target="_blank" href="https://www.facebook.com">
-                    <span className="sr-only">Facebook</span>
-                    <Image className="size-6" src={facebook} alt="Facebook" />
-                  </Link>
-                  <div className="bg-stroke-1/20 h-6 w-px" />
-                  <Link target="_blank" href="https://www.instagram.com">
-                    <span className="sr-only">Instagram</span>
-                    <Image className="size-6" src={instagram} alt="Instagram" />
-                  </Link>
-                  <div className="bg-stroke-1/20 h-6 w-px" />
-                  <Link target="_blank" href="https://www.youtube.com">
-                    <span className="sr-only">Youtube</span>
-                    <Image className="size-6" src={youtube} alt="Youtube" />
-                  </Link>
-                  <div className="bg-stroke-1/20 h-6 w-px" />
-                  <Link target="_blank" href="https://www.linkedin.com">
-                    <span className="sr-only">LinkedIn</span>
-                    <Image className="size-6" src={linkedin} alt="LinkedIn" />
-                  </Link>
-                  <div className="bg-stroke-1/20 h-6 w-px" />
-                  <Link target="_blank" href="https://www.dribbble.com">
-                    <span className="sr-only">Dribbble</span>
-                    <Image className="size-6" src={dribbble} alt="Dribbble" />
-                  </Link>
-                  <div className="bg-stroke-1/20 h-6 w-px" />
-                  <Link target="_blank" href="https://www.behance.net">
-                    <span className="sr-only">Behance</span>
-                    <Image className="size-6" src={behance} alt="Behance" />
-                  </Link>
-                </div>
               </div>
             </div>
           </RevealAnimation>
-          <div className="col-span-12 grid grid-cols-12 gap-x-0 gap-y-8 xl:col-span-8">
+
+          <div className="col-span-12 grid grid-cols-12 gap-x-0 gap-y-12 xl:col-span-9">
             {footerLinks.map(({ title, links }, index) => (
-              <div className="col-span-12 md:col-span-4" key={title}>
+              <div className="col-span-12 sm:col-span-6 md:col-span-3" key={title}>
                 <RevealAnimation delay={0.2 + index * 0.1}>
-                  <div className="space-y-8">
-                    <p className="sm:text-heading-6 text-tagline-1 text-primary-50 font-normal">{title}</p>
-                    <ul className="space-y-5">
+                  <div className="space-y-6">
+                    <p className="text-lg font-bold text-white">{title}</p>
+                    <ul className="space-y-4">
                       {links.map(({ label, href }) => (
                         <li key={label}>
-                          <Link href={href} className="footer-link">
+                          <Link href={href} className="text-white/60 hover:text-white transition-colors text-sm">
                             {label}
                           </Link>
                         </li>
@@ -87,18 +53,58 @@ const Footer = ({ className }: { className?: string }) => {
                 </RevealAnimation>
               </div>
             ))}
+
+            {/* Stay Connected Section */}
+            <div className="col-span-12 sm:col-span-6 md:col-span-3">
+              <RevealAnimation delay={0.5}>
+                <div className="space-y-6">
+                  <p className="text-lg font-bold text-white">Stay Connected</p>
+                  <p className="text-white/60 text-sm leading-relaxed">
+                    Subscribe to our newsletter for the latest updates and events.
+                  </p>
+                  <form className="relative max-w-[280px]">
+                    <input
+                      type="email"
+                      placeholder="Email Address"
+                      className="w-full bg-white/5 border border-white/10 rounded-md py-3 px-4 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-white/30"
+                    />
+                    <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-[#3a0104] size-8 rounded flex items-center justify-center hover:bg-white/90 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </button>
+                  </form>
+
+                  {/* Social Icons moved here */}
+                  <div className="flex items-center gap-4 pt-2">
+                    <Link target="_blank" href="https://www.facebook.com" className="hover:opacity-80 transition-opacity">
+                      <Image className="size-5 invert" src={facebook} alt="Facebook" />
+                    </Link>
+                    <Link target="_blank" href="https://www.instagram.com" className="hover:opacity-80 transition-opacity">
+                      <Image className="size-5 invert" src={instagram} alt="Instagram" />
+                    </Link>
+                    <Link target="_blank" href="https://www.linkedin.com" className="hover:opacity-80 transition-opacity">
+                      <Image className="size-5 invert" src={linkedin} alt="LinkedIn" />
+                    </Link>
+                    <Link target="_blank" href="https://www.youtube.com" className="hover:opacity-80 transition-opacity">
+                      <Image className="size-5 invert" src={youtube} alt="Youtube" />
+                    </Link>
+                  </div>
+                </div>
+              </RevealAnimation>
+            </div>
           </div>
         </div>
+
         <div className="relative pt-[26px] pb-[42px] text-center">
-          <FooterDivider className="bg-accent/10 dark:bg-stroke-6" />
+          <FooterDivider className="bg-white/5" />
           <RevealAnimation delay={0.7} offset={10} start="top 105%">
-            <p className="text-tagline-1 text-primary-50 font-normal">
-              Copyright ©Pixels71. NextSaaS – smart application for modern business
+            <p className="text-white/30 text-xs font-normal">
+              Copyright © 2024 FGCEOSA. All rights reserved. Pro Unitate.
             </p>
           </RevealAnimation>
         </div>
       </div>
-      <ThemeToggle />
     </footer>
   );
 };
