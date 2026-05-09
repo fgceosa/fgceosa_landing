@@ -4,22 +4,7 @@ import HeroImages from './HeroImages';
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden pt-[130px] pb-[100px] lg:pb-[100px]">
-      {/* Background Gradients */}
-      <div className="absolute top-0 right-0 -z-1 h-full w-full opacity-40 blur-[100px]">
-        <div className="bg-secondary absolute top-0 right-0 h-[700px] w-[700px] rounded-full translate-x-1/4 -translate-y-1/4"></div>
-      </div>
-      <div className="absolute top-0 left-0 -z-1 h-full w-full opacity-50 blur-[120px]">
-        <div className="bg-secondary absolute bottom-0 left-0 h-[600px] w-[600px] rounded-full -translate-x-1/4 translate-y-1/4"></div>
-      </div>
-
-      {/* Central Divider Shade / Glow */}
-      <div className="absolute top-1/2 left-[50%] z-10 h-[800px] w-[300px] -translate-x-1/4 -translate-y-1/2 opacity-30 blur-[100px] pointer-events-none hidden md:block">
-        <div
-          style={{ backgroundColor: '#BE908F' }}
-          className="h-full w-full rounded-full"
-        ></div>
-      </div>
+    <section className=" pt-[230px] pb-[100px] lg:pb-[200px]">
 
       <div className="main-container">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 lg:gap-x-12">
