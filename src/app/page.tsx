@@ -15,6 +15,8 @@ import Hero from '@/components/home/Hero';
 import HeroFeatures from '@/components/home/HeroFeatures';
 import { Metadata } from 'next';
 
+import ConnectionBanner from '@/components/home/ConnectionBanner';
+
 export const metadata: Metadata = {
   ...defaultMetadata,
   title: 'Home - FGCEOSA',
@@ -37,7 +39,7 @@ const page = () => {
       <GalleryCTA />
       <JoinUs />
       <NewsEvents />
-
+      <ConnectionBanner />
     </main>
   );
 };
