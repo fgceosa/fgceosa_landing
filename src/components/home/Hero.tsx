@@ -4,7 +4,7 @@ import HeroImages from './HeroImages';
 
 const Hero = () => {
   return (
-    <section className=" pt-[230px] pb-[100px] lg:pb-[100px]">
+    <section className="pb-[100px] lg:pb-[100px]" style={{ paddingTop: '170px' }}>
 
       <div className="main-container">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 lg:gap-x-12">
