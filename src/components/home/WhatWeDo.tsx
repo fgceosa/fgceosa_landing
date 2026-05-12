@@ -1,10 +1,10 @@
 import RevealAnimation from '../animation/RevealAnimation';
 import Image from 'next/image';
 import Link from 'next/link';
-import img1 from '@public/images/ns-img-323.png';
-import img2 from '@public/images/ns-img-324.png';
-import img3 from '@public/images/ns-img-325.png';
-import img4 from '@public/images/ns-img-326.png';
+import img1 from '@public/images/gallery_1.png';
+import img2 from '@public/images/gallery_2.png';
+import img3 from '@public/images/gallery_3.png';
+import img4 from '@public/images/gallery_4.png';
 
 const data = [
   {
@@ -31,7 +31,7 @@ const data = [
     image: img3,
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.5 4.5L21.75 7m-1.5 12h1.5V5.25" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
       </svg>
     ),
     title: 'Welfare & Empowerment',
@@ -51,20 +51,25 @@ const data = [
 
 const WhatWeDo = () => {
   return (
-    <section className="pt-40 pb-20 md:pt-56 md:pb-32 lg:pt-[180px] lg:pb-[100px]">
-      <div className="main-container">
-        <div className="mx-auto mb-14 max-w-[850px] space-y-5 text-center">
+    <section className="py-24 bg-[#F9FAFB] overflow-hidden">
+      <div className="main-container px-4 sm:px-6">
+        <div className="mx-auto mb-16 max-w-[850px] space-y-6 text-center">
           <RevealAnimation delay={0.1}>
-             <div className="bg-white mb-6 inline-block rounded-lg border-2 border-secondary px-4 py-2 shadow-sm">
-                <span className="text-secondary font-bold uppercase tracking-wider">What We Do</span>
-              </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/5 rounded-full border border-secondary/10">
+              <div className="size-2 bg-secondary rounded-full animate-pulse" />
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary">Our Core Initiatives</span>
+            </div>
           </RevealAnimation>
           <div>
             <RevealAnimation delay={0.2}>
-              <h2 className="mb-3">Our Core Initiatives</h2>
+              <h2 className="text-secondary font-bold text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
+                Dedicated to <span className="text-black/40 italic">Excellence</span> <br /> & Community Growth.
+              </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p className="mx-auto max-w-[520px]">Dedicated to the growth of our members and the excellence of our alma mater.</p>
+              <p className="mx-auto mt-6 max-w-[550px] text-black/60 font-medium text-base md:text-lg leading-relaxed">
+                Empowering our members while building a lasting legacy for our alma mater through strategic development and unity.
+              </p>
             </RevealAnimation>
           </div>
         </div>
@@ -72,21 +77,22 @@ const WhatWeDo = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {data.map((item, index) => (
             <RevealAnimation key={index} delay={0.1 * (index + 1)}>
-              <div className="group overflow-hidden rounded-2xl border border-stroke-4 bg-white shadow-sm transition-all duration-300 hover:shadow-xl dark:border-stroke-6 dark:bg-background-5">
-                <div className="relative h-48 overflow-hidden">
-                  <Image src={item.image} alt={item.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="group flex flex-col h-full overflow-hidden rounded-[32px] border border-secondary/5 bg-white shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                <div className="relative h-60 overflow-hidden">
+                  <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-linear-to-t from-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
-                <div className="p-6">
-                  <div className="bg-secondary/10 text-secondary mb-4 flex size-12 items-center justify-center rounded-lg transition-colors group-hover:bg-secondary group-hover:text-white">
+                <div className="p-8 flex flex-col flex-1">
+                  <div className="bg-secondary/5 text-secondary mb-6 flex size-14 items-center justify-center rounded-2xl transition-all duration-500 group-hover:bg-secondary group-hover:text-white group-hover:shadow-lg group-hover:shadow-secondary/20">
                     {item.icon}
                   </div>
-                  <h4 className="mb-3 text-xl font-bold">{item.title}</h4>
-                  <p className="text-secondary/60 dark:text-accent/80 mb-6 text-sm leading-relaxed">
+                  <h4 className="mb-3 text-xl font-black text-secondary tracking-tight">{item.title}</h4>
+                  <p className="text-black/50 mb-8 text-sm leading-relaxed font-medium flex-1">
                     {item.text}
                   </p>
-                  <Link href="/learn-more" className="text-secondary flex items-center gap-2 text-sm font-bold transition-all hover:gap-3">
+                  <Link href="#" className="inline-flex items-center gap-2 text-sm font-black text-secondary uppercase tracking-widest group/link">
                     Learn More
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-4 group-hover/link:translate-x-1.5 transition-transform duration-300">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
                   </Link>
