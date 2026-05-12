@@ -1,4 +1,8 @@
 @import 'tailwindcss';
+
+@theme {
+  --font-serif: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
 @import '../styles/variables.css';
 @import '../styles/icon-font.css';
 @import '../styles/typography.css';

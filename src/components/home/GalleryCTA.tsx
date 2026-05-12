@@ -76,10 +76,10 @@ const GalleryCTA = () => {
               <RevealAnimation delay={0.2} direction="up">
                 <div className="space-y-4 md:space-y-6">
                   <div className="relative h-[180px] sm:h-[250px] md:h-[300px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img1} alt="Gallery 1" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <Image src={img1} alt="Gallery 1" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
                   <div className="relative h-[120px] sm:h-[180px] md:h-[200px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img2} alt="Gallery 2" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <Image src={img2} alt="Gallery 2" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
                 </div>
               </RevealAnimation>
@@ -88,13 +88,13 @@ const GalleryCTA = () => {
               <RevealAnimation delay={0.3} direction="up">
                 <div className="space-y-4 md:space-y-6 pt-6 sm:pt-12">
                   <div className="relative h-[220px] sm:h-[320px] md:h-[380px] rounded-[32px] overflow-hidden shadow-2xl hover:shadow-secondary/20 transition-all duration-500 group border-4 border-white">
-                    <Image src={awardImg} alt="Special Moment" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <Image src={awardImg} alt="Special Moment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
                     <div className="absolute inset-0 bg-linear-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                       <span className="text-white text-[10px] font-black uppercase tracking-[0.2em]">Impact & Excellence</span>
                     </div>
                   </div>
                   <div className="relative h-[150px] sm:h-[220px] md:h-[250px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img3} alt="Gallery 3" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <Image src={img3} alt="Gallery 3" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
                 </div>
               </RevealAnimation>
@@ -103,10 +103,10 @@ const GalleryCTA = () => {
               <RevealAnimation delay={0.4} direction="up">
                 <div className="hidden sm:block space-y-4 md:space-y-6">
                   <div className="relative h-[150px] sm:h-[200px] md:h-[220px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img4} alt="Gallery 4" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <Image src={img4} alt="Gallery 4" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
                   <div className="relative h-[200px] sm:h-[280px] md:h-[320px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img1} alt="Gallery 5" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <Image src={img1} alt="Gallery 5" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
                 </div>
               </RevealAnimation>
