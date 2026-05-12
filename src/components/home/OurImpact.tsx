@@ -46,19 +46,33 @@ const impactItems = [
 
 const OurImpact = () => {
   return (
-    <section className="pt-24 pb-12 bg-[#F9FAFB] dark:bg-background-6">
+    <section className="bg-[#F9FAFB] dark:bg-background-6">
       <div className="main-container">
-        <div className="mx-auto mb-16 max-w-[850px] space-y-6 text-center">
+        <div className="mx-auto mb-20 max-w-[850px] text-center">
+          {/* Entrance Badge */}
           <RevealAnimation delay={0.1}>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/5 rounded-full border border-secondary/10 mb-4">
-              <div className="size-2 bg-secondary rounded-full animate-pulse" />
-              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary">Our Collective Reach</span>
+            <div className="flex items-center justify-center gap-6 mb-8">
+              <div className="h-[2px] w-12 bg-secondary/20" />
+              <div className="border-2 border-secondary/20 px-6 py-2.5 rounded-xl flex items-center gap-3 bg-white shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-5 text-secondary">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18 9 11.25l4.5 4.5L21.75 7m-1.5 12h1.5V5.25" />
+                </svg>
+                <span className="text-xs font-black uppercase tracking-[0.4em] text-secondary">OUR IMPACT</span>
+              </div>
+              <div className="h-[2px] w-12 bg-secondary/20" />
             </div>
           </RevealAnimation>
+
           <RevealAnimation delay={0.2}>
             <h2 className="text-secondary font-bold text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
-              Building a better tomorrow <br className="hidden md:block" /> <span className="text-black/40 italic">together.</span>
+              Building a better tomorrow <br className="hidden md:block" /> <span className="text-black">together.</span>
             </h2>
+          </RevealAnimation>
+
+          <RevealAnimation delay={0.3}>
+            <p className="mx-auto mt-6 max-w-[580px] text-black/60 font-medium text-base md:text-lg leading-relaxed">
+              Our commitment to excellence extends beyond graduation. Through collective effort, we are transforming lives and empowering our community.
+            </p>
           </RevealAnimation>
         </div>
 
@@ -75,7 +89,7 @@ const OurImpact = () => {
                     {item.icon}
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-secondary font-black text-4xl lg:text-5xl tracking-tighter">{item.value}</h3>
+                    <h3 className="text-secondary font-black tracking-tighter">{item.value}</h3>
                     <p className="text-black font-bold text-sm uppercase tracking-[0.15em]">{item.title}</p>
                     <p className="text-black/50 text-sm leading-relaxed max-w-[220px] mx-auto font-medium">
                       {item.text}

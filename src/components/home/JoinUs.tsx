@@ -5,16 +5,16 @@ import bgImg from '@public/images/gallery_4.png';
 
 const JoinUs = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-white relative overflow-hidden">
       <div className="main-container px-4 sm:px-6">
         <RevealAnimation delay={0.1}>
           <div className="relative overflow-hidden rounded-[32px] bg-[#3F0606] px-6 py-12 sm:px-10 md:px-16 lg:px-20 text-white shadow-2xl">
             {/* Background Image Overlay */}
             <div className="absolute inset-0 z-0">
-              <Image 
-                src={bgImg} 
-                alt="Alumni background" 
-                fill 
+              <Image
+                src={bgImg}
+                alt="Alumni background"
+                fill
                 className="object-cover opacity-15 mix-blend-overlay scale-110"
               />
               <div className="absolute inset-0 bg-linear-to-b lg:bg-linear-to-r from-[#3F0606] via-[#541A17]/95 to-transparent" />
@@ -24,7 +24,7 @@ const JoinUs = () => {
               {/* LHS - Main Heading */}
               <div className="lg:col-span-4 space-y-6 text-center lg:text-left">
                 <div className="space-y-4">
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-[1.2] tracking-tight text-white uppercase italic">
+                  <h2 className="font-bold leading-[1.2] tracking-tight text-white uppercase italic">
                     Be a part of <br className="hidden lg:block" /> Something Greater
                   </h2>
                   <p className="text-sm sm:text-base text-white/80 leading-relaxed font-medium max-w-[400px] mx-auto lg:mx-0">
@@ -76,7 +76,7 @@ const JoinUs = () => {
               {/* RHS - CTA Button */}
               <div className="lg:col-span-3 flex justify-center lg:justify-end w-full">
                 <Link href="/signup" className="group relative flex items-center justify-center gap-4 bg-white text-[#3F0606] px-8 py-5 rounded-[16px] font-black text-base md:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 whitespace-nowrap w-full sm:w-auto text-center">
-                  Join the Community
+                  Join FGCEOSA
                   <div className="flex items-center justify-center size-8 bg-[#3F0606] text-white rounded-full group-hover:translate-x-2 transition-transform duration-500 shadow-lg shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-4">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />

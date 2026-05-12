@@ -51,19 +51,27 @@ const data = [
 
 const WhatWeDo = () => {
   return (
-    <section className="py-24 bg-[#F9FAFB] overflow-hidden">
-      <div className="main-container px-4 sm:px-6">
-        <div className="mx-auto mb-16 max-w-[850px] space-y-6 text-center">
+    <section className="py-16 md:py-24 bg-[#F9FAFB] overflow-hidden">
+      <div className="main-container px-4 sm:px-6 pt-15">
+        <div className="mx-auto mb-20 max-w-[850px] text-center">
+          {/* Entrance Badge */}
           <RevealAnimation delay={0.1}>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/5 rounded-full border border-secondary/10">
-              <div className="size-2 bg-secondary rounded-full animate-pulse" />
-              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary">Our Core Initiatives</span>
+            <div className="flex items-center justify-center gap-6 mb-8">
+              <div className="h-[2px] w-12 bg-secondary/20" />
+              <div className="border-2 border-secondary/20 px-6 py-2.5 rounded-xl flex items-center gap-3 bg-white shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-5 text-secondary">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.183 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                </svg>
+                <span className="text-xs font-black uppercase tracking-[0.4em] text-secondary">WHAT WE DO</span>
+              </div>
+              <div className="h-[2px] w-12 bg-secondary/20" />
             </div>
           </RevealAnimation>
+
           <div>
             <RevealAnimation delay={0.2}>
               <h2 className="text-secondary font-bold text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
-                Dedicated to <span className="text-black/40 italic">Excellence</span> <br /> & Community Growth.
+                Empowering Alumni. <span className="text-black">Strengthening Community.</span>
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
@@ -74,24 +82,27 @@ const WhatWeDo = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 pt-10">
           {data.map((item, index) => (
             <RevealAnimation key={index} delay={0.1 * (index + 1)}>
-              <div className="group flex flex-col h-full overflow-hidden rounded-[32px] border border-secondary/5 bg-white shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
-                <div className="relative h-60 overflow-hidden">
-                  <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-linear-to-t from-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-                <div className="p-8 flex flex-col flex-1">
-                  <div className="bg-secondary/5 text-secondary mb-6 flex size-14 items-center justify-center rounded-2xl transition-all duration-500 group-hover:bg-secondary group-hover:text-white group-hover:shadow-lg group-hover:shadow-secondary/20">
+              <div className="group flex flex-col h-full overflow-visible rounded-[32px] border border-secondary/5 bg-white shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                <div className="relative h-60 rounded-t-[32px] overflow-visible">
+                  <div className="absolute inset-0 rounded-t-[32px] overflow-hidden">
+                    <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <div className="absolute inset-0 bg-linear-to-t from-secondary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                  {/* Icon at bottom middle of image */}
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-secondary text-white flex size-14 items-center justify-center rounded-2xl shadow-xl z-20 border-4 border-white transition-transform duration-500 group-hover:scale-110">
                     {item.icon}
                   </div>
+                </div>
+                <div className="p-8 pt-12 flex flex-col flex-1">
                   <h4 className="mb-3 text-xl font-black text-secondary tracking-tight">{item.title}</h4>
                   <p className="text-black/50 mb-8 text-sm leading-relaxed font-medium flex-1">
                     {item.text}
                   </p>
-                  <Link href="#" className="inline-flex items-center gap-2 text-sm font-black text-secondary uppercase tracking-widest group/link">
-                    Learn More
+                  <Link href="#" className="inline-flex items-center gap-2 text-sm font-black text-secondary tracking-widest group/link">
+                    Learn more
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-4 group-hover/link:translate-x-1.5 transition-transform duration-300">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>

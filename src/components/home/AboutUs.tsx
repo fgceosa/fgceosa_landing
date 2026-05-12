@@ -15,7 +15,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="relative dark:bg-background-6 pt-6 pb-20 md:pt-8 md:pb-32 lg:pt-10 lg:pb-[50px] xl:pt-12 xl:pb-[50px]">
+    <section className="relative dark:bg-background-6 py-20 md:py-24 lg:py-32">
 
       <div className="main-container">
         <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px] mb-20 md:mb-32">
@@ -130,7 +130,7 @@ const AboutUs = () => {
       </div>
 
       {/* Floating Features Section */}
-      <div className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 translate-y-1/2 z-20">
+      <div className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 translate-y-1/2 z-20 pt-15">
         <AboutFeatures />
       </div>
     </section>

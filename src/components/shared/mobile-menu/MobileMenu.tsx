@@ -53,9 +53,6 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
         </div>
 
         <div className="scroll-bar mt-6 h-[85vh] w-full overflow-x-hidden pb-10">
-          <p className="text-accent/60 text-tagline-1 relative mb-2 block font-normal before:absolute before:top-1/2 before:-right-16 before:h-px before:w-full before:-translate-y-1/2 before:bg-accent/20 before:content-['']">
-            Menu
-          </p>
           <ul className="space-y-2">
             {menuData.map((item) => (
               <li key={item.id}>

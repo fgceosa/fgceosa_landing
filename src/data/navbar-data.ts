@@ -2,35 +2,52 @@ import { MobileMenuGroup } from '@/components/shared/mobile-menu/MobileMenu';
 import { FooterOneData } from '@/interface';
 
 export const mobileMenuData: MobileMenuGroup[] = [
-  {
-    id: 'home',
-    title: 'Home',
-    href: '/',
-  },
+  // {
+  //   id: 'home',
+  //   title: 'Home',
+  //   href: '/',
+  // },
   {
     id: 'about',
-    title: 'About Us',
-    href: '/about',
+    title: 'About',
+    submenu: [
+      { id: 'about-fgce', label: 'About FGCE', href: '/about' },
+      { id: 'presidents-message', label: "President's Message", href: '/presidents-message' },
+      { id: 'membership', label: 'Membership', href: '/membership' },
+      //   ],
+      // },
+      // {
+      //   id: 'exco',
+      //   title: 'Exco',
+      //   submenu: [
+      { id: 'constitution', label: 'The Constitution', href: '/constitution' },
+      { id: 'exco-officers', label: 'Exco Officers', href: '/exco-officers' },
+      { id: 'financial-report', label: 'Financial Report', href: '/financial-report' },
+    ],
   },
   {
-    id: 'membership',
-    title: 'Membership',
-    href: '/membership',
+    id: 'alumni-world',
+    title: 'Alumni World',
+    submenu: [
+      { id: 'projects', label: 'Project & Programmes', href: '/projects' },
+      { id: 'spotlight', label: 'Alumni Spotlight', href: '/spotlight' },
+    ],
   },
   {
-    id: 'events',
-    title: 'Events',
-    href: '/events',
+    id: 'news-events',
+    title: 'News and Events',
+    submenu: [
+      { id: 'reunion', label: 'Reunion Current Year', href: '/reunion' },
+      { id: 'fgce-50', label: 'FGCE @ 50', href: '/fgce-at-50' },
+    ],
   },
   {
-    id: 'news',
-    title: 'News & Announcements',
-    href: '/blog',
-  },
-  {
-    id: 'gallery',
-    title: 'Gallery',
-    href: '/gallery',
+    id: 'community',
+    title: 'Community',
+    submenu: [
+      { id: 'directory', label: 'Business Directory', href: '/directory' },
+      { id: 'groups', label: 'Groups', href: '/groups' },
+    ],
   },
   {
     id: 'contact',
@@ -41,31 +58,29 @@ export const mobileMenuData: MobileMenuGroup[] = [
 
 export const footerData: FooterOneData[] = [
   {
-    title: 'Company',
+    title: 'Quick Links',
     links: [
-      { label: 'About Us', href: '/about' },
-      { label: 'Career', href: '/career' },
-      { label: 'Case Studies', href: '/case-study' },
+      { label: 'About FGCE', href: '/about' },
+      { label: 'Exco Officers', href: '/exco-officers' },
+      { label: 'Projects', href: '/projects' },
       { label: 'Contact Us', href: '/contact-us' },
     ],
   },
   {
-    title: 'Support',
+    title: 'Resources',
     links: [
-      { label: 'FAQ', href: '/faq' },
-      { label: 'Documentation', href: '/documentation' },
-      { label: 'Tutorial', href: '/tutorial' },
-      { label: 'Community', href: '/community' },
+      { label: 'The Constitution', href: '/constitution' },
+      { label: 'Financial Report', href: '/financial-report' },
+      { label: 'Business Directory', href: '/directory' },
+      { label: 'Forum', href: '/forum' },
     ],
   },
   {
-    title: 'Legal Policies',
+    title: 'Legal',
     links: [
       { label: 'Terms & Conditions', href: '/terms-conditions' },
       { label: 'Privacy Policy', href: '/privacy-policy' },
-      { label: 'Refund Policy', href: '/refund-policy' },
-      { label: 'GDPR Compliance', href: '/gdpr' },
-      { label: 'Affiliate Policy', href: '/affiliate-policy' },
+      { label: 'Membership Policy', href: '/membership' },
     ],
   },
 ];
