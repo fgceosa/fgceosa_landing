@@ -68,14 +68,13 @@ export default function DemoShowcase({ activeDemoId }: Readonly<{ activeDemoId: 
 
   const getCardClassName = (href: string, id: number) => {
     const isActive = id === activeDemoId;
-    return `demo-card block border cursor-pointer transition-all duration-300 ease-in-out max-w-[500px] mx-auto rounded-[36px] p-2 ${
-      isActive ? 'border-primary-500 border-2' : 'border-stroke-3 group hover:border-primary-400'
-    }`;
+    return `demo-card block border cursor-pointer transition-all duration-300 ease-in-out max-w-[500px] mx-auto rounded-[36px] p-2 ${isActive ? 'border-primary-500 border-2' : 'border-stroke-3 group hover:border-primary-400'
+      }`;
   };
 
   return (
     <>
-      <button
+      {/* <button
         style={{ writingMode: 'sideways-lr', textOrientation: 'mixed' }}
         onClick={handleOpen}
         className="text-accent text-tagline-1 fixed right-0 bottom-1/2 z-[99999] flex translate-y-1/2 cursor-pointer items-center gap-4 rounded-l-xl bg-[#DE4A40] pt-4 pb-1 font-medium sm:pr-1 sm:pl-1">
@@ -112,12 +111,11 @@ export default function DemoShowcase({ activeDemoId }: Readonly<{ activeDemoId: 
           {' '}
           {demoShowcaseList.length > 0 ? `${demoShowcaseList.length}+ Pre built demos` : '38+ Pre built demos'}
         </span>
-      </button>
+      </button> */}
 
       <div
-        className={`fixed top-0 left-0 z-[99999] h-screen w-full origin-center transition-[transform,opacity,filter] duration-[900ms] ease-[cubic-bezier(0.23,1,0.32,1)] will-change-[transform,opacity,filter] backface-hidden ${
-          isOpen ? 'opacity-100 blur-none' : 'opacity-0 blur-[22px]'
-        }`}
+        className={`fixed top-0 left-0 z-[99999] h-screen w-full origin-center transition-[transform,opacity,filter] duration-[900ms] ease-[cubic-bezier(0.23,1,0.32,1)] will-change-[transform,opacity,filter] backface-hidden ${isOpen ? 'opacity-100 blur-none' : 'opacity-0 blur-[22px]'
+          }`}
         style={{
           transform: isOpen ? 'translateX(0) scale(1) rotateY(0deg)' : 'translateX(100%) scale(0.65) rotateY(20deg)',
         }}

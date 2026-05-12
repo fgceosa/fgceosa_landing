@@ -2,31 +2,31 @@ import { FooterData } from '@/interface';
 
 export const footerLinks: FooterData[] = [
   {
-    title: 'Company',
+    title: 'Quick Links',
     links: [
       { label: 'About Us', href: '/about' },
-      { label: 'Career', href: '/career' },
-      { label: 'Case Studies', href: '/case-study' },
+      { label: 'Our Impact', href: '/impact' },
+      { label: 'News & Events', href: '/news-events' },
+      { label: 'Photo Gallery', href: '/gallery' },
       { label: 'Contact Us', href: '/contact-us' },
     ],
   },
   {
-    title: 'Support',
+    title: 'Membership',
     links: [
-      { label: 'FAQ', href: '/faq' },
-      { label: 'Documentation', href: '/documentation' },
-      { label: 'Tutorial', href: '/tutorial' },
-      { label: 'Support', href: '/support' },
+      { label: 'Join FGCEOSA', href: '/join' },
+      { label: 'Membership Benefits', href: '/benefits' },
+      { label: 'Chapters', href: '/chapters' },
+      { label: 'Member Directory', href: '/directory' },
     ],
   },
   {
-    title: 'Legal Policies',
+    title: 'Get Involved',
     links: [
-      { label: 'Terms & Conditions', href: '/terms-conditions' },
-      { label: 'Privacy Policy', href: '/privacy-policy' },
-      { label: 'Refund Policy', href: '/refund-policy' },
-      { label: 'GDPR Compliance', href: '/gdpr' },
-      { label: 'Affiliate Policy', href: '/affiliate-policy' },
+      { label: 'Donate', href: '/donate' },
+      { label: 'Volunteer', href: '/volunteer' },
+      { label: 'Mentorship', href: '/mentorship' },
+      { label: 'Project Sponsorship', href: '/sponsorship' },
     ],
   },
 ];

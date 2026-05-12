@@ -6,71 +6,35 @@ NextSaaS Buttons Styles
   span {
     @apply inline-block transition-transform duration-300 ease-in-out first-letter:uppercase;
   }
-  &::before {
-    content: '';
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    @apply absolute top-1/2 right-0 h-0 w-0 -translate-y-1/2 opacity-0 transition-all duration-300 ease-in-out;
-  }
-  &:hover {
-    &::before {
-      @apply size-3 -translate-x-4 opacity-100;
-    }
-    span {
-      @apply -translate-x-2;
-    }
-  }
 }
 
 /* btn color variants */
 @utility btn-primary {
   @apply bg-primary-500 shadow-1 border-primary-600 dark:border-primary-400 text-white;
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-  }
 }
 
 @utility btn-white {
   @apply bg-background-1 border-stroke-3 shadow-1 text-secondary;
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%231a1a1c' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-  }
 }
 
 @utility btn-white-dark {
   @apply bg-background-6 border-stroke-7 shadow-1 text-accent;
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-  }
 }
 
 @utility btn-white-v2 {
   @apply border-stroke-3 shadow-1 text-secondary bg-white;
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%231a1a1c' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-  }
 }
 
 @utility btn-accent {
   @apply bg-accent border-stroke-3 shadow-1 text-secondary;
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%231a1a1c' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-  }
 }
 
 @utility btn-ash {
   @apply bg-background-12 text-secondary;
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%231a1a1c' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-  }
 }
 
 @utility btn-secondary {
   @apply shadow-1 bg-secondary border-black text-white;
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-  }
 }
 
 @utility btn-secondary-v2 {
@@ -79,16 +43,10 @@ NextSaaS Buttons Styles
 
 @utility btn-transparent {
   @apply border-stroke-7 text-accent bg-transparent;
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-  }
 }
 
 @utility btn-green {
   @apply bg-ns-green border-ns-green-light text-secondary;
-  &::before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%231a1a1c' viewBox='0 0 256 256'%3E%3Cpath d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'%3E%3C/path%3E%3C/svg%3E");
-  }
 }
 
 @utility btn-dark {
@@ -110,27 +68,14 @@ NextSaaS Buttons Styles
 /* btn size variants */
 @utility btn-sm {
   @apply px-4 py-1;
-  &::before {
-    content: none;
-  }
 }
 
 @utility btn-base {
   @apply text-tagline-1 px-[18px] py-2.5;
-  &:hover {
-    &::before {
-      @apply size-2 -translate-x-3 opacity-100;
-    }
-  }
 }
 
 @utility btn-md {
   @apply text-tagline-2 min-w-[90px] px-5 py-2.5;
-  &:hover {
-    &::before {
-      @apply size-2.5 -translate-x-3.5 opacity-100;
-    }
-  }
 }
 
 @utility btn-lg {
@@ -139,12 +84,6 @@ NextSaaS Buttons Styles
 
 @utility btn-xl {
   @apply text-tagline-1 px-8 py-3.5;
-
-  &:hover {
-    &::before {
-      @apply size-3 -translate-x-4 opacity-100;
-    }
-  }
 }
 
 /* button v2  */
