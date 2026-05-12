@@ -90,7 +90,7 @@ const NewsEvents = () => {
 
           <div>
             <RevealAnimation delay={0.2}>
-              <h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold text-secondary tracking-tight">Stay Informed. Stay Connected.</h2>
+              <h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold text-secondary tracking-tight"><span className='text-black'>Stay Informed. </span>Stay Connected.</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="mx-auto max-w-[550px] text-black font-semibold text-lg md:text-xl leading-relaxed">
@@ -113,7 +113,7 @@ const NewsEvents = () => {
                   </div>
                   <h3 className="text-lg font-black uppercase tracking-widest text-secondary">Upcoming Events</h3>
                 </div>
-                <Link href="#" className="text-[11px] font-black  tracking-[0.2em] text-secondary/40 hover:text-secondary flex items-center gap-2 transition-all group">
+                <Link href="#" className="text-[11px] font-black  tracking-[0.2em] text-secondary hover:text-secondary flex items-center gap-2 transition-all group">
                   View All Events
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-3.5 group-hover:translate-x-1.5 transition-transform">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -150,7 +150,7 @@ const NewsEvents = () => {
                                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                                 </svg>
                               </div>
-                              <p className="text-[11px] font-bold text-secondary/60 tracking-wider">{event.location}</p>
+                              <p className="text-[11px] font-bold text-secondary/90 tracking-wider">{event.location}</p>
                             </div>
 
                             <div className="flex items-center gap-2">
@@ -159,7 +159,7 @@ const NewsEvents = () => {
                                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
                               </div>
-                              <p className="text-[11px] font-bold text-secondary/40 uppercase tracking-widest">{event.time}</p>
+                              <p className="text-[11px] font-bold text-secondary/90 uppercase tracking-widest">{event.time}</p>
                             </div>
                           </div>
                         </div>
@@ -183,7 +183,7 @@ const NewsEvents = () => {
                   </div>
                   <h3 className="text-lg font-black uppercase tracking-widest text-secondary">Latest News</h3>
                 </div>
-                <Link href="#" className="text-[11px] font-black  tracking-[0.2em] text-secondary/40 hover:text-secondary flex items-center gap-2 transition-all group">
+                <Link href="#" className="text-[11px] font-black  tracking-[0.2em] text-secondary hover:text-secondary flex items-center gap-2 transition-all group">
                   View All News
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-3.5 group-hover:translate-x-1.5 transition-transform">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -215,7 +215,7 @@ const NewsEvents = () => {
                             </svg>
                           </span>
                         </Link>
-                        <p className="text-[11px] font-black text-secondary/30 tracking-widest">{item.date}</p>
+                        <p className="text-[11px] font-black text-secondary/90 tracking-widest">{item.date}</p>
                       </div>
                     </div>
                   </div>

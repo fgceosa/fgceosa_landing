@@ -46,32 +46,38 @@ const impactItems = [
 
 const OurImpact = () => {
   return (
-    <section className="pt-20 pb-20 md:pt-32 md:pb-32 lg:pt-[100px] lg:pb-[100px] bg-white dark:bg-background-6">
+    <section className="pt-24 pb-12 bg-[#F9FAFB] dark:bg-background-6">
       <div className="main-container">
-        <div className="mx-auto mb-14 max-w-[850px] space-y-5 text-center">
+        <div className="mx-auto mb-16 max-w-[850px] space-y-6 text-center">
           <RevealAnimation delay={0.1}>
-            <h2 className="text-black dark:text-white font-bold text-xl md:text-2xl lg:text-3xl">
-              Building a better tomorrow <span className="text-secondary">together.</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/5 rounded-full border border-secondary/10 mb-4">
+              <div className="size-2 bg-secondary rounded-full animate-pulse" />
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary">Our Collective Reach</span>
+            </div>
+          </RevealAnimation>
+          <RevealAnimation delay={0.2}>
+            <h2 className="text-secondary font-bold text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
+              Building a better tomorrow <br className="hidden md:block" /> <span className="text-black/40 italic">together.</span>
             </h2>
           </RevealAnimation>
         </div>
 
-        <div className="rounded-[40px] bg-secondary p-10 md:p-16 lg:p-20 shadow-2xl relative overflow-hidden">
-          {/* Decorative background element */}
-          <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-white/5 blur-3xl" />
-          <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-white/5 blur-3xl" />
+        <div className="rounded-[48px] bg-white p-12 md:p-16 lg:p-20 shadow-xl border border-secondary/5 relative overflow-hidden">
+          {/* Subtle decorative background elements */}
+          <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-secondary/5 blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-secondary/5 blur-3xl" />
 
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 relative z-10">
             {impactItems.map((item, index) => (
               <RevealAnimation key={index} delay={0.1 * (index + 1)}>
-                <div className="flex flex-col items-center text-center space-y-6 group">
-                  <div className="bg-white/10 text-white p-5 rounded-2xl transition-all duration-300 group-hover:bg-white group-hover:text-secondary group-hover:-translate-y-2">
+                <div className="flex flex-col items-center text-center space-y-8 group">
+                  <div className="bg-secondary/5 text-secondary p-6 rounded-3xl transition-all duration-500 group-hover:bg-secondary group-hover:text-white group-hover:-translate-y-3 group-hover:shadow-2xl group-hover:shadow-secondary/20">
                     {item.icon}
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="text-white font-bold text-3xl lg:text-4xl">{item.value}</h3>
-                    <p className="text-white font-bold text-base uppercase tracking-wider">{item.title}</p>
-                    <p className="text-white/70 text-xs leading-relaxed max-w-[200px] mx-auto">
+                  <div className="space-y-3">
+                    <h3 className="text-secondary font-black text-4xl lg:text-5xl tracking-tighter">{item.value}</h3>
+                    <p className="text-black font-bold text-sm uppercase tracking-[0.15em]">{item.title}</p>
+                    <p className="text-black/50 text-sm leading-relaxed max-w-[220px] mx-auto font-medium">
                       {item.text}
                     </p>
                   </div>
