@@ -69,7 +69,7 @@ const Statistics = () => {
       <div className="main-container mb-10">
         <div className="mx-auto max-w-[850px] space-y-5 text-center">
           <RevealAnimation delay={0.1}>
-            <h2 className="text-black dark:text-white font-bold text-xl md:text-2xl lg:text-3xl">
+            <h2 className="text-black dark:text-white font-bold">
               Our Community <span className="text-secondary">in numbers.</span>
             </h2>
           </RevealAnimation>
@@ -101,16 +101,18 @@ const Statistics = () => {
                   </div>
 
                   <div className="transform transition-all duration-500 ease-in-out group-hover:translate-y-[-4px]">
-                    <p className="mb-1 text-sm font-medium transition-colors duration-500 ease-in-out group-hover:text-white/80">
-                      {item.title}
-                    </p>
                     <h3 className="group-hover:text-white text-secondary dark:text-accent font-black transition-colors duration-500 ease-in-out text-xl md:text-2xl">
                       {item.value}
                     </h3>
+                    <p className="mb-1 text-sm font-medium transition-colors duration-500 ease-in-out group-hover:text-white/80">
+                      {item.title}
+                    </p>
+
+                    <p className="group-hover:text-white/60 text-black dark:text-accent/60 text-xs transform transition-all duration-500 ease-in-out group-hover:translate-y-[4px]">
+                      {item.description}
+                    </p>
                   </div>
-                  <p className="group-hover:text-white/60 text-secondary/60 dark:text-accent/60 text-xs transform transition-all duration-500 ease-in-out group-hover:translate-y-[4px]">
-                    {item.description}
-                  </p>
+
                 </div>
               ))}
             </div>

@@ -64,7 +64,7 @@ const OurImpact = () => {
           </RevealAnimation>
 
           <RevealAnimation delay={0.2}>
-            <h2 className="text-secondary font-bold text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
+            <h2 className="text-secondary font-bold leading-tight tracking-tight">
               Building a better tomorrow <br className="hidden md:block" /> <span className="text-black">together.</span>
             </h2>
           </RevealAnimation>

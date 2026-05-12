@@ -31,19 +31,19 @@ const MobileMenuItem = ({ id, title, children, hasSubmenu = false }: MobileMenuI
         aria-controls={hasSubmenu ? `submenu-${id}` : undefined}>
         <span
           className={cn(
-            'text-tagline-1 ease block font-normal transition-colors duration-300',
-            isActive ? 'text-secondary dark:text-accent font-medium' : 'text-secondary/60 dark:text-accent/60',
+            'text-tagline-1 ease block font-medium transition-colors duration-300',
+            isActive ? 'text-white' : 'text-white/70',
           )}>
-          {title}{' '}
+          {title}
         </span>
         {hasSubmenu && (
           <span
             className={cn(
-              'stroke-secondary/60 dark:stroke-accent/60 size-5 transition-transform duration-300 ease-in-out',
-              isActive && 'rotate-90',
+              'size-5 transition-transform duration-300 ease-in-out',
+              isActive ? 'rotate-90 text-white' : 'text-white/70',
             )}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
-              <path d="M8 12L12 8L8 4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" className="size-full">
+              <path d="M8 12L12 8L8 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </span>
         )}
@@ -54,8 +54,8 @@ const MobileMenuItem = ({ id, title, children, hasSubmenu = false }: MobileMenuI
         <div
           id={`submenu-${id}`}
           className={cn(
-            'dark:bg-background-7 ml-3.5 w-full overflow-y-hidden bg-white transition-[height,opacity] duration-300 ease-in-out',
-            isActive ? 'pointer-events-auto h-fit opacity-100' : 'pointer-events-none h-0 opacity-0',
+            'ml-4 w-full overflow-y-hidden bg-white/5 rounded-xl transition-[height,opacity] duration-300 ease-in-out',
+            isActive ? 'pointer-events-auto h-fit opacity-100 py-2' : 'pointer-events-none h-0 opacity-0',
           )}>
           {/* render submenu  */}
           {children}

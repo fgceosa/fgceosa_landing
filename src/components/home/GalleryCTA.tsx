@@ -24,7 +24,7 @@ const GalleryCTA = () => {
               </RevealAnimation>
 
               <RevealAnimation delay={0.2}>
-                <h2 className="text-black font-bold lg:text-[52px] leading-[1.1] tracking-tight">
+                <h2 className="text-black font-bold leading-[1.1] tracking-tight">
                   One Family. Many Journeys. <br className="hidden md:block" />
                   <span className="text-secondary font-serif">Unbreakable bond.</span>
                 </h2>

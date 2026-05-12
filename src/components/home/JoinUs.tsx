@@ -24,7 +24,7 @@ const JoinUs = () => {
               {/* LHS - Main Heading */}
               <div className="lg:col-span-4 space-y-6 text-center lg:text-left">
                 <div className="space-y-4">
-                  <h2 className="font-bold leading-[1.2] tracking-tight text-white uppercase italic">
+                  <h2 className="font-bold leading-[1.2] tracking-tight text-white uppercase">
                     Be a part of <br className="hidden lg:block" /> Something Greater
                   </h2>
                   <p className="text-sm sm:text-base text-white/80 leading-relaxed font-medium max-w-[400px] mx-auto lg:mx-0">

@@ -4,7 +4,7 @@ import HeroImages from './HeroImages';
 
 const Hero = () => {
   return (
-    <section className="" style={{ paddingTop: '170px' }}>
+    <section className="pb-32 md:pb-24" style={{ paddingTop: '170px' }}>
 
       <div className="main-container">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 lg:gap-x-12">
@@ -18,7 +18,7 @@ const Hero = () => {
                 </RevealAnimation>
                 <div className="space-y-4">
                   <RevealAnimation delay={0.2}>
-                    <h2 className="text-2xl font-bold text-black md:text-3xl lg:text-4xl xl:text-5xl">
+                    <h2 className="font-bold text-black leading-[1.1]">
                       Stronger Together.{' '}
                       <br />
                       United Forever.{' '}

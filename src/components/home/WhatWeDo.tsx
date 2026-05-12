@@ -70,7 +70,7 @@ const WhatWeDo = () => {
 
           <div>
             <RevealAnimation delay={0.2}>
-              <h2 className="text-secondary font-bold text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
+              <h2 className="text-secondary font-bold leading-tight tracking-tight">
                 Empowering Alumni. <span className="text-black">Strengthening Community.</span>
               </h2>
             </RevealAnimation>

@@ -90,7 +90,7 @@ const NewsEvents = () => {
 
           <div>
             <RevealAnimation delay={0.2}>
-              <h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold text-secondary tracking-tight"><span className='text-black'>Stay Informed. </span>Stay Connected.</h2>
+              <h2 className="mb-4 font-bold text-secondary tracking-tight"><span className='text-black'>Stay Informed. </span>Stay Connected.</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="mx-auto max-w-[550px] text-black font-semibold text-lg md:text-xl leading-relaxed">
@@ -111,7 +111,7 @@ const NewsEvents = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-black uppercase tracking-widest text-secondary">Upcoming Events</h3>
+                  <h6 className="font-black uppercase tracking-widest text-secondary">Upcoming Events</h6>
                 </div>
                 <Link href="#" className="text-[11px] font-black  tracking-[0.2em] text-secondary hover:text-secondary flex items-center gap-2 transition-all group">
                   View All Events
@@ -140,7 +140,7 @@ const NewsEvents = () => {
                         </div>
                         <div className="flex flex-col flex-1 relative">
                           <h4 className="font-bold text-xl text-secondary mb-3 leading-tight group-hover:text-[#950C12] transition-colors">{event.title}</h4>
-                          <p className="text-[13px] text-black/50 leading-relaxed line-clamp-2 mb-4 font-medium italic">{event.summary}</p>
+                          <p className="text-[13px] text-black/50 leading-relaxed line-clamp-2 mb-4 font-medium">{event.summary}</p>
 
                           <div className="mt-auto flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-secondary/5">
                             <div className="flex items-center gap-2">
@@ -181,7 +181,7 @@ const NewsEvents = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-black uppercase tracking-widest text-secondary">Latest News</h3>
+                  <h6 className="font-black uppercase tracking-widest text-secondary">Latest News</h6>
                 </div>
                 <Link href="#" className="text-[11px] font-black  tracking-[0.2em] text-secondary hover:text-secondary flex items-center gap-2 transition-all group">
                   View All News

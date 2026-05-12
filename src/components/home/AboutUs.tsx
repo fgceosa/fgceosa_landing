@@ -15,7 +15,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="relative dark:bg-background-6 py-20 md:py-24 lg:py-32">
+    <section className="relative dark:bg-background-6 pt-20 pb-72 md:py-24 lg:py-32">
 
       <div className="main-container">
         <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px] mb-20 md:mb-32">
@@ -28,7 +28,7 @@ const AboutUs = () => {
             </RevealAnimation>
 
             <RevealAnimation delay={0.2}>
-              <h2 className="mb-6 text-black dark:text-white leading-tight font-bold tracking-tight text-3xl md:text-4xl lg:text-5xl">
+              <h2 className="mb-6 text-black dark:text-white leading-tight font-bold tracking-tight">
                 A Legacy That <br />
                 <span className="relative inline-block text-secondary">
                   Lives On
@@ -94,7 +94,7 @@ const AboutUs = () => {
                     <div className="w-full sm:pr-[120px] md:pr-[180px] lg:pr-[220px]">
                       <p className="text-white italic text-base md:text-xl lg:text-2xl leading-snug font-medium relative">
                         <span className="text-4xl md:text-6xl absolute -top-4 md:-top-8 -left-2 md:-left-4 opacity-50 font-serif">"</span>
-                        <span className="pl-4 md:pl-8 block">United by our past. Inspired to build the future.</span>
+                        <span className="block">United by our past. Inspired to build the future.</span>
                       </p>
                     </div>
 
