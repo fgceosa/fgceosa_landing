@@ -41,7 +41,7 @@ const features = [
 
 const HeroFeatures = () => {
   return (
-    <div className="mx-auto max-w-[1200px] px-4">
+    <div className="main-container mt-10">
       <div className="grid grid-cols-1 gap-8 rounded-2xl bg-white p-8 shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:p-10">
         {features.map((feature, index) => (
           <RevealAnimation key={index} delay={0.1 * (index + 1)}>

@@ -16,6 +16,7 @@ import HeroFeatures from '@/components/home/HeroFeatures';
 import { Metadata } from 'next';
 
 import ConnectionBanner from '@/components/home/ConnectionBanner';
+import AboutFeatures from '@/components/home/AboutFeatures';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
@@ -25,14 +26,11 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <main className="dark:bg-background-7 bg-white overflow-x-hidden">
-      <div className="relative">
-        <Hero />
-        <div className="absolute left-1/2 bottom-0 w-full -translate-x-1/2 translate-y-1/2 z-20">
-          <HeroFeatures />
-        </div>
-      </div>
-      <div className="bg-secondary h-[100px] w-full rounded-t-[10px] relative z-0" />
+      <Hero />
+      <HeroFeatures />
+      {/* <div className="bg-secondary h-[100px] w-full rounded-t-[10px] relative z-0" /> */}
       <AboutUs />
+      <AboutFeatures />
       <WhatWeDo />
       <Statistics />
       <OurImpact />

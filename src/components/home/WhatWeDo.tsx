@@ -51,8 +51,8 @@ const data = [
 
 const WhatWeDo = () => {
   return (
-    <section className="py-16 md:py-12 bg-[#F9FAFB] overflow-hidden">
-      <div className="main-container px-4 sm:px-6 pt-15">
+    <section className="bg-[#F9FAFB] overflow-hidden">
+      <div className="main-container">
         <div className="mx-auto mb-20 max-w-[850px] text-center">
           {/* Entrance Badge */}
           <RevealAnimation delay={0.1}>

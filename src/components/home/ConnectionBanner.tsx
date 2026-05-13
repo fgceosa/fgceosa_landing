@@ -5,8 +5,8 @@ import bgImg from '@public/images/gallery_3.png';
 
 const ConnectionBanner = () => {
   return (
-    <section className="py-16 md:py-24 bg-white relative overflow-hidden">
-      <div className="main-container px-4 sm:px-6">
+    <section className="py-8 bg-white relative overflow-hidden">
+      <div className="main-container">
         <RevealAnimation delay={0.1}>
           <div className="relative overflow-hidden rounded-[32px] bg-[#3F0606] px-6 py-12 sm:px-10 md:px-16 lg:px-20 text-white shadow-2xl">
             {/* Background Image Overlay */}
