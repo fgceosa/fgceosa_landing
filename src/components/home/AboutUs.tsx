@@ -15,10 +15,10 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="relative dark:bg-background-6 pt-20 pb-72 md:py-24 lg:py-32">
+    <section className="relative dark:bg-background-6 pt-10 pb-72">
 
       <div className="main-container">
-        <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px] mb-20 md:mb-32">
+        <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px] mb-7">
           {/* LHS Content */}
           <div className="lg:order-1">
             <RevealAnimation delay={0.1}>
@@ -32,7 +32,7 @@ const AboutUs = () => {
                 A Legacy That <br />
                 <span className="relative inline-block text-secondary">
                   Lives On
-                  <div className="absolute -bottom-2 left-0 h-1.5 w-20 bg-secondary rounded-full" />
+                  <span className="absolute -bottom-2 left-0 h-1.5 w-20 bg-secondary rounded-full" />
                 </span>
               </h2>
             </RevealAnimation>
