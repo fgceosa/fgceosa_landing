@@ -13,34 +13,39 @@ const VisionStatement = () => {
             <span className="badge badge-cyan mb-5">Passion meets purpose</span>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
-            <h2>NextSaaS is defining the future landscape of business.</h2>
+            <h2 className="text-secondary font-bold leading-tight tracking-tight mx-auto sm:mx-0">FGCEOSA is defining the future of our alumni network.</h2>
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
-            <p>
-              In a rapidly evolving digital world, NextSaaS stands at the forefront of innovation, transforming how
-              businesses operate, connect, and grow.By delivering intelligent, scalable, and user-focused SaaS
-              solutions,
+            <p className="text-black dark:text-white/80 mx-auto sm:mx-0">
+              Driven by the values of excellence and unity, FGCEOSA stands at the forefront of alumni engagement,
+              connecting graduates across generations and borders. By fostering professional growth and supporting
+              our alma mater, we build a legacy that lasts.
             </p>
           </RevealAnimation>
         </div>
-        <article className="grid grid-cols-12 justify-center gap-x-8 gap-y-8">
-          <div className="col-span-12 space-y-8 md:col-span-6">
-            <RevealAnimation delay={0.5} instant>
-              <figure className="max-w-[630px] overflow-hidden rounded-[20px]">
-                <Image src={vision1Img} alt="vision-1" className="h-auto w-full" />
-              </figure>
-            </RevealAnimation>
-            <RevealAnimation delay={0.6} instant>
-              <figure className="max-w-[630px] overflow-hidden rounded-[20px]">
-                <Image src={vision2Img} alt="vision-2" className="h-auto w-full" />
-              </figure>
-            </RevealAnimation>
-          </div>
-          <RevealAnimation delay={0.7} instant>
-            <figure className="col-span-12 max-w-[630px] overflow-hidden rounded-[20px] md:col-span-6">
-              <Image src={vision3Img} alt="vision-3" className="h-auto w-full" />
+        <article className="grid grid-cols-1 md:grid-cols-2 justify-center gap-8">
+          <RevealAnimation delay={0.5} instant>
+            <figure className="relative h-[300px] md:h-[450px] overflow-hidden rounded-[20px] shadow-xl">
+              <Image
+                src="/images/alumni_reunion.png"
+                alt="FGCEOSA Global Reunion"
+                fill
+                className="object-cover transition-transform duration-700 hover:scale-105"
+              />
             </figure>
           </RevealAnimation>
+          <div className="space-y-8">
+            <RevealAnimation delay={0.6} instant>
+              <div className="bg-secondary/5 p-8 rounded-[20px] border border-secondary/10 h-full flex flex-col justify-center">
+                <h3 className="text-secondary mb-4">Our Vision</h3>
+                <p className="text-lg leading-relaxed font-medium text-black/70">
+                  To be a world-class alumni association that fosters a lifelong bond among members,
+                  empowering them to excel in their endeavors while significantly contributing to the
+                  holistic development of our alma mater.
+                </p>
+              </div>
+            </RevealAnimation>
+          </div>
         </article>
       </div>
     </section>

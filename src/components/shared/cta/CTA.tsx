@@ -38,7 +38,7 @@ const CTA = ({
     <section className={cn('py-[50px] md:py-20 lg:py-28', className)} aria-label="cta section">
       <div className="main-container">
         <div className="xl :gap-0 flex flex-col items-center justify-between gap-8 xl:flex-row">
-          <div className="mx-3 max-w-[649px] space-y-3 text-center sm:mx-0 md:w-full xl:text-left">
+          <div className="mx-3 max-w-[649px] space-y-3 text-left sm:mx-0 md:w-full">
             {badgeText && (
               <RevealAnimation delay={0.3}>
                 <span className={cn('badge badge-green', badgeClass)}>{badgeText}</span>

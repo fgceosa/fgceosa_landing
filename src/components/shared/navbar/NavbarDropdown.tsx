@@ -65,6 +65,7 @@ const NavbarDropdown = ({ title, submenu, isActive }: NavbarDropdownProps) => {
             <li key={item.id}>
               <Link
                 href={item.href}
+                onClick={() => setIsOpen(false)}
                 className="block px-5 py-2.5 text-sm text-secondary/80 hover:text-secondary dark:text-accent/80 dark:hover:text-accent hover:bg-secondary/5 dark:hover:bg-accent/5 font-medium transition-all duration-200"
               >
                 {item.label}
