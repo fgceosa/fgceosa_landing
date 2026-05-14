@@ -48,7 +48,7 @@ const OurImpact = () => {
   return (
     <section className="bg-[#F9FAFB] dark:bg-background-6">
       <div className="main-container">
-        <div className="mx-auto mb-20 max-w-[850px] text-center">
+        <div className="mx-auto mb-10 max-w-[850px] text-center">
           {/* Entrance Badge */}
           <RevealAnimation delay={0.1}>
             <div className="flex items-center justify-center gap-6 mb-8">

@@ -4,7 +4,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 
 const HeroImages = () => {
   return (
-    <div className=" relative z-0 h-auto min-h-[300px] w-full flex justify-center md:justify-end md:h-[450px] lg:h-[550px]">
+    <div className=" relative z-0 h-auto min-h-[300px] w-full flex justify-center md:justify-end md:h-[450px] lg:h-[450px]">
       <RevealAnimation delay={0.2} offset={100} useSpring={true} duration={2}>
         <figure className="relative -z-1 w-full max-w-[550px] md:right-[-120px] md:w-[600px] mt-6 md:mt-0">
           <Image

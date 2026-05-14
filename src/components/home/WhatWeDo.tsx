@@ -51,12 +51,12 @@ const data = [
 
 const WhatWeDo = () => {
   return (
-    <section className="py-16 md:py-24 bg-[#F9FAFB] overflow-hidden">
-      <div className="main-container px-4 sm:px-6 pt-15">
+    <section className="bg-[#F9FAFB] overflow-hidden">
+      <div className="main-container">
         <div className="mx-auto mb-20 max-w-[850px] text-center">
           {/* Entrance Badge */}
           <RevealAnimation delay={0.1}>
-            <div className="flex items-center justify-center gap-6 mb-8">
+            <div className="flex items-center justify-center gap-6 mb-8 mt-10">
               <div className="h-[2px] w-12 bg-secondary/20" />
               <div className="border-2 border-secondary/20 px-6 py-2.5 rounded-xl flex items-center gap-3 bg-white shadow-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-5 text-secondary">

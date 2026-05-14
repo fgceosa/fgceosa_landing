@@ -10,7 +10,7 @@ import awardImg from '@public/images/ns-img-464.png';
 const GalleryCTA = () => {
   return (
     <section className="py-16 md:py-12 bg-white overflow-hidden">
-      <div className="main-container px-4 sm:px-6">
+      <div className="main-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
 
           {/* LHS - Content Section */}

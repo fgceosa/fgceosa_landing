@@ -65,7 +65,7 @@ const data = [
 
 const Statistics = () => {
   return (
-    <section className="bg-background-2 dark:bg-background-5 relative overflow-hidden py-16 md:py-12">
+    <section className="bg-background-2 dark:bg-background-5 relative overflow-hidden py-10">
       <div className="main-container mb-10">
         <div className="mx-auto max-w-[850px] space-y-5 text-center">
           <RevealAnimation delay={0.1}>

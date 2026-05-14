@@ -41,7 +41,7 @@ const features = [
 
 const AboutFeatures = () => {
   return (
-    <div className="mx-auto max-w-[1200px] px-4 w-full">
+    <div className="main-container w-full mt-10 mb-10">
       <div className="grid grid-cols-1 gap-10 rounded-3xl bg-white p-8 shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:grid-cols-2 lg:grid-cols-4 lg:p-12 border border-gray-100">
         {features.map((feature, index) => (
           <RevealAnimation key={index} delay={0.1 * (index + 1)}>

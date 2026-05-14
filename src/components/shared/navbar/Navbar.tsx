@@ -47,24 +47,25 @@ const Navbar = () => {
 
             <nav className="hidden items-center lg:flex">
               <ul className="flex items-center gap-1 xl:gap-2">
-                {mobileMenuData.map((item) => (
-                  <li key={item.id}>
-                    {item.submenu ? (
-                      <NavbarDropdown 
-                        title={item.title} 
-                        submenu={item.submenu} 
-                        isActive={false} 
-                      />
-                    ) : (
+                {mobileMenuData.map((item) => 
+                  item.submenu ? (
+                    <NavbarDropdown
+                      key={item.id}
+                      title={item.title}
+                      submenu={item.submenu}
+                      isActive={false}
+                    />
+                  ) : (
+                    <li key={item.id}>
                       <Link
                         href={item.href || '#'}
                         className="text-tagline-2 text-accent/80 hover:text-accent px-2 xl:px-3 py-2 font-medium transition-all duration-200"
                       >
                         {item.title}
                       </Link>
-                    )}
-                  </li>
-                ))}
+                    </li>
+                  )
+                )}
               </ul>
             </nav>
 
