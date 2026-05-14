@@ -15,7 +15,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="relative dark:bg-background-6 pt-10">
+    <section className="relative dark:bg-background-6 pt-5">
 
       <div className="main-container">
         <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px] mb-7">

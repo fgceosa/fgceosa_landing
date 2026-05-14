@@ -6,50 +6,38 @@ import LinkButton from '../ui/button/LinkButton';
 
 const teamMembers = [
   {
-    name: 'Darrell Steward',
-    location: 'Monaco',
-    image: '/images/ns-avatar-2.png',
+    name: 'Dr. Emeka Okafor',
+    location: 'Lagos, Nigeria',
+    image: '/images/executive_1.png',
     social: {
-      facebook: 'https://www.facebook.com/staticmania/',
-      dribble: 'https://dribbble.com/staticmania',
-      github: 'https://github.com/StaticMania',
-      linkedin: 'https://bd.linkedin.com/company/staticmania',
+      linkedin: 'https://linkedin.com/',
     },
     delay: '0.4',
   },
   {
-    name: 'Wade Warren',
-    location: 'Tajikistan',
-    image: '/images/ns-avatar-3.png',
+    name: 'Mrs. Chioma Adebayo',
+    location: 'London, UK',
+    image: '/images/executive_2.png',
     social: {
-      facebook: 'https://www.facebook.com/staticmania/',
-      dribble: 'https://dribbble.com/staticmania',
-      github: 'https://github.com/StaticMania',
-      linkedin: 'https://bd.linkedin.com/company/staticmania',
+      linkedin: 'https://linkedin.com/',
     },
     delay: '0.5',
   },
   {
-    name: 'Kathryn Murphy',
-    location: 'Palestine, State of',
-    image: '/images/ns-avatar-12.png',
+    name: 'Mr. Tunde Olawale',
+    location: 'Abuja, Nigeria',
+    image: '/images/executive_1.png',
     social: {
-      facebook: 'https://www.facebook.com/staticmania/',
-      dribble: 'https://dribbble.com/staticmania',
-      github: 'https://github.com/StaticMania',
-      linkedin: 'https://bd.linkedin.com/company/staticmania',
+      linkedin: 'https://linkedin.com/',
     },
     delay: '0.6',
   },
   {
-    name: 'Brooklyn Simmons',
-    location: 'Palestine, State of',
-    image: '/images/ns-avatar-5.png',
+    name: 'Ms. Ngozi Okoro',
+    location: 'Houston, USA',
+    image: '/images/executive_2.png',
     social: {
-      facebook: 'https://www.facebook.com/staticmania/',
-      dribble: 'https://dribbble.com/staticmania',
-      github: 'https://github.com/StaticMania',
-      linkedin: 'https://bd.linkedin.com/company/staticmania',
+      linkedin: 'https://linkedin.com/',
     },
     delay: '0.7',
   },
@@ -57,53 +45,51 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="bg-background-3 dark:bg-background-7 py-[100px]">
+    <section className="bg-background-3 dark:bg-background-7 py-10 md:py-14">
       <div className="main-container">
         <div>
           {/* team heading section   */}
-          <div className="mx-auto mb-[70px] max-w-[620px] text-center md:w-full">
-            {/* badge  */}
+          <div className="mb-[30px] max-w-[620px] text-left md:w-full">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-cyan mb-5">Our team</span>
+              <span className="badge badge-cyan mb-5">Leadership</span>
             </RevealAnimation>
-            {/* heading  */}
             <RevealAnimation delay={0.2}>
-              <h2 className="mb-3">Our innovative, dynamic, and talented team</h2>
+              <h2 className="text-secondary font-bold leading-tight tracking-tight mb-3">Our Executive Council</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p>
-                Our innovative, dynamic, and talented team is the driving force behind our success. Each member brings a
-                unique blend of expertise
+              <p className="text-black dark:text-white/80">
+                The FGCEOSA leadership team is dedicated to fostering unity among alumni and
+                driving impactful projects for our alma mater.
               </p>
             </RevealAnimation>
           </div>
           {/* team members  */}
-          <div className="mb-14 grid grid-cols-1 items-center justify-center gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mb-7 grid grid-cols-1 items-center justify-center gap-6 sm:grid-cols-2 xl:grid-cols-4">
             {teamMembers.map((member, index) => (
               <RevealAnimation key={member.name} delay={0.4 + index * 0.1}>
-                <div className="mx-auto h-[312px] w-[298px] space-y-[34px]">
+                <div className="mx-auto flex h-full w-full flex-col items-start justify-center space-y-6 rounded-2xl border border-secondary/10 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-md dark:border-white/10 dark:bg-background-8">
                   {/* team member image */}
-                  <figure className="mx-auto flex size-[156px] items-center justify-center overflow-hidden rounded-full bg-[#d5dbe3]">
+                  <figure className="flex size-[140px] items-center justify-center overflow-hidden rounded-full border-2 border-secondary/5 bg-[#d5dbe3]">
                     <Image
                       src={member.image}
                       className="size-full object-cover"
                       alt={`${member.name} profile img`}
                       loading="lazy"
-                      width={100}
-                      height={100}
+                      width={140}
+                      height={140}
                       quality={100}
                     />
                   </figure>
 
                   {/* team member info */}
-                  <div className="space-y-[27px]">
-                    <div className="text-center">
-                      <h3 className="text-heading-5">{member.name}</h3>
-                      <p className="text-tagline-2">{member.location}</p>
+                  <div className="space-y-4 text-left">
+                    <div>
+                      <h3 className="text-heading-6 font-bold text-secondary dark:text-white">{member.name}</h3>
+                      <p className="text-tagline-3 font-medium text-black/60 dark:text-white/60">{member.location}</p>
                     </div>
 
                     {/* social links */}
-                    <div className="flex items-center justify-center gap-2.5">
+                    <div className="flex items-center justify-start gap-2.5 pt-2">
                       {['facebook', 'dribble', 'github', 'linkedin'].map((platform) => {
                         const href = member.social[platform as keyof typeof member.social];
                         if (!href) {
@@ -115,9 +101,9 @@ const Team = () => {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group border-secondary/10 dark:border-accent/10 hover:bg-primary-500 hover:border-primary-500 flex size-10 items-center justify-center rounded-full border p-2.5 transition-all duration-300 ease-in-out hover:-translate-y-1.5 hover:scale-110 hover:shadow-lg"
+                            className="group border-secondary/10 dark:border-accent/10 hover:bg-secondary hover:border-secondary flex size-9 items-center justify-center rounded-full border p-2 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
                             aria-label={`Follow ${member.name} on ${platform}`}>
-                            <span>
+                            <span className="text-secondary group-hover:text-white dark:text-white transition-colors duration-300">
                               <SocialIcon platform={platform as Platform} />
                             </span>
                           </Link>
@@ -130,7 +116,7 @@ const Team = () => {
             ))}
           </div>
           {/* team btn  */}
-          <RevealAnimation delay={0.8}>
+          {/* <RevealAnimation delay={0.8}>
             <div className="flex items-center justify-center">
               <LinkButton
                 href="/team"
@@ -138,7 +124,7 @@ const Team = () => {
                 View all members
               </LinkButton>
             </div>
-          </RevealAnimation>
+          </RevealAnimation> */}
         </div>
       </div>
     </section>

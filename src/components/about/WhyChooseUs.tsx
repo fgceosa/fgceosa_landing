@@ -15,64 +15,47 @@ const featureList = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="overflow-hidden pt-14 pb-14 md:pt-16 md:pb-16 lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
+    <section className="overflow-hidden pb-5">
       <div className="main-container">
-        <div className="flex flex-col items-center justify-between gap-x-12 gap-y-10 md:flex-row">
+        <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px]">
           <div>
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-cyan mb-5">Reasons to select us</span>
+              <span className="badge badge-cyan mb-5">Why Join FGCEOSA?</span>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <h2 className="mb-3">
-                A highly effective
+              <h2 className="text-secondary font-bold leading-tight tracking-tight mb-3">
+                A lifelong network
                 <br className="hidden lg:block" />
-                unified platform
+                of excellence
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
-              <p className="lg:max-w-[536px]">
-                Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text nothing Before &amp;
-                After magazine.
+              <p className="lg:max-w-[536px] text-black dark:text-white/80">
+                Being a part of FGCEOSA means access to a global community that supports your professional
+                journey and keeps you connected to your roots.
               </p>
             </RevealAnimation>
             <ul className="mt-10 sm:space-y-2 md:mt-14">
-              {featureList.map((item, idx) => (
+              {[
+                { id: 1, icon: 'ns-shape-8', label: 'Global Alumni Network' },
+                { id: 2, icon: 'ns-shape-9', label: 'Mentorship Programs' },
+                { id: 3, icon: 'ns-shape-12', label: 'Exclusive Events' },
+                { id: 4, icon: 'ns-shape-21', label: 'Alma Mater Support' },
+              ].map((item, idx) => (
                 <RevealAnimation key={item.id} delay={0.5 + idx * 0.1}>
                   <li className="flex list-none items-center gap-4 py-2">
                     <span className={`${item.icon} text-secondary dark:text-accent text-[36px]`} />
-                    <strong className="text-tagline-1 text-secondary dark:text-accent font-medium">{item.label}</strong>
+                    <strong className="text-tagline-1 text-black dark:text-white font-medium">{item.label}</strong>
                   </li>
                 </RevealAnimation>
               ))}
             </ul>
           </div>
-          <div className="relative h-full max-h-[598px] min-h-[400px] w-full max-w-[460px] rounded-[20px] bg-linear-[156deg,_#FFF_32.92%,_#83E7EE_91%] md:min-h-[450px] lg:min-h-[500px] xl:min-h-[558px] dark:bg-linear-[156deg,_#070B10_32.92%,_#C6F56F_91%]">
-            <RevealAnimation delay={0.3}>
-              <figure className="absolute bottom-[6%] -left-[12%] w-[85%] rounded-2xl md:-left-[19%] md:w-[120%]">
-                <Image src={circleImg} alt="transaction-statistics" className="size-full" />
-              </figure>
-            </RevealAnimation>
-            <RevealAnimation delay={0.4} duration={1} direction="right">
-              <figure className="shadow-3 absolute top-[5%] -right-2.5 w-full max-w-[244px] overflow-hidden rounded-2xl max-xl:w-[180px] md:-right-[4%] lg:-right-[2%] 2xl:-right-[19%]">
-                <Image
-                  src={aboutDecentralization2Img}
-                  alt="transaction-statistics"
-                  className="block size-full dark:hidden"
-                />
-                <Image
-                  src={aboutDecentralizationDark2Img}
-                  alt="transaction-statistics"
-                  className="hidden size-full dark:block"
-                />
-              </figure>
-            </RevealAnimation>
-            <RevealAnimation delay={0.6} duration={1} direction="right" offset={100}>
-              <figure className="shadow-3 absolute -right-2.5 bottom-[5%] w-full max-w-[270px] overflow-hidden rounded-[20px] md:-right-[4%] lg:-right-[2%] lg:max-w-[330px] xl:max-w-[395px] 2xl:-right-[20%]">
-                <Image src={profitChartImg} alt="transaction-statistics" className="block size-full dark:hidden" />
-                <Image src={profitDarkChartImg} alt="transaction-statistics" className="hidden size-full dark:block" />
-              </figure>
-            </RevealAnimation>
-          </div>
+          <RevealAnimation delay={0.3}>
+            <figure className="relative h-[400px] md:h-[550px] w-full overflow-hidden rounded-[30px] shadow-2xl">
+              <Image src="/images/alumni_global_networking.png" alt="Alumni Networking" fill className="object-cover transition-transform duration-700 hover:scale-105" />
+            </figure>
+          </RevealAnimation>
         </div>
       </div>
     </section>

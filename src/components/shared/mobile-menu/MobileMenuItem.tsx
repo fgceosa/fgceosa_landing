@@ -23,7 +23,7 @@ const MobileMenuItem = ({ id, title, children, hasSubmenu = false }: MobileMenuI
   };
 
   return (
-    <li className="space-y-2">
+    <div className="space-y-2">
       <button
         onClick={handleToggle}
         className={cn('flex w-full cursor-pointer items-center justify-between p-2.5 transition-all duration-200')}
@@ -61,7 +61,7 @@ const MobileMenuItem = ({ id, title, children, hasSubmenu = false }: MobileMenuI
           {children}
         </div>
       )}
-    </li>
+    </div>
   );
 };
 
