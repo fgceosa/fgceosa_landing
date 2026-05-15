@@ -58,9 +58,9 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
         <div className="flex-1 overflow-y-auto overflow-x-hidden pt-6 pb-12 custom-scrollbar">
           <ul className="space-y-4">
             {menuData.map((item) => {
-              const isItemActive = item.href === pathname || 
+              const isItemActive = item.href === pathname ||
                 item.submenu?.some(sub => sub.href === pathname);
-              
+
               return (
                 <li key={item.id} className="border-b border-white/5 last:border-none pb-4">
                   {item.href ? (
@@ -68,7 +68,7 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
                       href={item.href}
                       onClick={closeMenu}
                       className={cn(
-                        "relative text-tagline-1 block p-2.5 font-medium transition-all duration-200 pl-6",
+                        "relative text-tagline-1 block p-2.5 font-medium transition-all duration-200 pl-3",
                         isItemActive ? "text-white" : "text-white/70 hover:text-white"
                       )}>
                       {/* Active indicator bar */}
