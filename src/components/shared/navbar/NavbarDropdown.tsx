@@ -38,8 +38,8 @@ const NavbarDropdown = ({ title, submenu, isActive }: NavbarDropdownProps) => {
     >
       <button
         className={cn(
-          "text-tagline-2 text-accent/80 hover:text-accent flex items-center gap-1 px-3 py-2 font-medium transition-all duration-200 cursor-pointer",
-          isOpen && "text-accent"
+          "relative text-tagline-2 flex items-center gap-1 px-3 py-2 font-medium transition-all duration-200 cursor-pointer group",
+          (isOpen || isActive) ? "text-accent" : "text-accent/80 hover:text-accent"
         )}
       >
         <span>{title}</span>
@@ -51,6 +51,12 @@ const NavbarDropdown = ({ title, submenu, isActive }: NavbarDropdownProps) => {
         >
           <path fillRule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
         </svg>
+
+        {/* Gold Bar Active State */}
+        <span className={cn(
+          "absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#d4af37] transition-all duration-300",
+          (isActive || isOpen) ? "w-full" : "w-0 group-hover:w-1/2"
+        )}></span>
       </button>
 
       {/* Dropdown Menu */}

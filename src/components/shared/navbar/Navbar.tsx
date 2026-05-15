@@ -8,12 +8,14 @@ import { useNavbarScroll } from '@/hooks/useScrollHeader';
 import { cn } from '@/utils/cn';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import MobileMenu from '../mobile-menu/MobileMenu';
 import MobileMenuButton from '../mobile-menu/MobileMenuButton';
 import NavbarDropdown from './NavbarDropdown';
 
 const Navbar = () => {
   const { isScrolled } = useNavbarScroll(150);
+  const pathname = usePathname();
 
   return (
     <MobileMenuProvider>
@@ -47,25 +49,36 @@ const Navbar = () => {
 
             <nav className="hidden items-center lg:flex">
               <ul className="flex items-center gap-1 xl:gap-2">
-                {mobileMenuData.map((item) => 
-                  item.submenu ? (
+                {mobileMenuData.map((item) => {
+                  const isActive = item.href === pathname || 
+                    (item.submenu?.some(sub => sub.href === pathname));
+                  
+                  return item.submenu ? (
                     <NavbarDropdown
                       key={item.id}
                       title={item.title}
                       submenu={item.submenu}
-                      isActive={false}
+                      isActive={!!isActive}
                     />
                   ) : (
                     <li key={item.id}>
                       <Link
                         href={item.href || '#'}
-                        className="text-tagline-2 text-accent/80 hover:text-accent px-2 xl:px-3 py-2 font-medium transition-all duration-200"
+                        className={cn(
+                          "relative text-tagline-2 px-2 xl:px-3 py-2 font-medium transition-all duration-200 group",
+                          isActive ? "text-accent" : "text-accent/80 hover:text-accent"
+                        )}
                       >
                         {item.title}
+                        {/* Gold Bar Active State */}
+                        <span className={cn(
+                          "absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#d4af37] transition-all duration-300",
+                          isActive ? "w-full" : "w-0 group-hover:w-1/2"
+                        )}></span>
                       </Link>
                     </li>
-                  )
-                )}
+                  );
+                })}
               </ul>
             </nav>
 
