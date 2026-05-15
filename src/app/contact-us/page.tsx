@@ -1,27 +1,21 @@
-import ContactInfo from '@/components/contact-page/ContactInfo';
-import ContactMap from '@/components/contact-page/ContactMap';
-import CTA from '@/components/shared/cta/CTA';
+import ContactBanner from '@/components/contact-us/ContactBanner';
+import ContactFormSection from '@/components/contact-us/ContactFormSection';
+import ContactCTASection from '@/components/contact-us/ContactCTASection';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Contact Us - Wealth Management || NextSaaS',
+  title: 'Contact Us - FGCEOSA',
+  description: 'Get in touch with the Federal Government College Enugu Old Students Association. We are here to help and connect with our alumni.',
 };
 
 const ContactUs = () => {
   return (
-    <main className="bg-background-3 dark:bg-background-7">
-      <ContactInfo />
-      <ContactMap />
-      <CTA
-        className="dark:bg-background-5 bg-white"
-        badgeClass="badge-yellow-v2"
-        badgeText="Get started"
-        ctaBtnText="Contact us"
-        ctaHeading="Get in touch"
-        description="We're here to help you with your inquiries and needs. Feel free to reach out to us using the contact form below, and we'll get back to you as soon as possible."
-      />
+    <main className="dark:bg-background-7 bg-white overflow-x-hidden">
+      <ContactBanner />
+      <ContactFormSection />
+      <ContactCTASection />
     </main>
   );
 };
