@@ -1,10 +1,11 @@
 import RevealAnimation from '@/components/animation/RevealAnimation';
+import { CalendarIcon, ProjectAchievementCheckIcon, ProjectSatisfiedClientsIcon, ProjectTeamMembersIcon } from '@/icons';
 
 const stats = [
-  { value: '250+', label: 'Scholarships' },
-  { value: '45+', label: 'Projects Done' },
-  { value: '10K+', label: 'Lives Impacted' },
-  { value: '50+', label: 'Years of Excellence' },
+  { value: '250+', label: 'Scholarships', icon: ProjectTeamMembersIcon },
+  { value: '45+', label: 'Projects Done', icon: ProjectAchievementCheckIcon },
+  { value: '10K+', label: 'Lives Impacted', icon: ProjectSatisfiedClientsIcon },
+  { value: '50+', label: 'Years of Excellence', icon: CalendarIcon },
 ];
 
 const ImpactNumbers = () => {
@@ -24,9 +25,14 @@ const ImpactNumbers = () => {
 
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16">
                 {stats.map((stat, index) => (
-                  <div key={index} className="space-y-2">
-                    <h5 className="font-black text-[#d4af37]">{stat.value}</h5>
-                    <p className="capitalize text-white/60">{stat.label}</p>
+                  <div key={index} className="flex flex-col items-center space-y-4">
+                    <div className="text-[#d4af37] flex items-center justify-center">
+                      <stat.icon className="w-10 h-10" />
+                    </div>
+                    <div className="space-y-2">
+                      <h5 className="font-black text-[#d4af37]">{stat.value}</h5>
+                      <p className="capitalize text-white/60">{stat.label}</p>
+                    </div>
                   </div>
                 ))}
               </div>
