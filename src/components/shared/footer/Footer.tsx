@@ -109,21 +109,8 @@ const Footer = ({ className }: { className?: string }) => {
                   </div>
 
                   <p className="text-white/50 text-sm leading-relaxed">
-                    Subscribe to our newsletter for the latest updates.
+                    Follow us on social media for the latest updates.
                   </p>
-
-                  <form className="relative max-w-[280px] group">
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      className="w-full bg-white/5 border border-white/10 rounded-lg py-3.5 px-4 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-all focus:bg-white/10"
-                    />
-                    <button className="absolute right-1.5 top-1/2 -translate-y-1/2 bg-white text-[#2a0103] h-9 px-3 rounded-md flex items-center justify-center hover:bg-white/90 transition-all hover:scale-105 active:scale-95 shadow-[0_4px_0_0_#d1d5db] active:shadow-none active:translate-y-[-40%]">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                      </svg>
-                    </button>
-                  </form>
                 </div>
               </RevealAnimation>
             </div>

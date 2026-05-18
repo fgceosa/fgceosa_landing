@@ -1,0 +1,12 @@
+
+{
+  "models": [
+    {
+      "title": "Claude 3.5 Sonnet (Qorebit)",
+      "provider": "anthropic",
+      "model": "claude-3-5-sonnet",
+      "apiKey": "qb_live_l9zNxnwdaru2zDBwutT2zXYGGUu2kzE3_RGiVT5t4Fg",
+      "apiBase": "https://api.qorebit.ai/v1"
+    }
+  ]
+}

@@ -16,7 +16,6 @@ export const footerLinks: FooterData[] = [
     links: [
       { label: 'Join FGCEOSA', href: '/join' },
       { label: 'Membership Benefits', href: '/benefits' },
-      { label: 'Chapters', href: '/chapters' },
       { label: 'Member Directory', href: '/directory' },
     ],
   },
@@ -24,7 +23,6 @@ export const footerLinks: FooterData[] = [
     title: 'Get Involved',
     links: [
       { label: 'Donate', href: '/donate' },
-      { label: 'Volunteer', href: '/volunteer' },
       { label: 'Mentorship', href: '/mentorship' },
       { label: 'Project Sponsorship', href: '/sponsorship' },
     ],
