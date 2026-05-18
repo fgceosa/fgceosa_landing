@@ -4,17 +4,17 @@ import RevealAnimation from '../animation/RevealAnimation';
 
 const HeroImages = () => {
   return (
-    <div className=" relative z-0 h-auto min-h-[300px] w-full flex justify-center md:justify-end md:h-[450px] lg:h-[450px]">
+    <div className="relative z-0 flex h-auto min-h-[300px] w-full justify-center md:h-[450px] md:justify-end lg:h-[450px]">
       <RevealAnimation delay={0.2} offset={100} useSpring={true} duration={2}>
-        <figure className="relative -z-1 w-full max-w-[550px] md:right-[-120px] md:w-[600px] mt-6 md:mt-0">
+        <div className="relative overflow-hidden rounded-[10px] shadow-2xl">
           <Image
             src={HeroImageCenter}
             alt="FGCEOSA Hero"
-            className="w-full shadow-[0_25px_100px_rgba(108,2,9,0.25)]"
+            className="h-[200px] w-full object-cover transition-transform duration-700 hover:scale-105 md:h-[400px]"
             priority
             loading="eager"
           />
-        </figure>
+        </div>
       </RevealAnimation>
     </div>
   );

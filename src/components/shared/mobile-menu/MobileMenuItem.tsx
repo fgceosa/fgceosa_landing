@@ -9,9 +9,10 @@ interface MobileMenuItemProps {
   title: string;
   children?: ReactNode;
   hasSubmenu?: boolean;
+  isRouteActive?: boolean;
 }
 
-const MobileMenuItem = ({ id, title, children, hasSubmenu = false }: MobileMenuItemProps) => {
+const MobileMenuItem = ({ id, title, children, hasSubmenu = false, isRouteActive = false }: MobileMenuItemProps) => {
   const { activeSubmenu, toggleSubmenu } = useMobileMenuContext();
 
   const isActive = activeSubmenu === id;
