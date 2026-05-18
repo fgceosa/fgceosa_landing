@@ -6,7 +6,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 
 const VisionStatement = () => {
   return (
-    <section className="pt-32 pb-14 sm:pt-36 md:pt-42 md:pb-16 lg:pb-[88px] xl:pt-[180px] xl:pb-[100px]">
+    <section className="pt-12 pb-14 ">
       <div className="main-container space-y-14 md:space-y-[70px]">
         <div className="mx-auto max-w-[780px] space-y-3 text-center">
           <RevealAnimation delay={0.2}>
