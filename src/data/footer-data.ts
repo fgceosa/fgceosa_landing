@@ -5,28 +5,23 @@ export const footerLinks: FooterData[] = [
     title: 'Quick Links',
     links: [
       { label: 'About Us', href: '/about' },
-      { label: 'Our Impact', href: '/impact' },
-      { label: 'News & Events', href: '/news-events' },
-      { label: 'Photo Gallery', href: '/gallery' },
+      { label: 'Our Impact', href: '#' },
       { label: 'Contact Us', href: '/contact-us' },
     ],
   },
   {
     title: 'Membership',
     links: [
-      { label: 'Join FGCEOSA', href: '/join' },
-      { label: 'Membership Benefits', href: '/benefits' },
-      { label: 'Chapters', href: '/chapters' },
-      { label: 'Member Directory', href: '/directory' },
+      { label: 'Join FGCEOSA', href: '/signup' },
+      { label: 'Chapters', href: '#' },
+      { label: 'Member Directory', href: '#' },
     ],
   },
   {
     title: 'Get Involved',
     links: [
-      { label: 'Donate', href: '/donate' },
-      { label: 'Volunteer', href: '/volunteer' },
-      { label: 'Mentorship', href: '/mentorship' },
-      { label: 'Project Sponsorship', href: '/sponsorship' },
+      { label: 'Donate', href: '#' },
+      { label: 'Volunteer', href: '#' },
     ],
   },
 ];

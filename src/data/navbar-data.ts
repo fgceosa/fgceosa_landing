@@ -28,25 +28,10 @@ export const mobileMenuData: MobileMenuGroup[] = [
     title: 'Alumni World',
     submenu: [
       { id: 'projects', label: 'Project & Programmes', href: '/projects' },
-      { id: 'spotlight', label: 'Alumni Spotlight', href: '/spotlight' },
+      { id: 'spotlight', label: 'Alumni Spotlight', href: '#' },
     ],
   },
-  {
-    id: 'news-events',
-    title: 'News and Events',
-    submenu: [
-      { id: 'reunion', label: 'Reunion Current Year', href: '/reunion' },
-      { id: 'fgce-50', label: 'FGCE @ 50', href: '/fgce-at-50' },
-    ],
-  },
-  {
-    id: 'community',
-    title: 'Community',
-    submenu: [
-      { id: 'directory', label: 'Business Directory', href: '/directory' },
-      { id: 'groups', label: 'Groups', href: '/groups' },
-    ],
-  },
+
   {
     id: 'contact',
     title: 'Contact Us',

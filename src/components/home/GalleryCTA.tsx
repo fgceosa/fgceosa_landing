@@ -9,110 +9,156 @@ import awardImg from '@public/images/ns-img-464.png';
 
 const GalleryCTA = () => {
   return (
-    <section className="py-16 md:py-12 bg-white overflow-hidden">
+    <section className="overflow-hidden bg-white py-16 md:py-12">
       <div className="main-container">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-20">
           {/* LHS - Content Section */}
-          <div className="lg:col-span-5 space-y-8 md:space-y-10 text-center lg:text-left order-1">
+          <div className="order-1 space-y-8 text-center md:space-y-10 lg:col-span-5 lg:text-left">
             <div className="space-y-6">
               <RevealAnimation delay={0.1}>
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/5 rounded-full border border-secondary/10">
-                  <div className="size-2 bg-secondary rounded-full animate-pulse" />
-                  <span className="text-[10px] font-black uppercase tracking-[0.2em] text-secondary">Our Legacy in Pictures</span>
+                <div className="bg-secondary/5 border-secondary/10 inline-flex items-center gap-2 rounded-full border px-4 py-2">
+                  <div className="bg-secondary size-2 animate-pulse rounded-full" />
+                  <span className="text-secondary text-[10px] font-black tracking-[0.2em] uppercase">
+                    Our Legacy in Pictures
+                  </span>
                 </div>
               </RevealAnimation>
 
               <RevealAnimation delay={0.2}>
-                <h2 className="text-black font-bold leading-[1.1] tracking-tight">
+                <h2 className="leading-[1.1] font-bold tracking-tight text-black">
                   One Family. Many Journeys. <br className="hidden md:block" />
                   <span className="text-secondary font-serif">Unbreakable bond.</span>
                 </h2>
               </RevealAnimation>
 
               <RevealAnimation delay={0.3}>
-                <p className="text-black/60 text-base md:text-lg max-w-[450px] mx-auto lg:mx-0 font-medium leading-relaxed">
-                  From campus life to global achievements, our shared journey inspire generations.                </p>
+                <p className="mx-auto max-w-[450px] text-base leading-relaxed font-medium text-black/60 md:text-lg lg:mx-0">
+                  From campus life to global achievements, our shared journey inspire generations.{' '}
+                </p>
               </RevealAnimation>
             </div>
 
             <RevealAnimation delay={0.4}>
-              <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
-                <Link href="/gallery" className="group relative flex items-center justify-center gap-4 bg-secondary text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 w-full sm:w-auto">
+              <div className="flex flex-col items-center justify-center gap-6 sm:flex-row lg:justify-start">
+                <Link
+                  href="#"
+                  className="group bg-secondary relative flex w-full items-center justify-center gap-4 rounded-2xl px-10 py-5 text-lg font-bold text-white transition-all duration-500 hover:scale-105 hover:shadow-2xl sm:w-auto">
                   View Photo Gallery
-                  <div className="flex items-center justify-center size-7 bg-white/20 rounded-full group-hover:translate-x-1.5 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-3.5">
+                  <div className="flex size-7 items-center justify-center rounded-full bg-white/20 transition-transform duration-300 group-hover:translate-x-1.5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="3"
+                      stroke="currentColor"
+                      className="size-3.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
                   </div>
                 </Link>
-
               </div>
             </RevealAnimation>
 
             {/* Micro Stats */}
             <RevealAnimation delay={0.5}>
-              <div className="flex items-center justify-center lg:justify-start gap-8 pt-8 border-t border-secondary/5">
+              <div className="border-secondary/5 flex items-center justify-center gap-8 border-t pt-8 lg:justify-start">
                 <div>
-                  <p className="text-2xl font-black text-secondary">1,200+</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-secondary/40">Photos</p>
+                  <p className="text-secondary text-2xl font-black">1,200+</p>
+                  <p className="text-secondary/40 text-[10px] font-bold tracking-widest uppercase">Photos</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-black text-secondary">45+</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-secondary/40">Years</p>
+                  <p className="text-secondary text-2xl font-black">45+</p>
+                  <p className="text-secondary/40 text-[10px] font-bold tracking-widest uppercase">Years</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-black text-secondary">150+</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-secondary/40">Events</p>
+                  <p className="text-secondary text-2xl font-black">150+</p>
+                  <p className="text-secondary/40 text-[10px] font-bold tracking-widest uppercase">Events</p>
                 </div>
               </div>
             </RevealAnimation>
           </div>
 
           {/* RHS - Dynamic Image Mosaic */}
-          <div className="lg:col-span-7 order-2">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
+          <div className="order-2 lg:col-span-7">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6">
               {/* Column 1 */}
               <RevealAnimation delay={0.2} direction="up">
                 <div className="space-y-4 md:space-y-6">
-                  <div className="relative h-[180px] sm:h-[250px] md:h-[300px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img1} alt="Gallery 1" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="group relative h-[180px] overflow-hidden rounded-3xl shadow-lg transition-all duration-500 hover:shadow-2xl sm:h-[250px] md:h-[300px]">
+                    <Image
+                      src={img1}
+                      alt="Gallery 1"
+                      fill
+                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
                   </div>
-                  <div className="relative h-[120px] sm:h-[180px] md:h-[200px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img2} alt="Gallery 2" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="group relative h-[120px] overflow-hidden rounded-3xl shadow-lg transition-all duration-500 hover:shadow-2xl sm:h-[180px] md:h-[200px]">
+                    <Image
+                      src={img2}
+                      alt="Gallery 2"
+                      fill
+                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
                   </div>
                 </div>
               </RevealAnimation>
 
               {/* Column 2 - Main Hero Image */}
               <RevealAnimation delay={0.3} direction="up">
-                <div className="space-y-4 md:space-y-6 pt-6 sm:pt-12">
-                  <div className="relative h-[220px] sm:h-[320px] md:h-[380px] rounded-[32px] overflow-hidden shadow-2xl hover:shadow-secondary/20 transition-all duration-500 group border-4 border-white">
-                    <Image src={awardImg} alt="Special Moment" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
-                    <div className="absolute inset-0 bg-linear-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                      <span className="text-white text-[10px] font-black uppercase tracking-[0.2em]">Impact & Excellence</span>
+                <div className="space-y-4 pt-6 sm:pt-12 md:space-y-6">
+                  <div className="hover:shadow-secondary/20 group relative h-[220px] overflow-hidden rounded-[32px] border-4 border-white shadow-2xl transition-all duration-500 sm:h-[320px] md:h-[380px]">
+                    <Image
+                      src={awardImg}
+                      alt="Special Moment"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="from-secondary/80 absolute inset-0 flex items-end bg-linear-to-t to-transparent p-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                      <span className="text-[10px] font-black tracking-[0.2em] text-white uppercase">
+                        Impact & Excellence
+                      </span>
                     </div>
                   </div>
-                  <div className="relative h-[150px] sm:h-[220px] md:h-[250px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img3} alt="Gallery 3" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="group relative h-[150px] overflow-hidden rounded-3xl shadow-lg transition-all duration-500 hover:shadow-2xl sm:h-[220px] md:h-[250px]">
+                    <Image
+                      src={img3}
+                      alt="Gallery 3"
+                      fill
+                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
                   </div>
                 </div>
               </RevealAnimation>
 
               {/* Column 3 - Only visible from sm and up */}
               <RevealAnimation delay={0.4} direction="up">
-                <div className="hidden sm:block space-y-4 md:space-y-6">
-                  <div className="relative h-[150px] sm:h-[200px] md:h-[220px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img4} alt="Gallery 4" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div className="hidden space-y-4 sm:block md:space-y-6">
+                  <div className="group relative h-[150px] overflow-hidden rounded-3xl shadow-lg transition-all duration-500 hover:shadow-2xl sm:h-[200px] md:h-[220px]">
+                    <Image
+                      src={img4}
+                      alt="Gallery 4"
+                      fill
+                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
                   </div>
-                  <div className="relative h-[200px] sm:h-[280px] md:h-[320px] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-                    <Image src={img1} alt="Gallery 5" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw" className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="group relative h-[200px] overflow-hidden rounded-3xl shadow-lg transition-all duration-500 hover:shadow-2xl sm:h-[280px] md:h-[320px]">
+                    <Image
+                      src={img1}
+                      alt="Gallery 5"
+                      fill
+                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
                   </div>
                 </div>
               </RevealAnimation>
             </div>
           </div>
-
         </div>
       </div>
     </section>
