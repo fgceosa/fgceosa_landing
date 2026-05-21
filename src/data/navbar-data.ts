@@ -13,7 +13,6 @@ export const mobileMenuData: MobileMenuGroup[] = [
     submenu: [
       { id: 'about-fgce', label: 'About FGCE', href: '/about' },
       { id: 'presidents-message', label: "President's Message", href: '/presidents-message' },
-      { id: 'membership', label: 'Membership', href: '/membership' },
       //   ],
       // },
       // {
@@ -22,7 +21,6 @@ export const mobileMenuData: MobileMenuGroup[] = [
       //   submenu: [
       { id: 'constitution', label: 'The Constitution', href: '/constitution' },
       { id: 'exco-officers', label: 'Exco Officers', href: '/exco-officers' },
-      { id: 'financial-report', label: 'Financial Report', href: '/financial-report' },
     ],
   },
   {
@@ -70,7 +68,6 @@ export const footerData: FooterOneData[] = [
     title: 'Resources',
     links: [
       { label: 'The Constitution', href: '/constitution' },
-      { label: 'Financial Report', href: '/financial-report' },
       { label: 'Business Directory', href: '/directory' },
       { label: 'Forum', href: '/forum' },
     ],
