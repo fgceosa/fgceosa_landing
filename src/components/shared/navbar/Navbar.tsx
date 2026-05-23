@@ -78,7 +78,8 @@ const Navbar = () => {
 
             <div className="hidden items-center gap-3 lg:flex">
               <Link
-                href="/login"
+                href="https://fgceoapp.netlify.app/sign-in"
+                target="_blank"
                 className="text-tagline-2 text-accent flex items-center gap-1.5 rounded-md border-1 border-white/60 px-3 py-1.5 font-medium transition-all duration-200 hover:border-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +97,8 @@ const Navbar = () => {
                 <span>Login</span>
               </Link>
               <Link
-                href="/signup"
+                href="https://fgceoapp.netlify.app/sign-up"
+                target="_blank"
                 className="btn btn-sm btn-primary text-secondary hover:bg-accent py-1.4 rounded-md border-none bg-white px-4 font-bold">
                 <span className="capitalize">Join Now</span>
               </Link>

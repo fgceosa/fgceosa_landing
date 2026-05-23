@@ -12,7 +12,7 @@ export const footerLinks: FooterData[] = [
   {
     title: 'Membership',
     links: [
-      { label: 'Join FGCEOSA', href: '/signup' },
+      { label: 'Join FGCEOSA', href: 'https://fgceoapp.netlify.app/sign-up', target: '_blank' },
       { label: 'Chapters', href: '#' },
       { label: 'Member Directory', href: '#' },
     ],

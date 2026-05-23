@@ -28,13 +28,13 @@ const partnershipLinks: PartnershipLink[] = [
   {
     title: 'Login',
     description: 'Sign in securely',
-    href: '/login',
+    href: 'https://fgceoapp.netlify.app/sign-in',
     icon: LoginIcon,
   },
   {
     title: 'Create Account',
     description: 'Register account',
-    href: '/signup',
+    href: 'https://fgceoapp.netlify.app/sign-up',
     icon: SignUpIcon,
   },
   {

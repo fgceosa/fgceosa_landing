@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ProjectsHero = () => {
   return (
-    <section className="bg-secondary relative overflow-hidden pt-16 pb-20 md:pt-40 md:pb-16">
+    <section className="bg-secondary relative overflow-hidden pt-16 pb-10">
       {/* Background Decorative Elements */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute top-0 right-0 h-full w-1/3 translate-x-20 skew-x-[-20deg] bg-white/5"></div>

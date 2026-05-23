@@ -57,7 +57,10 @@ const LoginHero = () => {
                 <div>
                   <p className="text-tagline-2 text-secondary dark:text-accent flex items-center justify-center gap-1 text-center font-normal">
                     Not registered yet?
-                    <Link href="/signup" className="text-tagline-1 footer-link-v2 font-medium">
+                    <Link
+                      href="https://fgceoapp.netlify.app/sign-up"
+                      target="_blank"
+                      className="text-tagline-1 footer-link-v2 font-medium">
                       Create an Account
                     </Link>
                   </p>

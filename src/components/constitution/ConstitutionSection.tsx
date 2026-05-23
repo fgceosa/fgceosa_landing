@@ -62,7 +62,7 @@ const getDetailIcon = (idx: number) => {
 const ConstitutionSection = () => {
   return (
     <>
-      <section className="main-container grid grid-cols-1 gap-12 py-6 lg:grid-cols-2">
+      <section className="main-container grid grid-cols-1 gap-12 py-6 lg:grid-cols-[40%_60%]">
         {/* LHS: Key Highlights + Constitution Details (Stacked) */}
         <div className="space-y-8">
           <RevealAnimation delay={0.1} direction="up">

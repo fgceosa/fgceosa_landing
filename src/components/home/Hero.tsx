@@ -5,25 +5,22 @@ import HeroImages from './HeroImages';
 const Hero = () => {
   return (
     <section className="" style={{ paddingTop: '170px' }}>
-
       <div className="main-container">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 lg:gap-x-12">
           <div className="md:pr-10 lg:pr-16">
             <div className="space-y-10 md:space-y-14">
               <div className="space-y-5 text-center md:text-left">
                 <RevealAnimation delay={0.1}>
-                  <span className="badge border-secondary bg-white text-secondary uppercase border-2 font-bold rounded-md">
+                  <span className="badge border-secondary text-secondary rounded-md border-2 bg-white font-bold uppercase">
                     PRO UNITATE
                   </span>
                 </RevealAnimation>
                 <div className="space-y-4">
                   <RevealAnimation delay={0.2}>
-                    <h2 className="font-bold text-black leading-[1.1]">
-                      Stronger Together.{' '}
-                      <br />
-                      United Forever.{' '}
-                      <br />
-                      <span className="font-bold text-secondary">Pro Unitate.</span>
+                    <h2 className="leading-[1.1] font-bold text-black">
+                      Stronger Together. <br />
+                      United Forever. <br />
+                      <span className="text-secondary font-bold">Pro Unitate.</span>
                     </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
@@ -37,9 +34,10 @@ const Hero = () => {
               <RevealAnimation delay={0.4}>
                 <div className="flex flex-wrap items-center justify-center gap-3 md:flex-nowrap md:justify-start">
                   <LinkButton
-                    href="/signup"
+                    href="/https://fgceoapp.netlify.app/sign-up"
+                    target="_blank"
                     insideSpan={false}
-                    className="btn btn-secondary btn-md flex shrink-0 items-center gap-2 rounded-md font-bold px-5 md:btn-lg md:px-6">
+                    className="btn btn-secondary btn-md md:btn-lg flex shrink-0 items-center gap-2 rounded-md px-5 font-bold md:px-6">
                     <div className="flex items-center gap-2 whitespace-nowrap">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +58,7 @@ const Hero = () => {
                   <LinkButton
                     href="/about"
                     insideSpan={false}
-                    className="btn btn-outline border-secondary text-secondary hover:bg-secondary hover:text-accent btn-lg flex shrink-0 items-center gap-2 rounded-md font-bold px-6">
+                    className="btn btn-outline border-secondary text-secondary hover:bg-secondary hover:text-accent btn-lg flex shrink-0 items-center gap-2 rounded-md px-6 font-bold">
                     <div className="flex items-center gap-2 whitespace-nowrap">
                       <span>Learn More</span>
                       <svg

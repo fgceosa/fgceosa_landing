@@ -28,14 +28,14 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
   return (
     <aside
       className={cn(
-        'fixed top-0 right-0 z-[9999] h-full w-full translate-x-full rounded-none bg-secondary transition-all duration-300 sm:w-1/2 sm:rounded-l-3xl xl:hidden',
+        'bg-secondary fixed top-0 right-0 z-[9999] h-full w-full translate-x-full rounded-none transition-all duration-300 sm:w-1/2 sm:rounded-l-3xl xl:hidden',
         isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0',
       )}>
-      <div className="p-6 h-full flex flex-col overflow-hidden">
+      <div className="flex h-full flex-col overflow-hidden p-6">
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-white/10 pb-6 shrink-0">
+        <div className="flex shrink-0 items-center justify-between border-b border-white/10 pb-6">
           <Link href="/" onClick={closeMenu} className="flex items-center gap-3">
-            <figure className="size-10 md:size-12 shrink-0 overflow-hidden rounded-full border-2 border-accent/20 bg-white">
+            <figure className="border-accent/20 size-10 shrink-0 overflow-hidden rounded-full border-2 bg-white md:size-12">
               <Image
                 src="/images/fgceosa_logo.jpeg"
                 alt="FGCEOSA Logo"
@@ -55,25 +55,24 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
         </div>
 
         {/* Scrollable Content */}
-        <div className="flex-1 overflow-y-auto overflow-x-hidden pt-6 pb-12 custom-scrollbar">
+        <div className="custom-scrollbar flex-1 overflow-x-hidden overflow-y-auto pt-6 pb-12">
           <ul className="space-y-4">
             {menuData.map((item) => {
-              const isItemActive = item.href === pathname ||
-                item.submenu?.some(sub => sub.href === pathname);
+              const isItemActive = item.href === pathname || item.submenu?.some((sub) => sub.href === pathname);
 
               return (
-                <li key={item.id} className="border-b border-white/5 last:border-none pb-4">
+                <li key={item.id} className="border-b border-white/5 pb-4 last:border-none">
                   {item.href ? (
                     <Link
                       href={item.href}
                       onClick={closeMenu}
                       className={cn(
-                        "relative text-tagline-1 block p-2.5 font-medium transition-all duration-200 pl-3",
-                        isItemActive ? "text-white" : "text-white/70 hover:text-white"
+                        'text-tagline-1 relative block p-2.5 pl-3 font-medium transition-all duration-200',
+                        isItemActive ? 'text-white' : 'text-white/70 hover:text-white',
                       )}>
                       {/* Active indicator bar */}
                       {isItemActive && (
-                        <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-[#d4af37] rounded-r-full shadow-[0_0_8px_#d4af37]"></span>
+                        <span className="absolute top-1/2 left-0 h-6 w-1 -translate-y-1/2 rounded-r-full bg-[#d4af37] shadow-[0_0_8px_#d4af37]"></span>
                       )}
                       {item.title}
                     </Link>
@@ -82,9 +81,8 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
                       id={item.id}
                       title={item.title}
                       hasSubmenu={item.submenu && item.submenu.length > 0}
-                      isRouteActive={!!isItemActive}
-                    >
-                      <ul className="space-y-2 mt-2">
+                      isRouteActive={!!isItemActive}>
+                      <ul className="mt-2 space-y-2">
                         {item?.submenu?.map((subItem) => {
                           const isSubActive = subItem.href === pathname;
                           return (
@@ -93,11 +91,11 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
                                 href={subItem.href}
                                 onClick={closeMenu}
                                 className={cn(
-                                  "relative text-lg ml-6 block py-2.5 font-medium transition-all duration-200 border-l border-white/10 pl-6",
-                                  isSubActive ? "text-white" : "text-white/60 hover:text-white"
+                                  'relative ml-6 block border-l border-white/10 py-2.5 pl-6 text-lg font-medium transition-all duration-200',
+                                  isSubActive ? 'text-white' : 'text-white/60 hover:text-white',
                                 )}>
                                 {isSubActive && (
-                                  <span className="absolute left-[-1px] top-1/2 -translate-y-1/2 w-1 h-5 bg-[#d4af37] rounded-r-full"></span>
+                                  <span className="absolute top-1/2 left-[-1px] h-5 w-1 -translate-y-1/2 rounded-r-full bg-[#d4af37]"></span>
                                 )}
                                 {subItem.label}
                               </Link>
@@ -114,11 +112,12 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
         </div>
 
         {/* Footer CTA */}
-        <div className="pt-6 border-t border-white/10 shrink-0">
+        <div className="shrink-0 border-t border-white/10 pt-6">
           <Link
-            href="/signup"
+            href="https://fgceoapp.netlify.app/sign-up"
+            target="_blank"
             onClick={closeMenu}
-            className="w-full bg-white text-secondary py-4 rounded-xl font-bold text-center block hover:bg-accent transition-colors shadow-lg">
+            className="text-secondary hover:bg-accent block w-full rounded-xl bg-white py-4 text-center font-bold shadow-lg transition-colors">
             Join the Community
           </Link>
         </div>
