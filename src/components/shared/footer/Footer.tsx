@@ -18,7 +18,7 @@ const FooterLinkGroup = ({
   index,
 }: {
   title: string;
-  links: { label: string; href: string }[];
+  links: { label: string; href: string; target?: string }[];
   index: number;
 }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -55,10 +55,11 @@ const FooterLinkGroup = ({
               'mt-6 space-y-4 overflow-hidden transition-all duration-300 lg:max-h-none lg:opacity-100',
               isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 lg:max-h-none lg:opacity-100',
             )}>
-            {links.map(({ label, href }) => (
+            {links.map(({ label, href, target }) => (
               <li key={label}>
                 <Link
                   href={href}
+                  target={target}
                   className="group flex items-center text-sm font-medium text-white/60 transition-all hover:text-white">
                   {label}
                 </Link>
