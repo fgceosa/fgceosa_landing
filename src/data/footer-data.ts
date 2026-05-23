@@ -22,6 +22,7 @@ export const footerLinks: FooterData[] = [
     links: [
       { label: 'Donate', href: '#' },
       { label: 'Volunteer', href: '#' },
+
     ],
   },
 ];

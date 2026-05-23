@@ -1,70 +1,59 @@
-# NextSaaS - Modern SaaS Template Collection 
+# FGCEOSA Alumni Association - Landing Page
 
-A comprehensive, modern Next.js 15 SaaS template collection with 20+ homepage variations and complete inner pages. Built with React 19, TypeScript, Tailwind CSS 4, and cutting-edge web technologies for SaaS businesses, startups, and web applications.
+A modern, responsive landing page for the Federal Government College Enugu Old Students Association (FGCEOSA), built with Next.js 15, React 19, TypeScript, and Tailwind CSS 4.
 
-![Next.js](https://img.shields.io/badge/Next.js-15.4.6-black)
-![React](https://img.shields.io/badge/React-19.1.0-blue)
+![Next.js](https://img.shields.io/badge/Next.js-16.1.1-black)
+![React](https://img.shields.io/badge/React-19.2.3-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.0-blue)
-![GSAP](https://img.shields.io/badge/GSAP-3.12.5-green)
-![Lenis](https://img.shields.io/badge/Lenis-1.0.38-orange)
 
 ## 📦 What's Included
 
-- ✅ **Complete Source Code** - Full Next.js 15 project
-- ✅ **20+ Homepage Variations** - Different layouts and styles
-- ✅ **50+ Inner Pages** - Authentication, pricing, blog, and more
-- ✅ **500+ Components** - Reusable React components
-- ✅ **Documentation** - Comprehensive setup guide
-- ✅ **Free Updates** - Future improvements included
-- ✅ **Premium Support** - Email support from our team
+- ✅ **Modern Landing Page** - Fully responsive alumni association website
+- ✅ **Dynamic Sections** - Hero, About, Events, Gallery, Testimonials, and more
+- ✅ **Content Management** - Easy-to-update markdown-based content
+- ✅ **Dark/Light Mode** - Seamless theme switching
+- ✅ **Smooth Animations** - Premium interactions with GSAP
+- ✅ **Mobile Optimized** - Mobile-first responsive design
+- ✅ **SEO Ready** - Optimized metadata and structure
 
 ## ✨ Features
 
-### 🏠 **34+ Homepage Variations**
+### 🏠 **Landing Page Sections**
 
-- Multiple design styles for different business needs
-- Crypto, Finance, Analytics, SaaS, and more themes
-- Modern layouts with unique hero sections and components
+- **Hero Section**: Eye-catching introduction with call-to-action
+- **About Us**: Alumni association history and mission
+- **What We Do**: Key activities and initiatives
+- **Statistics**: Impact metrics and achievements
+- **Our Impact**: Success stories and community contributions
+- **Gallery**: Photo showcase with CTA
+- **Join Us**: Membership registration
+- **News & Events**: Latest updates and upcoming activities
+- **Connection Banner**: Community engagement
+- **Testimonials**: Alumni success stories
+- **Blog**: Articles and updates
+- **FAQ**: Common questions answered
 
-### 📄 **Complete Page Collection**
+### 🎨 **Design Features**
 
-- **Authentication**: Login/Signup pages with multiple variants
-- **Pricing**: Multiple pricing page designs with feature comparisons
-- **Blog**: Blog listing, details, and markdown support
-- **About**: Team, company story, and mission pages
-- **Services**: Service listings and detailed service pages
-- **Contact**: Contact forms with integrated maps
-- **Legal**: Privacy policy, terms, GDPR compliance pages
-- **Support**: FAQ, documentation, and help pages
-
-### 🎨 **Modern Design System**
-
-- **Dark/Light Mode**: Seamless theme switching with next-themes
-- **Responsive Design**: Mobile-first approach with Tailwind CSS
-- **Smooth Animations**: GSAP and Lenis for premium interactions
-- **Interactive Components**: Sliders, modals, and dynamic elements
-- **Professional UI**: Clean, modern design with consistent spacing
-
-### ⚡ **Performance & Developer Experience**
-
-- **Next.js 15**: Latest features with Turbopack support
-- **TypeScript**: Full type safety and better developer experience
-- **Component Architecture**: Reusable, modular components
-- **Code Quality**: ESLint, Prettier, and Husky pre-commit hooks
-- **Conventional Commits**: Structured commit messages with Commitlint
+- **Responsive Design**: Perfect on mobile, tablet, and desktop
+- **Dark/Light Mode**: User preference theme switching
+- **Smooth Animations**: GSAP-powered transitions
+- **Modern UI**: Clean, professional design
+- **Interactive Elements**: Engaging user experience
+- **Accessibility**: WCAG compliant components
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15.4.6 with App Router
+- **Framework**: Next.js 16.1.1 with App Router
 - **Language**: TypeScript 5.0
 - **Styling**: Tailwind CSS 4.0
-- **UI Components**: Custom component library
 - **Animations**: GSAP 3.13, Lenis smooth scrolling
-- **Maps**: Leaflet with React integration
-- **Content**: Markdown support with gray-matter
 - **Theme**: next-themes for dark/light mode
-- **Development**: ESLint, Prettier, Husky, lint-staged
+- **Content**: Markdown support with gray-matter
+- **Maps**: Leaflet with React integration
+- **Carousel**: Swiper for image sliders
+- **Development**: ESLint, Prettier for code quality
 
 ## 📋 Prerequisites
 
@@ -76,34 +65,23 @@ Before getting started, ensure you have:
 
 ## 🚀 Quick Start
 
-### 1. Download & Extract
-
-1. **Download** the template files from ThemeForest
-2. **Extract** the ZIP file to your development directory
-3. **Navigate** to the project folder:
+### 1. Clone the Repository
 
 ```bash
-cd nextsaas-next
+git clone <repository-url>
+cd fgceosa_landing
 ```
 
 ### 2. Install Dependencies
 
 ```bash
-# Using npm
 npm install
-
-# Using yarn
-yarn install
 ```
 
 ### 3. Start Development Server
 
 ```bash
-# Using npm
 npm run dev
-
-# Using yarn
-yarn dev
 ```
 
 The application will be available at `http://localhost:3000`
@@ -111,61 +89,48 @@ The application will be available at `http://localhost:3000`
 ## 📁 Project Structure
 
 ```
-nextsaas-next/
+fgceosa_landing/
 ├── public/                     # Static assets
-│   ├── images/                # Images organized by components
-│   ├── icons/                 # SVG icons and graphics
+│   ├── images/                # Images and graphics
+│   │   ├── home/             # Homepage images
+│   │   ├── about/            # About section images
+│   │   ├── gallery/          # Photo gallery
+│   │   └── events/           # Event photos
 │   └── favicon.ico           # Site favicon
 ├── src/
-│   ├── app/                  # Next.js 15 App Router
-│   │   ├── (pages)/         # Route groups for different pages
-│   │   ├── globals.css      # Global styles
-│   │   └── layout.tsx       # Root layout component
+│   ├── app/                  # Next.js App Router
+│   │   ├── page.tsx         # Homepage
+│   │   ├── layout.tsx       # Root layout
+│   │   └── globals.css      # Global styles
 │   ├── components/          # React components
-│   │   ├── homepage-*/      # Homepage variations (01-20)
-│   │   ├── authentication/  # Login/signup components
-│   │   ├── pricing-*/       # Pricing page components
-│   │   ├── blog-*/          # Blog-related components
-│   │   ├── shared/          # Reusable components
-│   │   │   ├── header/      # Navigation components
-│   │   │   ├── footer/      # Footer components
-│   │   │   └── ui/          # Base UI components
-│   │   └── ui/              # Core UI components
-│   ├── context/             # React contexts
-│   ├── data/                # Static data and content
-│   │   ├── blogs/           # Markdown blog posts
-│   │   ├── services/        # Service descriptions
-│   │   └── team/            # Team member data
-│   ├── hooks/               # Custom React hooks
-│   ├── styles/              # CSS modules and styles
-│   ├── types/               # TypeScript type definitions
-│   └── utils/               # Utility functions
-├── next.config.ts           # Next.js configuration
-├── tailwind.config.ts       # Tailwind CSS configuration
-├── tsconfig.json            # TypeScript configuration
-└── package.json             # Dependencies and scripts
+│   │   ├── home/           # Homepage sections
+│   │   │   ├── Hero.tsx
+│   │   │   ├── AboutUs.tsx
+│   │   │   ├── WhatWeDo.tsx
+│   │   │   ├── Statistics.tsx
+│   │   │   ├── OurImpact.tsx
+│   │   │   ├── GalleryCTA.tsx
+│   │   │   ├── JoinUs.tsx
+│   │   │   ├── NewsEvents.tsx
+│   │   │   └── ConnectionBanner.tsx
+│   │   ├── shared/         # Reusable components
+│   │   │   ├── header/    # Navigation
+│   │   │   ├── footer/    # Footer
+│   │   │   └── ui/        # UI components
+│   │   └── animation/     # Animation components
+│   ├── data/              # Content and data
+│   │   ├── blogs/        # Blog posts (markdown)
+│   │   ├── services/     # Services data
+│   │   ├── team/         # Team members
+│   │   └── footer-data.ts
+│   ├── hooks/            # Custom React hooks
+│   ├── utils/            # Utility functions
+│   └── types/            # TypeScript definitions
+├── config.json           # Application configuration
+├── next.config.ts        # Next.js configuration
+├── tailwind.config.ts    # Tailwind CSS configuration
+└── package.json          # Dependencies and scripts
 ```
-
-## 🎯 Available Pages
-
-### Homepage Variations
-
-Access different homepage designs:
-
-- `/` - Default homepage (Homepage 01)
-- `/homepage-02` through `/homepage-20` - Additional variations
-
-### Core Pages
-
-- **Authentication**: `/login-01`, `/signup-01`, `/login-02`, etc.
-- **Pricing**: `/pricing-01`, `/pricing-02`, `/pricing-03`
-- **About**: `/about-01`, `/about-02`, `/about-03`
-- **Blog**: `/blog-01`, `/blog-02`, `/blog-03`, `/blog/[slug]`
-- **Services**: `/our-services-01`, `/our-services/[slug]`
-- **Team**: `/our-team-01`, `/team/[slug]`
-- **Features**: `/features-01`, `/features-02`
-- **Contact**: `/contact-us`
-- **Legal**: `/privacy`, `/terms-conditions`, `/gdpr`
 
 ## 🔧 Development
 
@@ -184,274 +149,336 @@ npm run format       # Format code with Prettier
 npm run format:check # Check code formatting
 ```
 
-### Code Quality Tools
+### Development Workflow
 
-This project uses several tools to maintain code quality:
+1. **Start Development**: Run `npm run dev`
+2. **Make Changes**: Edit components and see live updates
+3. **Check Code**: Run `npm run lint` and `npm run format:check`
+4. **Fix Issues**: Use `npm run lint:fix` and `npm run format`
+5. **Test Build**: Run `npm run build` before deploying
 
-- **ESLint**: JavaScript/TypeScript linting
-- **Prettier**: Code formatting
-- **Husky**: Git hooks for pre-commit checks
-- **lint-staged**: Run linters on staged files only
-- **Commitlint**: Enforce conventional commit messages
+## 🎨 Customization Guide
 
-### Commit Message Format
+### Updating Content
 
-Follow [Conventional Commits](https://www.conventionalcommits.org/) specification:
+#### Homepage Sections
 
-```bash
-feat: add new homepage variation.
-fix: resolve responsive layout issue.
-docs: update installation guide.
+Edit components in `src/components/home/`:
+
+- `Hero.tsx` - Main hero section content
+- `AboutUs.tsx` - About section content
+- `WhatWeDo.tsx` - Services and activities
+- `Statistics.tsx` - Metrics and numbers
+- `JoinUs.tsx` - Membership call-to-action
+- `NewsEvents.tsx` - Latest news and events
+
+#### Blog Posts
+
+Add markdown files in `src/data/blogs/`:
+
+```markdown
+---
+title: "Your Blog Post Title"
+date: "2024-01-15"
+author: "Author Name"
+excerpt: "Brief description"
+---
+
+Your blog post content here...
 ```
 
-## 🎨 Customization
+#### Footer Content
 
-### Theme Customization
+Update `src/data/footer-data.ts`:
 
-1. **Colors**: Edit `src/styles/variables.css` for color schemes
-2. **Typography**: Modify font settings in `src/utils/font.ts`
-3. **Components**: Customize components in `src/components/ui/`
-4. **Tailwind**: Update `tailwind.config.ts` for design tokens
-
-### Adding New Pages
-
-Here's a complete example of creating a new "Portfolio" page:
-
-#### Step 1: Create the Page Route
-
-Create `src/app/portfolio/page.tsx`:
-
-```tsx
-import Portfolio from '@/components/portfolio/Portfolio';
-import FooterOne from '@/components/shared/footer/FooterOne';
-import NavbarOne from '@/components/shared/header/NavbarOne';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Portfolio - NextSaaS',
-  description: 'Showcase of our amazing projects and work',
+```typescript
+export const footerData = {
+  description: "Your organization description",
+  social: {
+    facebook: "https://facebook.com/yourpage",
+    twitter: "https://twitter.com/yourhandle",
+    instagram: "https://instagram.com/yourprofile"
+  },
+  contact: {
+    email: "info@fgceosa.org",
+    phone: "+234 XXX XXX XXXX"
+  }
 };
-
-const PortfolioPage = () => {
-  return (
-    <>
-      <NavbarOne />
-      <Portfolio />
-      <FooterOne />
-    </>
-  );
-};
-
-export default PortfolioPage;
 ```
 
-#### Step 2: Create Page Components
+### Styling and Theme
 
-Create `src/components/portfolio/Portfolio.tsx`:
+#### Colors
+
+Update colors in `tailwind.config.ts`:
+
+```typescript
+theme: {
+  extend: {
+    colors: {
+      primary: '#your-color',
+      secondary: '#your-color',
+      // Add more custom colors
+    }
+  }
+}
+```
+
+#### Typography
+
+Modify font settings in `src/utils/font.ts` or `globals.css`.
+
+### Adding Images
+
+1. Place images in `public/images/`
+2. Organize by section (home, about, events, etc.)
+3. Use Next.js Image component for optimization:
 
 ```tsx
 import Image from 'next/image';
-import RevealAnimation from '@/components/animation/RevealAnimation';
 
-const portfolioData = [
-  {
-    id: 1,
-    title: 'E-commerce Platform',
-    category: 'Web Development',
-    image: '/images/portfolio/project-1.jpg',
-    description: 'Modern e-commerce solution built with Next.js',
-  },
-  // Add more portfolio items...
-];
-
-const Portfolio = () => {
-  return (
-    <section className="pb-[100px] pt-[100px]">
-      <div className="main-container">
-        <div className="text-center space-y-3 mb-14">
-          <RevealAnimation delay={0.3}>
-            <h1 className="max-w-[742px] mx-auto">Our Portfolio</h1>
-          </RevealAnimation>
-          <RevealAnimation delay={0.4}>
-            <p className="max-w-[482px] mx-auto">Discover our latest projects and creative solutions</p>
-          </RevealAnimation>
-        </div>
-
-        <div className="grid grid-cols-12 gap-8">
-          {portfolioData.map((item, index) => (
-            <RevealAnimation delay={0.5 + index * 0.1} key={item.id}>
-              <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                <div className="bg-background-2 dark:bg-background-5 rounded-[20px] overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={400}
-                    height={300}
-                    className="w-full h-[250px] object-cover"
-                  />
-                  <div className="p-6 space-y-3">
-                    <span className="text-sm text-primary">{item.category}</span>
-                    <h3 className="text-heading-5">{item.title}</h3>
-                    <p className="text-body-text">{item.description}</p>
-                  </div>
-                </div>
-              </div>
-            </RevealAnimation>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Portfolio;
+<Image
+  src="/images/home/hero-image.jpg"
+  alt="Description"
+  width={800}
+  height={600}
+  priority
+/>
 ```
 
-#### Step 3: Add Navigation Link
+### Configuration
 
-Update the header component to include the new page. In `src/components/shared/header/NavbarOne.tsx`, add:
+Edit `config.json` for app-wide settings:
 
-```tsx
-// Add to the navigation items array
+```json
 {
-  id: 7,
-  name: 'Portfolio',
-  path: '/portfolio',
-},
+  "siteName": "FGCEOSA",
+  "siteUrl": "https://fgceosa.org",
+  "socialMedia": {
+    "facebook": "url",
+    "twitter": "url"
+  }
+}
 ```
-
-#### Step 4: Add Data (Optional)
-
-Create `src/data/portfolio.ts` for dynamic content:
-
-```tsx
-export const portfolioItems = [
-  {
-    id: 1,
-    title: 'E-commerce Platform',
-    category: 'Web Development',
-    image: '/images/portfolio/project-1.jpg',
-    description: 'Modern e-commerce solution built with Next.js',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    link: 'https://example.com',
-  },
-  // Add more items...
-];
-```
-
-#### Step 5: Add Images
-
-Place your portfolio images in:
-
-```
-public/images/portfolio/
-├── project-1.jpg
-├── project-2.jpg
-└── project-3.jpg
-```
-
-#### Step 6: Test Your Page
-
-1. Start the development server: `npm run dev`
-2. Navigate to `http://localhost:3000/portfolio`
-3. Check that the page loads correctly
-4. Test navigation from the header menu
-
-**That's it!** Your new portfolio page is ready with proper routing, components, navigation, and SEO metadata.
-
-### Content Management
-
-- **Blog Posts**: Add markdown files in `src/data/blogs/`
-- **Services**: Update service data in `src/data/services/`
-- **Team Members**: Modify team data in `src/data/team/`
-- **Static Content**: Edit component files directly
 
 ## 🏗️ Building for Production
 
-### Build Process
+### Production Build
 
 ```bash
-# Create production build
+# Create optimized production build
 npm run build
 
-# Start production server
+# Test production build locally
 npm run start
 ```
 
-### Build Output
+### Build Optimizations
 
-- Static assets are optimized and compressed
-- JavaScript is minified and tree-shaken
-- CSS is purged and optimized
-- Images are automatically optimized by Next.js
-
-### Performance Features
-
-- **Image Optimization**: Automatic WebP conversion and lazy loading
-- **Code Splitting**: Automatic route-based code splitting
-- **Static Generation**: Pre-rendered pages for better performance
-- **Bundle Analysis**: Built-in bundle analyzer
+The production build includes:
+- Minified JavaScript and CSS
+- Optimized images with automatic WebP conversion
+- Tree-shaken code for smaller bundle size
+- Static generation for better performance
+- Compressed assets
 
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
 
-Vercel is the easiest way to deploy your Next.js application:
+Easiest deployment for Next.js applications:
 
 ```bash
 # Install Vercel CLI
 npm i -g vercel
 
-# Deploy
+# Deploy to Vercel
 vercel
 ```
 
+Or connect your Git repository to Vercel for automatic deployments.
+
 ### Other Platforms
 
-The project can be deployed to:
+#### Netlify
 
-- **Netlify**: Static site deployment with automatic builds
-- **Railway**: Full-stack deployment with database support
-- **DigitalOcean**: App Platform with automatic scaling
-- **AWS**: Amplify or EC2 for enterprise solutions
-- **Hostinger**: Shared hosting with Node.js support
+1. Connect your Git repository
+2. Build command: `npm run build`
+3. Publish directory: `.next`
 
-### Deployment Guide
+#### AWS Amplify
 
-1. **Build the project**: Run `npm run build` locally to test
-2. **Choose platform**: Select your preferred hosting provider
-3. **Configure environment**: Set up any required environment variables
-4. **Deploy**: Follow platform-specific deployment instructions
+1. Connect repository
+2. Build settings: Auto-detected for Next.js
+3. Deploy
 
-Need help with deployment? Contact us at [hello@pixel71.com](mailto:hello@pixel71.com)
+#### DigitalOcean App Platform
 
-## 🔍 Browser Support
+1. Create new app from GitHub
+2. Select Next.js preset
+3. Deploy
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+### Environment Variables
 
-## 📖 Documentation
+Create `.env.local` for local development:
 
-- [Development Guide](./DEVELOPMENT.md) - Detailed development workflow
-- [Component Documentation](https://nextsaas-documentation.vercel.app/nextjs/get-started) - Usage guide
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_API_URL=your-api-url
+```
 
-## 📧 Support & Contact
+For production, set these in your hosting platform's environment settings.
 
-We provide comprehensive support for all our customers:
+## 📱 Git Workflow
 
-- **Email Support**: [hello@pixel71.com](mailto:hello@pixel71.com)
-- **Response Time**: Within 24 hours on business days
-- **Support Includes**:
-  - Installation assistance
-  - Bug fixes and troubleshooting
-  - Customization guidance
-  - Feature clarifications
+### Branch Structure
+
+- `master` - Production-ready code
+- `develop` - Development branch
+- `feature/*` - Feature branches
+
+### Making Changes
+
+```bash
+# Create feature branch from develop
+git checkout develop
+git pull origin develop
+git checkout -b feature/your-feature-name
+
+# Make your changes
+git add .
+git commit -m "feat: add new feature"
+
+# Push to remote
+git push origin feature/your-feature-name
+
+# Create pull request to develop
+```
+
+### Commit Message Format
+
+Follow conventional commits:
+
+```bash
+feat: add new alumni registration form
+fix: resolve mobile navigation issue
+docs: update README installation steps
+style: improve hero section spacing
+refactor: optimize image loading
+```
+
+## 🔍 Common Tasks
+
+### Adding a New Section to Homepage
+
+1. Create component in `src/components/home/`:
+
+```tsx
+// src/components/home/NewSection.tsx
+const NewSection = () => {
+  return (
+    <section className="py-20">
+      <div className="main-container">
+        <h2>Section Title</h2>
+        {/* Section content */}
+      </div>
+    </section>
+  );
+};
+
+export default NewSection;
+```
+
+2. Import and add to `src/app/page.tsx`:
+
+```tsx
+import NewSection from '@/components/home/NewSection';
+
+const page = () => {
+  return (
+    <main>
+      {/* Other sections */}
+      <NewSection />
+    </main>
+  );
+};
+```
+
+### Updating Navigation Menu
+
+Edit navigation items in `src/components/shared/header/` component:
+
+```tsx
+const menuItems = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '#about' },
+  { name: 'Events', path: '#events' },
+  // Add more items
+];
+```
+
+### Managing Events
+
+Create event data structure in `src/data/events/`:
+
+```typescript
+export const events = [
+  {
+    id: 1,
+    title: 'Annual Alumni Reunion',
+    date: '2024-12-15',
+    location: 'School Campus',
+    description: 'Join us for our annual reunion...',
+    image: '/images/events/reunion.jpg'
+  }
+];
+```
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Build fails with TypeScript errors:**
+```bash
+npm run lint:fix
+# Fix type errors in reported files
+```
+
+**Images not loading:**
+- Verify image paths start with `/`
+- Check images exist in `public/` directory
+- Use correct file extensions
+
+**Styles not applying:**
+- Check Tailwind class names are correct
+- Verify `globals.css` is imported
+- Run `npm run dev` to rebuild
+
+**Port already in use:**
+```bash
+# Use different port
+npm run dev -- -p 3001
+```
+
+## 📖 Additional Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
+
+## 📧 Support
+
+For issues, questions, or contributions:
+
+- Create an issue in the repository
+- Contact the development team
+- Email: dev@fgceosa.org
+
+## 📄 License
+
+This project is proprietary to FGCEOSA Alumni Association.
 
 ---
 
-**Made by [Pixel71](mailto:hello@pixel71.com)**
-
-\_Happy coding!
+**Built with ❤️ for FGCEOSA Alumni Community**

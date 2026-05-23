@@ -171,6 +171,7 @@ const Footer = ({ className }: { className?: string }) => {
                       />
                     </Link>
                   </div>
+
                 </div>
               </RevealAnimation>
             </div>
