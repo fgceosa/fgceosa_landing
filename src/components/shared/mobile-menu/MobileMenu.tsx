@@ -55,7 +55,7 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
         </div>
 
         {/* Scrollable Content */}
-        <div className="custom-scrollbar flex-1 overflow-x-hidden overflow-y-auto pt-6 pb-12">
+        <div className="custom-scrollbar overflow-x-hidden overflow-y-auto pt-6 pb-12">
           <ul className="space-y-4">
             {menuData.map((item) => {
               const isItemActive = item.href === pathname || item.submenu?.some((sub) => sub.href === pathname);
