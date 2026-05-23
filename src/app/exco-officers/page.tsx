@@ -1,9 +1,11 @@
-import ConstitutionHero from '@/components/constitution/ConstitutionHero';
+import ExcoOfficersHero from '@/components/exco-officers/ExcoOfficersHero';
+import ExcoOfficersSection from '@/components/exco-officers/ExcoOfficersSection';
 
-export default function ConstitutionPage() {
+export default function ExcoOfficersPage() {
   return (
-    <main>
-      <ConstitutionHero />
+    <main className="min-h-screen bg-[#f8fafc]">
+      <ExcoOfficersHero />
+      <ExcoOfficersSection />
     </main>
   );
 }

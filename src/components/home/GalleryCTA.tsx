@@ -5,7 +5,7 @@ import img1 from '@public/images/gallery_1.png';
 import img2 from '@public/images/gallery_2.png';
 import img3 from '@public/images/gallery_3.png';
 import img4 from '@public/images/gallery_4.png';
-import awardImg from '@public/images/ns-img-464.png';
+import awardImg from '@public/images/executive_2.png';
 
 const GalleryCTA = () => {
   return (

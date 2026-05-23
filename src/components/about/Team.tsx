@@ -54,12 +54,12 @@ const Team = () => {
               <span className="badge badge-cyan mb-5">Leadership</span>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
-              <h2 className="text-secondary font-bold leading-tight tracking-tight mb-3">Our Executive Council</h2>
+              <h2 className="text-secondary mb-3 leading-tight font-bold tracking-tight">Our Executive Council</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="text-black dark:text-white/80">
-                The FGCEOSA leadership team is dedicated to fostering unity among alumni and
-                driving impactful projects for our alma mater.
+                The FGCEOSA leadership team is dedicated to fostering unity among alumni and driving impactful projects
+                for our alma mater.
               </p>
             </RevealAnimation>
           </div>
@@ -67,9 +67,9 @@ const Team = () => {
           <div className="mb-7 grid grid-cols-1 items-center justify-center gap-6 sm:grid-cols-2 xl:grid-cols-4">
             {teamMembers.map((member, index) => (
               <RevealAnimation key={member.name} delay={0.4 + index * 0.1}>
-                <div className="mx-auto flex h-full w-full flex-col items-start justify-center space-y-6 rounded-2xl border border-secondary/10 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-md dark:border-white/10 dark:bg-background-8">
+                <div className="border-secondary/10 dark:bg-background-8 mx-auto flex h-full w-full flex-col items-start justify-center space-y-6 rounded-2xl border bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-md dark:border-white/10">
                   {/* team member image */}
-                  <figure className="flex size-[140px] items-center justify-center overflow-hidden rounded-full border-2 border-secondary/5 bg-[#d5dbe3]">
+                  <figure className="border-secondary/5 flex size-[140px] items-center justify-center overflow-hidden rounded-full border-2 bg-[#d5dbe3]">
                     <Image
                       src={member.image}
                       className="size-full object-cover"
@@ -84,7 +84,7 @@ const Team = () => {
                   {/* team member info */}
                   <div className="space-y-4 text-left">
                     <div>
-                      <h3 className="text-heading-6 font-bold text-secondary dark:text-white">{member.name}</h3>
+                      <h3 className="text-heading-6 text-secondary font-bold dark:text-white">{member.name}</h3>
                       <p className="text-tagline-3 font-medium text-black/60 dark:text-white/60">{member.location}</p>
                     </div>
 
@@ -103,7 +103,7 @@ const Team = () => {
                             rel="noopener noreferrer"
                             className="group border-secondary/10 dark:border-accent/10 hover:bg-secondary hover:border-secondary flex size-9 items-center justify-center rounded-full border p-2 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
                             aria-label={`Follow ${member.name} on ${platform}`}>
-                            <span className="text-secondary group-hover:text-white dark:text-white transition-colors duration-300">
+                            <span className="text-secondary transition-colors duration-300 group-hover:text-white dark:text-white">
                               <SocialIcon platform={platform as Platform} />
                             </span>
                           </Link>
