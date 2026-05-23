@@ -21,10 +21,9 @@ export default function OfficerCard({ officer }: OfficerCardProps) {
           {department}
         </div>
       </div>
-      <div className="flex flex-col items-center p-4">
+      <div className="flex flex-col p-4">
         <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
-        <p className="text-primary-600 text-sm">Year: {year}</p>
-        {bio && <p className="mt-2 text-center text-xs text-gray-500">{bio}</p>}
+        <p className="text-secondary-600 text-sm">Year: {year}</p>
       </div>
     </div>
   );

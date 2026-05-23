@@ -40,9 +40,7 @@ const officersData = [
     image: galleryImages[3],
     bio: 'Innovating tech solutions.',
   },
-  { name: 'Eva Gomez', year: 2025, department: 'Human Resources', image: galleryImages[4], bio: 'Cultivating talent.' },
   { name: 'Frank Wu', year: 2020, department: 'Legal', image: galleryImages[5], bio: 'Ensuring compliance.' },
-  { name: 'Grace Liu', year: 2021, department: 'Product', image: galleryImages[6], bio: 'Shaping product vision.' },
   {
     name: 'Hannah Kim',
     year: 2022,
@@ -130,9 +128,7 @@ const departmentIcons: { [key: string]: React.FC } = {
   Operations: DeptIconOps,
   Marketing: DeptIconMarketing,
   Technology: DeptIconTech,
-  'Human Resources': DeptIconHR,
   Legal: DeptIconLegal,
-  Product: DeptIconProduct,
   'Customer Success': DeptIconCS,
   'Business Development': DeptIconBizDev,
 };
@@ -155,44 +151,49 @@ export default function ExcoOfficersSection() {
   });
 
   return (
-    <section className="bg-white py-12" aria-label="exco officers section">
-      <div className="main-container mx-auto grid grid-cols-1 gap-8 lg:grid-cols-3">
+    <section className="bg-white py-6" aria-label="exco officers section">
+      <div className="main-container mx-auto mb-5 grid grid-cols-1 gap-8 lg:grid-cols-3">
         {/* Left side – Summary & Department Filters */}
-        <aside className="space-y-4 rounded-lg bg-gradient-to-br from-slate-50 to-slate-100 p-6">
+        <aside className="space-y-4 rounded-lg p-5">
           <RevealAnimation delay={0.1} direction="up">
             {/* Summary Section */}
             <div className="mb-6 space-y-3 rounded-lg bg-white p-5 shadow-sm">
-              <div className="flex items-center gap-3">
-                <svg className="text-secondary size-7" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm8 0c1.66 0 2.99-1.34 2.99-3S25.66 5 24 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.5 1.06 2.5 2.75 2.5 4.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+              <div className="flex items-center justify-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="bg-secondary size-15 self-center rounded-full p-2 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v1c0 .55.45 1 1 1h18c.55 0 1-.45 1-1v-1c0-3.33-6.67-5-10-5z" />
                 </svg>
-                <h2 className="text-lg font-bold text-gray-900">Executive Committee 2026-2028</h2>
               </div>
+              <h2 className="text-secondary text-lg font-bold text-gray-900">Executive Committee (2026-2028)</h2>
+
               <p className="text-sm leading-relaxed text-gray-600">
                 Meet the dedicated leaders driving our organization forward with vision, expertise, and commitment to
                 excellence.
               </p>
               <div className="space-y-2 border-t border-gray-200 pt-3">
                 <div className="flex items-center gap-2 text-sm font-semibold">
-                  <svg className="text-primary-600 size-4" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="text-primary-600 size-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm8 0c1.66 0 2.99-1.34 2.99-3S25.66 5 24 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.5 1.06 2.5 2.75 2.5 4.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
                   </svg>
                   <span className="text-primary-600">{officersData.length}</span>
-                  <span className="text-gray-600">exco members</span>
+                  <span className="text-gray-600 capitalize">exco members</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold">
-                  <svg className="text-secondary size-4" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="text-secondary size-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                   </svg>
                   <span className="text-secondary">{departments.length}</span>
-                  <span className="text-gray-600">depts</span>
+                  <span className="text-gray-600 capitalize">depts</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold">
-                  <svg className="size-4 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="size-6 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                   <span className="text-amber-600">1</span>
-                  <span className="text-gray-600">unified purpose</span>
+                  <span className="text-gray-600 capitalize">unified purpose</span>
                 </div>
               </div>
             </div>
@@ -201,7 +202,7 @@ export default function ExcoOfficersSection() {
           {/* Department Filters */}
           <RevealAnimation delay={0.2} direction="up">
             <div className="space-y-2 border-t border-gray-200 pt-4">
-              <h3 className="mb-3 font-medium text-gray-800">Filter by Department</h3>
+              <h6 className="mb-3 font-medium text-gray-800">Filter by Department</h6>
               <div className="space-y-2">
                 <button
                   onClick={() => setSelectedDept('All')}
@@ -236,17 +237,21 @@ export default function ExcoOfficersSection() {
 
           {/* Join Section */}
           <RevealAnimation delay={0.3} direction="up">
-            <div className="space-y-3 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 p-5">
+            <div className="bg-secondary space-y-3 rounded-lg p-5">
               <div className="flex items-center gap-2">
-                <svg className="size-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm8 0c1.66 0 2.99-1.34 2.99-3S25.66 5 24 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.5 1.06 2.5 2.75 2.5 4.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="bg-secondary size-15 self-center rounded-full p-2 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v1c0 .55.45 1 1 1h18c.55 0 1-.45 1-1v-1c0-3.33-6.67-5-10-5z" />
                 </svg>
-                <h3 className="font-bold text-gray-900">Interested in joining the leadership team?</h3>
+                <h6 className="font-bold text-white">Interested in joining the leadership team?</h6>
               </div>
-              <p className="text-sm text-gray-700">Be part of our growing community of leaders making a real impact.</p>
+              <p className="text-sm text-white">Be part of our growing community of leaders making a real impact.</p>
               <a
-                href="/careers"
-                className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-blue-700">
+                href="#"
+                className="bg-secondary hover:bg-secondary inline-flex items-center gap-2 rounded-lg border border-white px-4 py-2 text-sm font-semibold text-white transition-all">
                 Learn More
                 <svg className="size-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
