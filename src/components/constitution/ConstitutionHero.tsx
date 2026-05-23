@@ -28,9 +28,9 @@ const ConstitutionHero = () => {
               </div>
             </RevealAnimation>
             <RevealAnimation delay={0.2} direction="up">
-              <h1 className="text-heading-3 md:text-heading-2 xl:text-heading-1 mb-6 leading-tight font-bold text-white">
-                Our <span className="text-[#d4af37]">Constitution</span>
-              </h1>
+              <h2 className="mb-6 leading-tight font-bold text-white">
+                FGCEOSA Constitution 2026 <span className="text-[#d4af37]"></span>
+              </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3} direction="up">
               <p className="mb-10 max-w-xl text-lg leading-relaxed text-white/80 md:text-xl">
