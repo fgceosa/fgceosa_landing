@@ -15,31 +15,32 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="relative dark:bg-background-6 pt-5">
-
+    <section className="dark:bg-background-6 relative pt-5">
       <div className="main-container">
-        <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px] mb-7">
+        <div className="mb-7 grid grid-cols-1 items-center gap-y-14 lg:grid-cols-2 lg:gap-x-[97px]">
           {/* LHS Content */}
           <div className="lg:order-1">
-            <RevealAnimation delay={0.1}>
-              <div className="bg-white mb-6 inline-block rounded-lg border-2 border-secondary px-4 py-2 shadow-sm">
-                <span className="text-secondary font-bold uppercase tracking-wider">About FGCEOSA</span>
+            <RevealAnimation delay={0.1} className="flex justify-center lg:justify-start">
+              <div className="border-secondary mb-6 inline-block rounded-lg border-2 bg-white px-4 py-2 shadow-sm">
+                <span className="text-secondary font-bold tracking-wider uppercase">About FGCEOSA</span>
               </div>
             </RevealAnimation>
 
             <RevealAnimation delay={0.2}>
-              <h2 className="mb-6 text-black dark:text-white leading-tight font-bold tracking-tight">
+              <h2 className="mb-6 text-center leading-tight font-bold tracking-tight text-black lg:text-left dark:text-white">
                 A Legacy That <br />
-                <span className="relative inline-block text-secondary">
+                <span className="text-secondary relative inline-block">
                   Lives On
-                  <span className="absolute -bottom-2 left-0 h-1.5 w-20 bg-secondary rounded-full" />
+                  <span className="bg-secondary absolute -bottom-2 left-0 h-1.5 w-20 rounded-full" />
                 </span>
               </h2>
             </RevealAnimation>
 
             <RevealAnimation delay={0.3}>
-              <p className="text-black dark:text-accent/80 mb-8 text-lg leading-relaxed">
-                Founded by the enduring values of excellence, discipline and unity instilled at FGC Enugu, FGCEOSA connects past students across generations and borders             </p>
+              <p className="dark:text-accent/80 mb-8 text-center text-lg leading-relaxed text-black lg:text-left">
+                Founded by the enduring values of excellence, discipline and unity instilled at FGC Enugu, FGCEOSA
+                connects past students across generations and borders{' '}
+              </p>
             </RevealAnimation>
 
             <RevealAnimation delay={0.4}>
@@ -49,7 +50,7 @@ const AboutUs = () => {
                     <div className="bg-secondary flex size-6 shrink-0 items-center justify-center rounded-full">
                       <CheckIcon className="size-4 fill-white" />
                     </div>
-                    <span className="text-black dark:text-accent font-medium">{point}</span>
+                    <span className="dark:text-accent font-medium text-black">{point}</span>
                   </li>
                 ))}
               </ul>
@@ -59,7 +60,7 @@ const AboutUs = () => {
               <LinkButton
                 href="/about"
                 insideSpan={false}
-                className="btn btn-secondary btn-md flex shrink-0 items-center gap-2 rounded-md font-bold px-5 md:btn-lg md:px-8 w-fit">
+                className="btn btn-secondary btn-md md:btn-lg flex w-fit shrink-0 items-center gap-2 rounded-md px-5 font-bold md:px-8">
                 <div className="flex items-center gap-2 whitespace-nowrap">
                   <span>Learn More About Us</span>
                   <svg
@@ -78,7 +79,6 @@ const AboutUs = () => {
 
           {/* RHS Image */}
           <div className="lg:order-2">
-
             <RevealAnimation delay={0.4} direction="right">
               <div className="relative overflow-hidden rounded-[30px] shadow-2xl">
                 <Image
@@ -87,48 +87,40 @@ const AboutUs = () => {
                   className="h-[400px] w-full object-cover transition-transform duration-700 hover:scale-105 md:h-[600px]"
                 />
 
-
                 {/* Quote Overlay */}
-                <div className="absolute bottom-6 left-4 right-4 md:bottom-12 md:left-8 md:right-8">
-                  <div className="relative rounded-2xl bg-secondary p-6 md:p-10 shadow-xl min-h-[160px] flex items-center">
+                <div className="absolute right-4 bottom-6 left-4 md:right-8 md:bottom-12 md:left-8">
+                  <div className="bg-secondary relative flex min-h-[160px] items-center rounded-2xl p-6 shadow-xl md:p-10">
                     <div className="w-full sm:pr-[120px] md:pr-[180px] lg:pr-[220px]">
-                      <p className="text-white italic text-base md:text-xl lg:text-2xl leading-snug font-medium relative">
-                        <span className="text-4xl md:text-6xl absolute -top-4 md:-top-8 -left-2 md:-left-4 opacity-50 font-serif">"</span>
+                      <p className="relative text-base leading-snug font-medium text-white italic md:text-xl lg:text-2xl">
+                        <span className="absolute -top-4 -left-2 font-serif text-4xl opacity-50 md:-top-8 md:-left-4 md:text-6xl">
+                          "
+                        </span>
                         <span className="block">United by our past. Inspired to build the future.</span>
                       </p>
                     </div>
 
                     {/* Desktop Logo (Absolute & Overflowing) */}
-                    <div className="absolute -right-4 md:-right-10 top-1/2 -translate-y-1/2 bg-white p-2 md:p-3 rounded-full shadow-2xl z-10 hidden sm:block border-[6px] md:border-[10px] border-secondary">
+                    <div className="border-secondary absolute top-1/2 -right-4 z-10 hidden -translate-y-1/2 rounded-full border-[6px] bg-white p-2 shadow-2xl sm:block md:-right-10 md:border-[10px] md:p-3">
                       <Image
                         src={logoImg}
                         alt="Logo"
-                        className="size-28 md:size-40 lg:size-48 object-cover rounded-full"
+                        className="size-28 rounded-full object-cover md:size-40 lg:size-48"
                       />
                     </div>
                   </div>
 
                   {/* Mobile Logo (Positioned below the box for better responsiveness) */}
-                  <div className="flex justify-center -mt-6 sm:hidden">
-                    <div className="bg-white p-1 rounded-full shadow-xl border-4 border-secondary z-20">
-                      <Image
-                        src={logoImg}
-                        alt="Logo"
-                        className="size-20 object-cover rounded-full"
-                      />
+                  <div className="-mt-6 flex justify-center sm:hidden">
+                    <div className="border-secondary z-20 rounded-full border-4 bg-white p-1 shadow-xl">
+                      <Image src={logoImg} alt="Logo" className="size-20 rounded-full object-cover" />
                     </div>
                   </div>
                 </div>
-
-
-
               </div>
             </RevealAnimation>
           </div>
-
         </div>
       </div>
-
     </section>
   );
 };
