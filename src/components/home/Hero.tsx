@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="" style={{ paddingTop: '170px' }}>
       <div className="main-container">
-        <div className="flex flex-col-reverse md:grid md:grid-cols-2 lg:gap-x-12">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 lg:gap-x-12 md:items-stretch">
           <div className="md:pr-10 lg:pr-16">
             <div className="space-y-10 md:space-y-14">
               <div className="space-y-5 text-center md:text-left">
@@ -17,14 +17,14 @@ const Hero = () => {
                 </RevealAnimation>
                 <div className="space-y-4">
                   <RevealAnimation delay={0.2}>
-                    <h2 className="leading-[1.1] font-bold text-black">
+                    <h2 className="leading-[1.1] font-bold text-black dark:text-white">
                       Stronger Together. <br />
                       United Forever. <br />
                       <span className="text-secondary font-bold">Pro Unitate.</span>
                     </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
-                    <p className="mx-auto max-w-[550px] text-sm text-black md:mx-0 md:text-base">
+                    <p className="mx-auto max-w-[550px] text-sm text-black/75 dark:text-white/85 md:mx-0 md:text-base">
                       FGCEOSA is a global community of proud alumni of Federal Government College Enugu, connecting
                       generations, empowering members and creating lasting impact.
                     </p>
@@ -34,7 +34,7 @@ const Hero = () => {
               <RevealAnimation delay={0.4}>
                 <div className="flex flex-wrap items-center justify-center gap-3 md:flex-nowrap md:justify-start">
                   <LinkButton
-                    href="/https://fgceoapp.netlify.app/sign-up"
+                    href="https://fgceoapp.netlify.app/sign-up"
                     target="_blank"
                     insideSpan={false}
                     className="btn btn-secondary btn-md md:btn-lg flex shrink-0 items-center gap-2 rounded-md px-5 font-bold md:px-6">

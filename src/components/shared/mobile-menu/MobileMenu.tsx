@@ -46,9 +46,6 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
             </figure>
             <div className="flex flex-col leading-tight">
               <span className="text-lg font-bold tracking-tight text-white">FGCEOSA</span>
-              <span className="text-[10px] font-medium tracking-wider text-white/60 uppercase">
-                FGC Enugu Ex-students association
-              </span>
             </div>
           </Link>
           <MenuCloseButton />

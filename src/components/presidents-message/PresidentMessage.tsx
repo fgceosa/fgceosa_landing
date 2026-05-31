@@ -3,11 +3,8 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 import Link from 'next/link';
 
 const PresidentMessage = () => {
-  const pastMessages = [
-    { year: '2021 - 2023', president: 'Mrs. Ngozi Okonjo', href: '#' },
-    { year: '2019 - 2021', president: 'Engr. Tunde Bakare', href: '#' },
-    { year: '2017 - 2019', president: 'Prof. Chidi Onyebuchi', href: '#' },
-  ];
+  const pastMessages: { year: string; president: string; href: string }[] = [];
+
 
   return (
     <section className="pt-45 pb-10 bg-white dark:bg-background-7">
@@ -19,31 +16,44 @@ const PresidentMessage = () => {
             <RevealAnimation delay={0.1} direction="up">
               <div className="prose prose-lg dark:prose-invert max-w-none">
                 <div className="space-y-6 text-black dark:text-gray-200 leading-relaxed text-black">
-                  <p className="text-xl font-medium text-secondary/80 dark:text-white/90">Dear Fellow Alumni,</p>
+                  <p className="text-xl font-medium text-secondary/80 dark:text-white/90">Dear fellow FGCE Alumni!</p>
                   <p className='text-black'>
-                    It is with great pride and a deep sense of responsibility that I address you as the Global President of our prestigious association. Since its inception, the Federal Government College Enugu Old Students Association (FGCEOSA) has stood as a testament to the enduring bonds formed within the walls of our alma mater.
+                    Welcome to the website of All Federal Government College Enugu Ex-Students Association (aka FGCEOSA), an association incorporated in Nigeria under the Companies and Allied Matters Act 2020.
                   </p>
                   <p className='text-black'>
-                    Our school motto, <strong>&quot;Pro Unitate&quot;</strong>, is not merely a collection of words; it is the heartbeat of our community. It reminds us that regardless of where we find ourselves in the world, we are connected by a shared history and a common commitment to excellence.
+                    The FGCEOSA&apos;s main objective is &quot;to help our alumni and our alma mater by promoting close relations between the school and alumni, ensuring that programs are initiated and developed for the benefit of alumni and the school, and to assist the school in its development and pursuit of academic excellence.&quot; The direct implication of this is that all we do as a group/team should be channeled toward realizing the objective for which this association was created.
                   </p>
                   <p className='text-black'>
-                    As we navigate the complexities of the modern world, our mission remains clear: to foster a vibrant network that supports the professional growth of our members, preserves the legacy of our school, and contributes meaningfully to the development of our nation.
+                    All members of FGCEOSA were at one time or the other students at Federal Government College (FGC) Enugu, a school founded on 19th January 1973. Membership of FGCEOSA is free and voluntary.
                   </p>
                   <p className='text-black'>
-                    We have achieved much together, from infrastructure projects at the college to mentorship programs for young graduates. However, the road ahead beckons with new opportunities. I invite every one of you to join us in this journey. Your expertise, your time, and your passion are the fuels that drive our association forward.
+                    Our large and diverse alumni membership base is a source of strength for us as we can leverage networking across the various Alumni Chapters and Class Sets to build capacity and create new opportunities for growth, thereby achieving different facets of development in life. This amongst other things has prompted the current set of Executives (aka Team SEAL) to base our activities on the theme <strong>&quot;Powering Progress Together&quot;</strong> for the duration of our tenure.
                   </p>
                   <p className='text-black'>
-                    Together, let us continue to build a legacy that will inspire generations of students yet to come.
+                    We have not relented in our efforts to make valuable impacts in the FGCE community through several infrastructural and capacity development projects funded by Alumni, inclusive of mentorship programs, and the annual Speech Day and prize-giving ceremony where students that exhibit excellent and outstanding performance in learning, sports, and character are celebrated and rewarded.
                   </p>
+                  <p className='text-black'>
+                    FGCEOSA is also one of the Alumni Association members of the Unity Schools Old Students Association (USOSA), an incorporated body and public trust made up of alumni of the over 100 Federal Government Colleges (aka Unity Schools) in Nigeria, and set up to advance the objectives of national unity and development through quality access to education in Nigeria.
+                  </p>
+                  <p className='text-black'>
+                    We as an EXCO will continue to seek and implement ways to improve the welfare conditions of all our Alumni and promote avenues for valuable collaboration amongst alumni. You will do well to support the EXCO by playing an active role in your alumni Class Set and/or Chapter.
+                  </p>
+                  <p className='text-black'>
+                    Follow us on our social media handles via the links at the top and bottom of this webpage, as well as reach the EXCO via the email address (at the top of this webpage) as you deem necessary.
+                  </p>
+                  <p className='text-black font-semibold'>
+                    May God bless ALL FEDERAL GOVERNMENT COLLEGE ENUGU EX-STUDENTS ASSOCIATION, and all our Alumni in general!
+                  </p>
+                  <p className='text-black font-bold uppercase tracking-widest text-sm'>PRO UNITATE FGCE!</p>
                 </div>
 
                 {/* Specific Signature Order: Script -> Year -> Name -> Title */}
                 <div className="mt-12 pt-10 border-t border-gray-100 dark:border-white/10">
                   <div className="space-y-2">
-                    <p className="text-4xl font-script text-secondary dark:text-accent italic mb-6">Dr. Emmanuel Okoro</p>
-                    <p className="text-[#d4af37] font-bold text-sm uppercase tracking-widest">2023 - 2025</p>
-                    <p className="font-bold text-gray-900 dark:text-white text-xl">Dr. Emmanuel Okoro</p>
-                    <p className="text-gray-500 uppercase tracking-widest text-xs font-bold">Global President, FGCEOSA</p>
+                    <p className="text-4xl font-script text-secondary dark:text-accent italic mb-6">Engr. Nnadozie Eze</p>
+                    <p className="text-[#d4af37] font-bold text-sm uppercase tracking-widest">2021 - 2023</p>
+                    <p className="font-bold text-gray-900 dark:text-white text-xl">Engr. Nnadozie Eze (Class of 1993)</p>
+                    <p className="text-gray-500 uppercase tracking-widest text-xs font-bold">President (2021-23) | On behalf of FGCEOSA National EXCO</p>
                   </div>
                 </div>
               </div>
@@ -57,7 +67,7 @@ const PresidentMessage = () => {
               <div className="bg-background-3 dark:bg-background-6 p-8 rounded-3xl border border-gray-100 dark:border-stroke-7 shadow-sm">
                 <h3 className="text-secondary dark:text-accent font-bold text-xl mb-4 border-b border-gray-200 dark:border-white/10 pb-4">About the President</h3>
                 <p className="text-black dark:text-gray-200 leading-relaxed">
-                  Dr. Emmanuel Okoro is a distinguished cardiologist and a 1985 graduate of FGC Enugu. With over 25 years of experience in healthcare leadership and international philanthropy, he brings a wealth of strategic vision to the association. He is committed to leveraging technology to unite alumni across the globe.
+                  Engr. Nnadozie Eze is a proud alumnus of Federal Government College Enugu (Class of 1993) and serves as President of FGCEOSA (2021-23), leading Team SEAL under the theme &quot;Powering Progress Together.&quot; He is committed to alumni welfare, institutional development, and fostering unity across all chapters and class sets.
                 </p>
               </div>
             </RevealAnimation>
@@ -67,7 +77,7 @@ const PresidentMessage = () => {
               <div className="bg-white dark:bg-background-7 p-6 rounded-2xl border border-gray-100 dark:border-stroke-7 shadow-sm flex items-center justify-between">
                 <span className="text-gray-400 font-medium">Term in Office</span>
                 <span className="bg-secondary/10 text-secondary dark:bg-accent/10 dark:text-accent px-4 py-1 rounded-full font-bold text-sm uppercase tracking-wider">
-                  2023 - 2025
+                   2021 - 2023
                 </span>
               </div>
             </RevealAnimation>

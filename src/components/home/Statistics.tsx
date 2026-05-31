@@ -7,9 +7,9 @@ import RevealAnimation from '../animation/RevealAnimation';
 const data = [
   {
     id: '1',
-    title: 'Alumni Network',
-    value: '5,000+',
-    description: 'Connected alumni across the globe.',
+    title: 'Impactful Projects',
+    value: '17+',
+    description: 'Completed projects for the alma mater.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const data = [
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+          d="M20.25 14.15v4.25c0 .621-.504 1.125-1.125 1.125H4.875c-.621 0-1.125-.504-1.125-1.125v-4.25m16.5 0a2.25 2.25 0 0 0-2.25-2.25H5.625a2.25 2.25 0 0 0-2.25 2.25m16.5 0v2.25a2.25 2.25 0 0 1-2.25 2.25H5.625a2.25 2.25 0 0 1-2.25-2.25v-2.25m13.5-3V4.625c0-.621-.504-1.125-1.125-1.125H8.25c-.621 0-1.125.504-1.125 1.125v4.25"
         />
       </svg>
     ),
@@ -29,7 +29,7 @@ const data = [
   {
     id: '2',
     title: 'Years of Excellence',
-    value: '50+',
+    value: '30+',
     description: 'Preserving the heritage of FGC Enugu.',
     icon: (
       <svg
@@ -49,51 +49,8 @@ const data = [
   },
   {
     id: '3',
-    title: 'Impactful Projects',
-    value: '100+',
-    description: 'Completed projects for the alma mater.',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="2"
-        stroke="currentColor"
-        className="size-6">
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M20.25 14.15v4.25c0 .621-.504 1.125-1.125 1.125H4.875c-.621 0-1.125-.504-1.125-1.125v-4.25m16.5 0a2.25 2.25 0 0 0-2.25-2.25H5.625a2.25 2.25 0 0 0-2.25 2.25m16.5 0v2.25a2.25 2.25 0 0 1-2.25 2.25H5.625a2.25 2.25 0 0 1-2.25-2.25v-2.25m13.5-3V4.625c0-.621-.504-1.125-1.125-1.125H8.25c-.621 0-1.125.504-1.125 1.125v4.25"
-        />
-      </svg>
-    ),
-  },
-  {
-    id: '4',
-    title: 'Regional Chapters',
-    value: '12+',
-    description: 'Active chapters supporting members locally.',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="2"
-        stroke="currentColor"
-        className="size-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-        />
-      </svg>
-    ),
-  },
-  {
-    id: '5',
     title: 'Scholarships Awarded',
-    value: '200+',
+    value: '75+',
     description: 'Empowering the next generation of students.',
     icon: (
       <svg
@@ -107,6 +64,27 @@ const data = [
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+        />
+      </svg>
+    ),
+  },
+  {
+    id: '4',
+    title: 'Alumni Network',
+    value: '500+',
+    description: 'Connected alumni across the globe.',
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="2"
+        stroke="currentColor"
+        className="size-6">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
         />
       </svg>
     ),
@@ -146,15 +124,15 @@ const Statistics = () => {
                     </div>
                   </div>
 
-                  <div className="group-https://fgceoapp.netlify.app/sign-up :translate-y-[-4px] transform transition-all duration-500 ease-in-out">
-                    <h3 className="text-secondary dark:text-accent text-xl font-black transition-colors duration-500 ease-in-out group-hover:text-white md:text-2xl">
+                  <div className="group-hover:translate-y-[-4px] transform transition-all duration-500 ease-in-out">
+                    <h3 className="text-secondary dark:text-cyan-400 text-xl font-black transition-colors duration-500 ease-in-out group-hover:text-white md:text-2xl">
                       {item.value}
                     </h3>
-                    <p className="mb-1 text-sm font-medium transition-colors duration-500 ease-in-out group-hover:text-white/80">
+                    <p className="mb-1 text-sm font-semibold text-black/80 dark:text-white/90 transition-colors duration-500 ease-in-out group-hover:text-white/80">
                       {item.title}
                     </p>
 
-                    <p className="dark:text-accent/60 transform text-xs text-black transition-all duration-500 ease-in-out group-hover:translate-y-[4px] group-hover:text-white/60">
+                    <p className="dark:text-white/60 transform text-xs text-black/60 transition-all duration-500 ease-in-out group-hover:translate-y-[4px] group-hover:text-white/60">
                       {item.description}
                     </p>
                   </div>

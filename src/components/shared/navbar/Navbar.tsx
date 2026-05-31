@@ -40,9 +40,6 @@ const Navbar = () => {
                 </figure>
                 <div className="flex flex-col leading-tight">
                   <span className="text-heading-6 text-accent font-bold tracking-tight">FGCEOSA</span>
-                  <span className="md:text-tagline-3 text-accent/80 text-[9px] font-medium tracking-wider uppercase">
-                    FGC Enugu Ex-students association
-                  </span>
                 </div>
               </Link>
             </div>

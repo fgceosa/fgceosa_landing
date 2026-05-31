@@ -4,7 +4,6 @@ import Blog from '@/components/home/Blog';
 import CTA from '@/components/home/CTA';
 import FAQ from '@/components/home/FAQ';
 import GalleryCTA from '@/components/home/GalleryCTA';
-import JoinUs from '@/components/home/JoinUs';
 import NewsEvents from '@/components/home/NewsEvents';
 import OurImpact from '@/components/home/OurImpact';
 import Statistics from '@/components/home/Statistics';
@@ -35,9 +34,8 @@ const page = () => {
       <Statistics />
       <OurImpact />
       <GalleryCTA />
-      <JoinUs />
-      <NewsEvents />
       <ConnectionBanner />
+      <NewsEvents />
     </main>
   );
 };

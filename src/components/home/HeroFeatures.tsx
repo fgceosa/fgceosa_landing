@@ -42,16 +42,16 @@ const features = [
 const HeroFeatures = () => {
   return (
     <div className="main-container mt-10 mb-5">
-      <div className="grid grid-cols-1 gap-8 rounded-2xl bg-white p-8 shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:p-10">
+      <div className="grid grid-cols-1 gap-8 rounded-2xl bg-white dark:bg-background-8 p-8 shadow-[0_20px_50px_rgba(0,0,0,0.06)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:p-10 border border-gray-100 dark:border-white/5">
         {features.map((feature, index) => (
           <RevealAnimation key={index} delay={0.1 * (index + 1)}>
-            <div className="flex items-start gap-4 text-left">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-secondary text-white shadow-md">
+            <div className="flex items-start gap-4 text-left group p-2.5 rounded-xl hover:bg-gray-50/80 dark:hover:bg-white/5 transition-all duration-300 hover:-translate-y-1">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-secondary text-white shadow-md transition-transform duration-300 group-hover:scale-110">
                 {feature.icon}
               </div>
               <div className="space-y-1">
-                <h4 className="text-lg font-bold text-secondary leading-tight">{feature.title}</h4>
-                <p className="text-sm text-gray-600 line-clamp-2">{feature.text}</p>
+                <h4 className="text-lg font-bold text-secondary dark:text-cyan-400 leading-tight transition-colors duration-300 group-hover:text-cyan-600 dark:group-hover:text-cyan-300">{feature.title}</h4>
+                <p className="text-sm text-gray-600 dark:text-white/60 line-clamp-2">{feature.text}</p>
               </div>
             </div>
           </RevealAnimation>

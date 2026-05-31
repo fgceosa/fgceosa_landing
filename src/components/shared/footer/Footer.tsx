@@ -90,9 +90,6 @@ const Footer = ({ className }: { className?: string }) => {
                 </figure>
                 <div className="flex flex-col">
                   <span className="text-xl font-bold tracking-wider text-white">FGCEOSA</span>
-                  <span className="text-[10px] leading-tight font-bold tracking-widest text-white/50 uppercase">
-                    FGC Enugu <br /> Old Students Association
-                  </span>
                 </div>
               </div>
               <p className="max-w-[550px] text-base leading-relaxed font-normal text-white/50">

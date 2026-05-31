@@ -4,56 +4,97 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 import OfficerCard from '@/components/exco-officers/OfficerCard';
 import ExcoCTA from '@/components/exco-officers/ExcoCTA';
 
-// Sample officer data (replace with real data as needed)
-const galleryImages = [
-  '/images/gallery_1.png',
-  '/images/gallery_2.png',
-  '/images/gallery_3.png',
-  '/images/gallery_4.png',
-  '/images/gallery_1.png',
-  '/images/gallery_2.png',
-  '/images/gallery_3.png',
-  '/images/gallery_4.png',
-  '/images/gallery_1.png',
-];
-
 const officersData = [
   {
-    name: 'Alice Johnson',
+    name: 'Nnadozie Eze',
+    year: 2021,
+    department: 'Leadership',
+    image: '/images/excos/nadozie.jpeg',
+    bio: 'The President (2021-2023) | Class of 1993, Honesty House',
+  },
+  {
+    name: 'Amara Nzelu-Erikume',
+    year: 2021,
+    department: 'Leadership',
+    image: '/images/excos/Amara-Nzelu-Erikume-1st-Vice-President-resized.jpg',
+    bio: '1st Vice President (2021-2023) | Class of 1998, Independence House',
+  },
+  {
+    name: 'Odera Udutchay',
+    year: 2021,
+    department: 'Leadership',
+    image: '/images/excos/Odera-Udutchay-2nd-Vice-President-resized.jpg',
+    bio: '2nd Vice President (2021-2023) | Class of 2007, Honesty House',
+  },
+  {
+    name: 'Obinna Anikwe',
+    year: 2021,
+    department: 'Secretariat',
+    image: '/images/excos/sec-gen-obinna-anikwe-1.jpg',
+    bio: 'Secretary General (2021-2023) | Class of 1991, Peace House',
+  },
+  {
+    name: 'Chibueze Ogodo',
+    year: 2021,
+    department: 'Secretariat',
+    image: '/images/excos/Chibueze-Ogodo-asst-sec-gen-resized.jpg',
+    bio: 'Assistant Secretary General (2021-2023) | Class of 1998, Liberty House',
+  },
+  {
+    name: 'Ifeanyi Mbah',
     year: 2021,
     department: 'Finance',
-    image: galleryImages[0],
-    bio: 'Leading financial strategy.',
+    image: '/images/Kingsley-Mbah-Treasurer-resized.jpg',
+    bio: 'Treasurer (2021-2023) | Class of 1997, National House',
   },
   {
-    name: 'Bob Smith',
-    year: 2022,
+    name: 'Chidiogo Ezejiofor',
+    year: 2021,
+    department: 'Finance',
+    image: '/images/excos/Chidiogo-Ezejiofor-Financial-Secretary-resized.jpg',
+    bio: 'Financial Secretary (2021-2023) | Class of 1983, Liberty House',
+  },
+  {
+    name: 'Paul Ojinta',
+    year: 2021,
+    department: 'Welfare & Publicity',
+    image: '/images/excos/Paul-Ojinta-Welfare-Publicity-Secretary-resized.jpg',
+    bio: 'Publicity And Welfare Secretary (2021-2023) | Class of 1993, Liberty House',
+  },
+  {
+    name: 'Prince Okezie Nnabueze',
+    year: 2021,
+    department: 'Welfare & Publicity',
+    image: '/images/excos/Prince-Nnabueze-Okezie-Assistant-Welfare-Publicity-Secretary-resized.jpg',
+    bio: 'Assistant Publicity And Welfare Secretary (2021-2023) | Class of 2004, Independence House',
+  },
+  {
+    name: 'Peter Ohabuenyi',
+    year: 2021,
+    department: 'Finance',
+    image: '/images/excos/Peter-Ohabuenyiauditor.jpg',
+    bio: 'Internal Auditor (2021-2023) | Class of 2000, Independence House',
+  },
+  {
+    name: "Umar Sa'ad",
+    year: 2021,
     department: 'Operations',
-    image: galleryImages[1],
-    bio: 'Overseeing daily operations.',
-  },
-  { name: 'Carol Lee', year: 2023, department: 'Marketing', image: galleryImages[2], bio: 'Driving brand growth.' },
-  {
-    name: 'David Patel',
-    year: 2024,
-    department: 'Technology',
-    image: galleryImages[3],
-    bio: 'Innovating tech solutions.',
-  },
-  { name: 'Frank Wu', year: 2020, department: 'Legal', image: galleryImages[5], bio: 'Ensuring compliance.' },
-  {
-    name: 'Hannah Kim',
-    year: 2022,
-    department: 'Customer Success',
-    image: galleryImages[7],
-    bio: 'Championing client satisfaction.',
+    image: '/images/excos/Umar-Saad.jpg',
+    bio: 'Provost (2021-2023) | Class of 1993, Liberty House',
   },
   {
-    name: 'Ian Chen',
-    year: 2023,
-    department: 'Business Development',
-    image: galleryImages[8],
-    bio: 'Expanding partnerships.',
+    name: 'Chinyere Okoli',
+    year: 2021,
+    department: 'Legal',
+    image: '/images/excos/Chinyere-Atalaor-Legal-Adviser.jpg',
+    bio: 'Legal Adviser (2021-2023) | Class of 1997, National House',
+  },
+  {
+    name: 'Jekwu Ozoemene',
+    year: 2021,
+    department: 'Leadership',
+    image: '/images/excos/Dr.-Jekwu-Ozoemene',
+    bio: 'Ex-Officio (2021-2023) | Class of 1990, Peace House',
   },
 ];
 
@@ -63,15 +104,31 @@ const departments = Array.from(new Set(officersData.map((o) => o.department)));
 // Year range options
 const yearRanges = [
   { label: 'All', from: 0, to: 9999 },
-  { label: '2020‑2022', from: 2020, to: 2022 },
-  { label: '2023‑2025', from: 2023, to: 2025 },
-  { label: '2026‑2028', from: 2026, to: 2028 },
+  { label: '2021‑2023', from: 2021, to: 2023 },
 ];
 
 // Department Icon Components
+const DeptIconLeadership = () => (
+  <svg className="size-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+  </svg>
+);
+
+const DeptIconSecretariat = () => (
+  <svg className="size-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-2.25 3h3m-3.75 3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+  </svg>
+);
+
 const DeptIconFinance = () => (
-  <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 1C6.48 1 2 5.48 2 11s4.48 10 10 10 10-4.48 10-10S17.52 1 12 1m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 7 15.5 7 14 7.67 14 8.5s.67 1.5 1.5 1.5m-7 0c.83 0 1.5-.67 1.5-1.5S9.33 7 8.5 7 7 7.67 7 8.5 7.67 10 8.5 10m3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5" />
+  <svg className="size-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-1.958-.659-1.171-.879-1.171-2.303 0-3.182 1.172-.879 3.07-.879 4.242 0L15 8.8" />
+  </svg>
+);
+
+const DeptIconWelfarePublicity = () => (
+  <svg className="size-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
   </svg>
 );
 
@@ -81,56 +138,19 @@ const DeptIconOps = () => (
   </svg>
 );
 
-const DeptIconMarketing = () => (
-  <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M21 16v-5h-3V4c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h14v2h3c.55 0 1-.45 1-1zm-11-7h2v2h-2zm-2 2h2v2H8zm4 0h2v2h-2zm-6-4h10v2H6zm0 4h2v2H6z" />
-  </svg>
-);
-
-const DeptIconTech = () => (
-  <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M9 17H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h18V2H1v8h18zm-6 2H9c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zm-3 6H8v-4h2v4zm6 0h-2v-4h2v4z" />
-  </svg>
-);
-
-const DeptIconHR = () => (
-  <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm8 0c1.66 0 2.99-1.34 2.99-3S25.66 5 24 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.5 1.06 2.5 2.75 2.5 4.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-  </svg>
-);
-
 const DeptIconLegal = () => (
-  <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-  </svg>
-);
-
-const DeptIconProduct = () => (
-  <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2--.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
-  </svg>
-);
-
-const DeptIconCS = () => (
-  <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M11.99 5V1h-1v4H1v3h4v16h3V8h6v12h3V8h4V5h-9z" />
-  </svg>
-);
-
-const DeptIconBizDev = () => (
-  <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 7 15.5 7 14 7.67 14 8.5s.67 1.5 1.5 1.5m-7 0c.83 0 1.5-.67 1.5-1.5S9.33 7 8.5 7 7 7.67 7 8.5 7.67 10 8.5 10m3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5" />
+  <svg className="size-5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M3 12h18m-9-9 9 9-9 9-9-9 9-9Z" />
   </svg>
 );
 
 const departmentIcons: { [key: string]: React.FC } = {
+  Leadership: DeptIconLeadership,
+  Secretariat: DeptIconSecretariat,
   Finance: DeptIconFinance,
+  'Welfare & Publicity': DeptIconWelfarePublicity,
   Operations: DeptIconOps,
-  Marketing: DeptIconMarketing,
-  Technology: DeptIconTech,
   Legal: DeptIconLegal,
-  'Customer Success': DeptIconCS,
-  'Business Development': DeptIconBizDev,
 };
 
 const AllIcon = () => (
@@ -167,7 +187,7 @@ export default function ExcoOfficersSection() {
                   <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v1c0 .55.45 1 1 1h18c.55 0 1-.45 1-1v-1c0-3.33-6.67-5-10-5z" />
                 </svg>
               </div>
-              <h2 className="text-secondary text-lg font-bold text-gray-900">Executive Committee (2026-2028)</h2>
+              <h2 className="text-secondary text-lg font-bold text-gray-900">Executive Committee (2021-2023)</h2>
 
               <p className="text-sm leading-relaxed text-gray-600">
                 Meet the dedicated leaders driving our organization forward with vision, expertise, and commitment to

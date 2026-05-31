@@ -59,8 +59,8 @@ const PresidentBanner = () => {
           <div className="flex flex-col items-center">
             <div className="size-40 md:size-64 rounded-full border-8 border-white dark:border-background-7 overflow-hidden shadow-2xl bg-white mb-6">
               <Image
-                src="/images/president_portrait.png"
-                alt="Dr. Emmanuel Okoro"
+                src="/images/excos/nadozie.jpeg"
+                alt="Engr. Nnadozie Eze"
                 width={300}
                 height={300}
                 className="size-full object-cover"
@@ -69,9 +69,9 @@ const PresidentBanner = () => {
 
             {/* Name, Year, Title under the pic */}
             <div className="text-center space-y-2">
-              <h2 className="text-secondary dark:text-accent text-2xl md:text-4xl font-black">Dr. Emmanuel Okoro</h2>
+              <h2 className="text-secondary dark:text-accent text-2xl md:text-4xl font-black">Engr. Nnadozie Eze</h2>
               <div className="flex flex-col items-center">
-                <p className="text-secondary/60 dark:text-white/60 font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase text-[10px] md:text-sm">Global President | 2023 - 2025</p>
+                <p className="text-secondary/60 dark:text-white/60 font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase text-[10px] md:text-sm">President | 2021 - 2023</p>
                 <div className="h-1 w-16 bg-[#d4af37] mt-3 rounded-full shadow-sm"></div>
               </div>
             </div>

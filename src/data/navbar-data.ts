@@ -8,20 +8,24 @@ export const mobileMenuData: MobileMenuGroup[] = [
   //   href: '/',
   // },
   {
-    id: 'about',
-    title: 'About',
-    submenu: [
-      { id: 'about-fgce', label: 'About FGCE', href: '/about' },
-      { id: 'presidents-message', label: "President's Message", href: '/presidents-message' },
-      //   ],
-      // },
-      // {
-      //   id: 'exco',
-      //   title: 'Exco',
-      //   submenu: [
-      { id: 'constitution', label: 'The Constitution', href: '/constitution' },
-      { id: 'exco-officers', label: 'Exco Officers', href: '/exco-officers' },
-    ],
+    id: 'about-fgce',
+    title: 'About FGCE',
+    href: '/about',
+  },
+  {
+    id: 'presidents-message',
+    title: "President's Message",
+    href: '/presidents-message',
+  },
+  {
+    id: 'constitution',
+    title: 'The Constitution',
+    href: '/constitution',
+  },
+  {
+    id: 'exco-officers',
+    title: 'Exco Officers',
+    href: '/exco-officers',
   },
   {
     id: 'alumni-world',

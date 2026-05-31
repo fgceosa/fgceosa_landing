@@ -42,17 +42,17 @@ const features = [
 const AboutFeatures = () => {
   return (
     <div className="main-container w-full mt-10 mb-10">
-      <div className="grid grid-cols-1 gap-10 rounded-3xl bg-white p-8 shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:grid-cols-2 lg:grid-cols-4 lg:p-12 border border-gray-100">
+      <div className="grid grid-cols-1 gap-10 rounded-3xl bg-white dark:bg-background-8 p-8 shadow-[0_20px_50px_rgba(0,0,0,0.06)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] md:grid-cols-2 lg:grid-cols-4 lg:p-12 border border-gray-100 dark:border-white/5">
         {features.map((feature, index) => (
           <RevealAnimation key={index} delay={0.1 * (index + 1)}>
-            <div className="group flex items-start gap-6 text-left">
+            <div className="group flex items-start gap-6 text-left hover:-translate-y-1 transition-all duration-300">
               {/* Left Column: Icons */}
               <div className="flex flex-col items-center gap-6 shrink-0">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-white shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-secondary/20">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-white shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-secondary/20">
                   {feature.icon}
                 </div>
                 {/* Arrow Icon Button */}
-                <div className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-secondary text-secondary transition-all duration-300 hover:bg-secondary hover:text-white cursor-pointer shadow-sm">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-secondary dark:border-cyan-400 text-secondary dark:text-cyan-400 transition-all duration-300 group-hover:bg-secondary dark:group-hover:bg-cyan-500 group-hover:text-white cursor-pointer shadow-sm">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -67,10 +67,10 @@ const AboutFeatures = () => {
 
               {/* Right Column: Text Content */}
               <div className="space-y-3 pt-1">
-                <h4 className="text-xl font-bold text-black leading-tight transition-colors group-hover:text-secondary">
+                <h4 className="text-xl font-bold text-black dark:text-white leading-tight transition-colors group-hover:text-secondary dark:group-hover:text-cyan-400">
                   {feature.title}
                 </h4>
-                <p className="text-sm text-gray-600 leading-relaxed font-medium">
+                <p className="text-sm text-gray-600 dark:text-white/60 leading-relaxed font-medium">
                   {feature.text}
                 </p>
               </div>
