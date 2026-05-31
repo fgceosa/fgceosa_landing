@@ -1,8 +1,9 @@
-import PresidentBanner from '@/components/presidents-message/PresidentBanner';
-import PresidentMessage from '@/components/presidents-message/PresidentMessage';
-import PresidentCTA from '@/components/presidents-message/PresidentCTA';
-import Navbar from '@/components/shared/navbar/Navbar';
-import Footer from '@/components/shared/footer/Footer';
+import LeadershipHero from '@/components/presidents-message/LeadershipHero';
+import KeyHighlights from '@/components/presidents-message/KeyHighlights';
+import StructuredMessage from '@/components/presidents-message/StructuredMessage';
+import AlumniImpact from '@/components/presidents-message/AlumniImpact';
+import PresidentProfile from '@/components/presidents-message/PresidentProfile';
+import FinalLeadershipCTA from '@/components/presidents-message/FinalLeadershipCTA';
 
 export const metadata = {
   title: "President's Message | FGCEOSA",
@@ -12,9 +13,12 @@ export const metadata = {
 export default function PresidentsMessagePage() {
   return (
     <main className="min-h-screen dark:bg-background-7 bg-white overflow-x-hidden">
-      <PresidentBanner />
-      <PresidentMessage />
-      <PresidentCTA />
+      <LeadershipHero />
+      <KeyHighlights />
+      <StructuredMessage />
+      <AlumniImpact />
+      <PresidentProfile />
+      <FinalLeadershipCTA />
     </main>
   );
 }
