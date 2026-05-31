@@ -2,43 +2,45 @@ import { MobileMenuGroup } from '@/components/shared/mobile-menu/MobileMenu';
 import { FooterOneData } from '@/interface';
 
 export const mobileMenuData: MobileMenuGroup[] = [
-  // {
-  //   id: 'home',
-  //   title: 'Home',
-  //   href: '/',
-  // },
   {
-    id: 'about-fgce',
-    title: 'About FGCE',
-    href: '/about',
+    id: 'about',
+    title: 'About',
+    submenu: [
+      { id: 'about-us', label: 'About Us', href: '/about' },
+      { id: 'presidents-message', label: "President's Message", href: '/presidents-message' },
+      { id: 'constitution', label: 'The Constitution', href: '/constitution' },
+    ],
   },
   {
-    id: 'presidents-message',
-    title: "President's Message",
-    href: '/presidents-message',
+    id: 'community',
+    title: 'Community',
+    submenu: [
+      { id: 'directory', label: 'Alumni Directory', href: '/directory' },
+      { id: 'chapters', label: 'Chapters', href: '#' },
+      { id: 'spotlight', label: 'Alumni Spotlight', href: '#spotlight' },
+    ],
   },
   {
-    id: 'constitution',
-    title: 'The Constitution',
-    href: '/constitution',
+    id: 'impact',
+    title: 'Impact',
+    submenu: [
+      { id: 'projects', label: 'Projects', href: '/projects' },
+      { id: 'scholarships', label: 'Scholarships', href: '/projects#scholarships' },
+    ],
   },
   {
-    id: 'exco-officers',
-    title: 'Exco Officers',
+    id: 'events',
+    title: 'Events',
+    href: '#events',
+  },
+  {
+    id: 'leadership',
+    title: 'Leadership',
     href: '/exco-officers',
   },
   {
-    id: 'alumni-world',
-    title: 'Alumni World',
-    submenu: [
-      { id: 'projects', label: 'Project & Programmes', href: '/projects' },
-      { id: 'spotlight', label: 'Alumni Spotlight', href: '#' },
-    ],
-  },
-
-  {
     id: 'contact',
-    title: 'Contact Us',
+    title: 'Contact',
     href: '/contact-us',
   },
 ];

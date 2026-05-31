@@ -1,4 +1,4 @@
-import HeroImageCenter from '@public/images/fgc-building-new.png';
+import HeroImageCenter from '@public/images/alumni_reunion.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 

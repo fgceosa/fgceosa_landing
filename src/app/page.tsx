@@ -1,21 +1,14 @@
-import AboutUs from '@/components/home/AboutUs';
-import Accessibility from '@/components/home/Accessibility';
-import Blog from '@/components/home/Blog';
-import CTA from '@/components/home/CTA';
-import FAQ from '@/components/home/FAQ';
-import GalleryCTA from '@/components/home/GalleryCTA';
-import NewsEvents from '@/components/home/NewsEvents';
-import OurImpact from '@/components/home/OurImpact';
-import Statistics from '@/components/home/Statistics';
-import Testimonials from '@/components/home/Testimonials';
-import WhatWeDo from '@/components/home/WhatWeDo';
-import { defaultMetadata } from '@/utils/generateMetaData';
 import Hero from '@/components/home/Hero';
-import HeroFeatures from '@/components/home/HeroFeatures';
+import ImpactSnapshot from '@/components/home/ImpactSnapshot';
+import WhyJoin from '@/components/home/WhyJoin';
+import AlumniSpotlight from '@/components/home/AlumniSpotlight';
+import CommunityImpact from '@/components/home/CommunityImpact';
+import Testimonials from '@/components/home/Testimonials';
+import NewsEvents from '@/components/home/NewsEvents';
+import LeadershipSpotlight from '@/components/home/LeadershipSpotlight';
+import FinalCTA from '@/components/home/FinalCTA';
+import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
-
-import ConnectionBanner from '@/components/home/ConnectionBanner';
-import AboutFeatures from '@/components/home/AboutFeatures';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
@@ -26,16 +19,14 @@ const page = () => {
   return (
     <main className="dark:bg-background-7 bg-white overflow-x-hidden">
       <Hero />
-      <HeroFeatures />
-      {/* <div className="bg-secondary h-[100px] w-full rounded-t-[10px] relative z-0" /> */}
-      <AboutUs />
-      <AboutFeatures />
-      <WhatWeDo />
-      <Statistics />
-      <OurImpact />
-      <GalleryCTA />
-      <ConnectionBanner />
+      <ImpactSnapshot />
+      <WhyJoin />
+      <AlumniSpotlight />
+      <CommunityImpact />
+      <Testimonials />
       <NewsEvents />
+      <LeadershipSpotlight />
+      <FinalCTA />
     </main>
   );
 };

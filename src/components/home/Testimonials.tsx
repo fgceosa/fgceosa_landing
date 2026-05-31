@@ -2,9 +2,9 @@
 
 import { NavigationArrow, QuoteIcon } from '@/icons';
 import { cn } from '@/utils/cn';
-import avatar6 from '@public/images/ns-avatar-6.png';
-import avatar7 from '@public/images/ns-avatar-7.png';
-import avatar8 from '@public/images/ns-avatar-8.png';
+import avatar1 from '@public/images/excos/Chinyere-Atalaor-Legal-Adviser.jpg';
+import avatar2 from '@public/images/excos/Peter-Ohabuenyiauditor.jpg';
+import avatar3 from '@public/images/excos/sec-gen-obinna-anikwe-1.jpg';
 import Image, { StaticImageData } from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -23,24 +23,24 @@ interface TestimonialReview {
 const testimonialReviews: TestimonialReview[] = [
   {
     id: 1,
-    name: 'Lana Stone',
-    position: '@lana_stone',
-    image: avatar6,
-    text: 'NextSaaS helped me shift from passive saving to active investing—with zero stress.',
+    name: 'Chinyere Atalaor',
+    position: 'Legal Adviser | Class of 1993',
+    image: avatar1,
+    text: 'FGCEOSA helped me reconnect with classmates after 20 years. The bond remains unbreakable, and it feels great to support our school.',
   },
   {
     id: 2,
-    name: 'Sarah Johnson',
-    position: '@sarah_j',
-    image: avatar7,
-    text: "The platform's intuitive design made investing accessible for someone like me who was completely new to it.",
+    name: 'Peter Ohabuenyi',
+    position: 'Auditor | Class of 2004',
+    image: avatar2,
+    text: "The mentorship network played a key role in my career transition. Alumni are always ready to lift others and share opportunities.",
   },
   {
     id: 3,
-    name: 'Mike Chen',
-    position: '@mike_chen',
-    image: avatar8,
-    text: "I've seen a 40% increase in my portfolio since switching to NextSaaS. Highly recommended!",
+    name: 'Obinna Anikwe',
+    position: 'Secretary General | Class of 1988',
+    image: avatar3,
+    text: "Supporting students through the FGCEOSA scholarship program gives me a direct way to give back to the institution that shaped me.",
   },
 ];
 
@@ -50,10 +50,12 @@ const Testimonials = () => {
       <div className="main-container">
         <div className="mx-auto mb-[70px] max-w-[850px] space-y-5 text-center">
           <RevealAnimation delay={0.1}>
-            <span className="badge badge-cyan">Testimonials</span>
+            <div className="bg-secondary/5 border-secondary/10 inline-flex items-center gap-2 rounded-full border px-4 py-2 justify-center mx-auto">
+              <span className="text-secondary text-[10px] font-black tracking-[0.2em] uppercase">Testimonials</span>
+            </div>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
-            <h2>What our clients say</h2>
+            <h2 className="text-black dark:text-white font-bold leading-tight">What Our <span className="text-secondary">Alumni Say</span></h2>
           </RevealAnimation>
         </div>
         <RevealAnimation delay={0.3}>

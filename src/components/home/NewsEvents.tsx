@@ -71,7 +71,7 @@ const news = [
 
 const NewsEvents = () => {
   return (
-    <section className="py-16 md:py-12 bg-white dark:bg-background-9 relative overflow-hidden">
+    <section id="events" className="py-12 md:py-10 bg-white dark:bg-background-9 relative overflow-hidden scroll-mt-24">
       <div className="main-container relative z-10">
         <div className="mx-auto mb-20 max-w-[850px] text-center">
           {/* Entrance Badge: ---- icon NEWS & EVENTS ____ bordered */}

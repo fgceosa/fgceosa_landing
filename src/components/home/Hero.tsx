@@ -19,14 +19,12 @@ const Hero = () => {
                   <RevealAnimation delay={0.2}>
                     <h2 className="leading-[1.1] font-bold text-black dark:text-white">
                       Stronger Together. <br />
-                      United Forever. <br />
-                      <span className="text-secondary font-bold">Pro Unitate.</span>
+                      <span className="text-secondary font-bold">Building the Future of FGCE Alumni.</span>
                     </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
                     <p className="mx-auto max-w-[550px] text-sm text-black/75 dark:text-white/85 md:mx-0 md:text-base">
-                      FGCEOSA is a global community of proud alumni of Federal Government College Enugu, connecting
-                      generations, empowering members and creating lasting impact.
+                      FGCEOSA connects thousands of alumni worldwide through networking, mentorship, scholarships, development projects, and lifelong community.
                     </p>
                   </RevealAnimation>
                 </div>
@@ -52,15 +50,15 @@ const Hero = () => {
                           d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a5.97 5.97 0 0 0-.942 3.197M12 10.5a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75ZM12 10.5a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75Zm-5.625 2.625a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75Zm11.25 0a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75Z"
                         />
                       </svg>
-                      <span>Join the Community</span>
+                      <span>Join FGCEOSA</span>
                     </div>
                   </LinkButton>
                   <LinkButton
-                    href="/about"
+                    href="#impact-snapshot"
                     insideSpan={false}
                     className="btn btn-outline border-secondary text-secondary hover:bg-secondary hover:text-accent btn-lg flex shrink-0 items-center gap-2 rounded-md px-6 font-bold">
                     <div className="flex items-center gap-2 whitespace-nowrap">
-                      <span>Learn More</span>
+                      <span>Explore Our Impact</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
