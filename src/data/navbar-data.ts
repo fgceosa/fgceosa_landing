@@ -3,35 +3,24 @@ import { FooterOneData } from '@/interface';
 
 export const mobileMenuData: MobileMenuGroup[] = [
   {
-    id: 'about',
-    title: 'About',
-    submenu: [
-      { id: 'about-us', label: 'About Us', href: '/about' },
-      { id: 'presidents-message', label: "President's Message", href: '/presidents-message' },
-      { id: 'constitution', label: 'The Constitution', href: '/constitution' },
-    ],
+    id: 'about-us',
+    title: 'About Us',
+    href: '/about',
   },
   {
-    id: 'community',
-    title: 'Community',
-    submenu: [
-      { id: 'directory', label: 'Alumni Directory', href: '/directory' },
-      { id: 'chapters', label: 'Chapters', href: '#' },
-      { id: 'spotlight', label: 'Alumni Spotlight', href: '#spotlight' },
-    ],
+    id: 'presidents-message',
+    title: "President's Message",
+    href: '/presidents-message',
   },
   {
-    id: 'impact',
-    title: 'Impact',
-    submenu: [
-      { id: 'projects', label: 'Projects', href: '/projects' },
-      { id: 'scholarships', label: 'Scholarships', href: '/projects#scholarships' },
-    ],
+    id: 'constitution',
+    title: 'The Constitution',
+    href: '/constitution',
   },
   {
-    id: 'events',
-    title: 'Events',
-    href: '#events',
+    id: 'projects',
+    title: 'Projects',
+    href: '/projects',
   },
   {
     id: 'leadership',
