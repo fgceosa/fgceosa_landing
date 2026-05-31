@@ -1,4 +1,4 @@
-import ContactBanner from '@/components/contact-us/ContactBanner';
+import ContactHero from '@/components/contact-us/ContactHero';
 import ContactFormSection from '@/components/contact-us/ContactFormSection';
 import ContactCTASection from '@/components/contact-us/ContactCTASection';
 import { defaultMetadata } from '@/utils/generateMetaData';
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 const ContactUs = () => {
   return (
-    <main className="dark:bg-background-7 bg-white overflow-x-hidden">
-      <ContactBanner />
+    <main className="dark:bg-background-8 bg-white overflow-x-hidden">
+      <ContactHero />
       <ContactFormSection />
       <ContactCTASection />
     </main>
