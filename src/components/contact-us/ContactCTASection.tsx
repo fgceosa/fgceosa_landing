@@ -16,7 +16,7 @@ const ContactCTASection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <LinkButton
-                href="https://fgceoapp.netlify.app/sign-up"
+                href="https://portal.allfgcealumni.org/sign-up"
                 target="_blank"
                 className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold bg-secondary text-white hover:bg-secondary/90 transition-all text-sm text-center shadow-lg"
               >

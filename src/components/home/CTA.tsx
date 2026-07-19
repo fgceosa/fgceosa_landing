@@ -30,7 +30,7 @@ const CTA = () => {
                 <RevealAnimation delay={0.4} direction="left" offset={50}>
                   <li className="w-full sm:w-auto">
                     <LinkButton
-                      href="https://fgceoapp.netlify.app/sign-up"
+                      href="https://portal.allfgcealumni.org/sign-up"
                       target="_blank"
                       className="btn btn-primary hover:btn-white btn-md w-[90%] border-0 sm:w-auto">
                       Sign up free

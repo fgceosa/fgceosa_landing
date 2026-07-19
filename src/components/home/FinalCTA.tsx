@@ -36,7 +36,7 @@ const FinalCTA = () => {
               {/* RHS - CTA Buttons */}
               <div className="lg:col-span-5 flex flex-col sm:flex-row gap-4 justify-center lg:justify-end w-full">
                 <Link
-                  href="https://fgceoapp.netlify.app/sign-up"
+                  href="https://portal.allfgcealumni.org/sign-up"
                   target="_blank"
                   className="group relative flex items-center justify-center gap-3 bg-white text-[#3F0606] px-6 py-4 rounded-[16px] font-black text-sm hover:shadow-2xl hover:scale-105 transition-all duration-300 whitespace-nowrap text-center">
                   Join FGCEOSA Today
