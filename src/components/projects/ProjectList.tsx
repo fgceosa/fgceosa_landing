@@ -9,21 +9,21 @@ const projects = [
     category: 'Completed',
     description:
       'A complete overhaul of the school library, providing modern study spaces and digital learning resources.',
-    image: '/images/library_renovation.png',
+    image: '/images/library_renovation_nigeria.png',
   },
   {
     id: 2,
     title: 'Solar Power Installation',
     category: 'Ongoing',
     description: 'Implementing sustainable solar energy solutions to provide 24/7 electricity to classrooms.',
-    image: '/images/solar_power_project.png',
+    image: '/images/solar_power_nigeria.jpg',
   },
   {
     id: 3,
     title: 'Sports Complex Upgrade',
     category: 'Planned',
     description: 'Proposed renovation of the sports field, including a new running track and basketball court.',
-    image: '/images/sports_complex_upgrade.png',
+    image: '/images/sports_complex_nigeria.jpg',
   },
 ];
 

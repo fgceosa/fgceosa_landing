@@ -35,7 +35,7 @@ const FinalCTA = () => {
             </div>
 
             <Link
-              href="https://fgceoapp.netlify.app/sign-up"
+              href="https://portal.allfgcealumni.org/sign-up"
               target="_blank"
               className="bg-secondary rounded-2xl px-10 py-5 text-lg font-black text-white shadow-2xl transition-all hover:-translate-y-1 hover:bg-[#d4af37]">
               Join FGCEOSA Today

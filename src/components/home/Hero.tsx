@@ -32,7 +32,7 @@ const Hero = () => {
               <RevealAnimation delay={0.4}>
                 <div className="flex flex-wrap items-center justify-center gap-3 md:flex-nowrap md:justify-start">
                   <LinkButton
-                    href="https://fgceoapp.netlify.app/sign-up"
+                    href="https://portal.allfgcealumni.org/sign-up"
                     target="_blank"
                     insideSpan={false}
                     className="btn btn-secondary btn-md md:btn-lg flex shrink-0 items-center gap-2 rounded-md px-5 font-bold md:px-6">

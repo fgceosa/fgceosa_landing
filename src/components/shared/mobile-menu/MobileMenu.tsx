@@ -111,7 +111,7 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
         {/* Footer CTA */}
         <div className="shrink-0 border-t border-white/10 pt-6">
           <Link
-            href="https://fgceoapp.netlify.app/sign-up"
+            href="https://portal.allfgcealumni.org/sign-up"
             target="_blank"
             onClick={closeMenu}
             className="text-secondary hover:bg-accent block w-full rounded-xl bg-white py-4 text-center font-bold shadow-lg transition-colors">

@@ -118,7 +118,7 @@ const JoinUs = () => {
               {/* RHS - CTA Button */}
               <div className="flex w-full justify-center lg:col-span-3 lg:justify-end">
                 <Link
-                  href="https://fgceoapp.netlify.app/sign-up"
+                  href="https://portal.allfgcealumni.org/sign-up"
                   target="_blank"
                   className="group relative flex w-full items-center justify-center gap-4 rounded-[16px] bg-white px-8 py-5 text-center text-base font-black whitespace-nowrap text-[#3F0606] transition-all duration-500 hover:scale-105 hover:shadow-2xl sm:w-auto md:text-lg">
                   Join FGCEOSA

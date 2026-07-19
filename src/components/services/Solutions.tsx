@@ -61,7 +61,7 @@ const Solutions = () => {
             <RevealAnimation delay={0.7}>
               <div className="text-center lg:text-left">
                 <LinkButton
-                  href="https://fgceoapp.netlify.app/sign-in"
+                  href="https://portal.allfgcealumni.org/sign-in"
                   target="_blank"
                   className="btn btn-xl dark:btn-transparent hover:btn-primary btn-secondary w-[90] sm:w-auto">
                   Get started
