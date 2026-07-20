@@ -1,7 +1,6 @@
 import Hero from '@/components/home/Hero';
 import ImpactSnapshot from '@/components/home/ImpactSnapshot';
 import WhyJoin from '@/components/home/WhyJoin';
-import AlumniSpotlight from '@/components/home/AlumniSpotlight';
 import CommunityImpact from '@/components/home/CommunityImpact';
 import Testimonials from '@/components/home/Testimonials';
 import NewsEvents from '@/components/home/NewsEvents';
@@ -21,7 +20,6 @@ const page = () => {
       <Hero />
       <ImpactSnapshot />
       <WhyJoin />
-      <AlumniSpotlight />
       <CommunityImpact />
       <Testimonials />
       <NewsEvents />

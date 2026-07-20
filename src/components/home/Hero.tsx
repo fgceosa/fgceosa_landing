@@ -18,10 +18,11 @@ const Hero = () => {
                 <div className="space-y-4">
                   <RevealAnimation delay={0.2}>
                     <h2 className="leading-[1.1] font-bold text-black dark:text-white">
-                      Stronger Together. <br />
+                      United in Legacy, Committed to Excellence. <br />
                       <span className="text-secondary font-bold">Building the Future of FGCE Alumni.</span>
                     </h2>
                   </RevealAnimation>
+
                   <RevealAnimation delay={0.3}>
                     <p className="mx-auto max-w-[550px] text-sm text-black/75 dark:text-white/85 md:mx-0 md:text-base">
                       FGCEOSA connects thousands of alumni worldwide through networking, mentorship, scholarships, development projects, and lifelong community.
