@@ -1,4 +1,3 @@
-import HeroImageCenter from '@public/images/alumni_reunion.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 
@@ -8,8 +7,8 @@ const HeroImages = () => {
       <RevealAnimation delay={0.2} offset={100} useSpring={true} duration={2}>
         <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-[16px] shadow-2xl">
           <Image
-            src={HeroImageCenter}
-            alt="Federal Government College Enugu"
+            src="/images/fgceosa_gate.jpeg"
+            alt="Federal Government College Enugu Gate"
             fill
             className="object-cover transition-transform duration-700 hover:scale-105"
             priority

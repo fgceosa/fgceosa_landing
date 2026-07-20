@@ -19,7 +19,7 @@ const Hero = () => {
                   <RevealAnimation delay={0.2}>
                     <h2 className="leading-[1.1] font-bold text-black dark:text-white">
                       United in Legacy, Committed to Excellence. <br />
-                      <span className="text-secondary font-bold">Building the Future of FGCE Alumni.</span>
+                      <span className="text-secondary font-bold">Building the Future of FGC Enugu Alumni.</span>
                     </h2>
                   </RevealAnimation>
 

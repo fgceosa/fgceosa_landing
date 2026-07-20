@@ -9,7 +9,7 @@ import Footer from '@/components/shared/footer/Footer';
 
 export const metadata = {
   title: "Projects & Programmes | FGCEOSA",
-  description: "Explore the various projects and programmes initiated by the Federal Government College Enugu Old Students Association (FGCEOSA) to support our alma mater.",
+  description: "Explore the various projects and programmes initiated by the All Federal Government College Enugu Ex-Students Association (aka FGCEOSA) to support our alma mater.",
 };
 
 export default function ProjectsPage() {

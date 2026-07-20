@@ -7,7 +7,7 @@ import FinalLeadershipCTA from '@/components/presidents-message/FinalLeadershipC
 
 export const metadata = {
   title: "President's Message | FGCEOSA",
-  description: "A message from the Global President of the Federal Government College Enugu Old Students Association (FGCEOSA).",
+  description: "A message from the Global President of the All Federal Government College Enugu Ex-Students Association (aka FGCEOSA).",
 };
 
 export default function PresidentsMessagePage() {

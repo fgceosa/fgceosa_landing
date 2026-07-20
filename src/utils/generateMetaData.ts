@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const DEFAULT_URL = 'https://fgceosa.org/';
-export const DEFAULT_TITLE = 'FGCEOSA - Federal Government College Enugu Old Students Association';
+export const DEFAULT_TITLE = 'All Federal Government College Enugu Ex-Students Association (aka FGCEOSA)';
 export const DEFAULT_DESCRIPTION =
   'The official platform for FGC Enugu alumni to connect, collaborate, and contribute to the growth of our alma mater. Pro Unitate.';
 export const DEFAULT_IMAGE_URL = '/images/fgceosa_logo.jpeg';
