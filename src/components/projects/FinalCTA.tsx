@@ -38,7 +38,11 @@ const FinalCTA = () => {
               href="https://portal.allfgcealumni.org/sign-up"
               target="_blank"
               className="bg-secondary rounded-2xl px-10 py-5 text-lg font-black text-white shadow-2xl transition-all hover:-translate-y-1 hover:bg-[#d4af37]">
-              Join FGCEOSA Today
+              <span className="inline-flex items-center">
+                <span className="mr-1.5 font-black">Join</span>
+                <span className="uppercase font-black mr-1.5">FGCEOSA</span>
+                <span className="font-black">Today</span>
+              </span>
             </Link>
           </div>
         </RevealAnimation>

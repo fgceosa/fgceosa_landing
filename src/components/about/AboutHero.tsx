@@ -34,7 +34,10 @@ const AboutHero = () => {
                   href="/signup"
                   insideSpan={false}
                   className="btn btn-secondary btn-md md:btn-lg rounded-md font-bold px-6 md:px-8 w-fit text-white">
-                  Join FGCEOSA
+                  <span className="!normal-case !first-letter:normal-case inline-flex items-center">
+                    <span className="mr-1.5">Join</span>
+                    <span className="uppercase">FGCEOSA</span>
+                  </span>
                 </LinkButton>
                 <LinkButton
                   href="#impact"

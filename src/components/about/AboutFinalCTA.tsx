@@ -31,7 +31,11 @@ const AboutFinalCTA = () => {
                 insideSpan={false}
                 className="w-full sm:w-auto btn bg-white text-secondary hover:bg-gray-100 btn-lg rounded-xl font-bold px-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
               >
-                Join FGCEOSA Now
+                <span className="!normal-case !first-letter:normal-case inline-flex items-center">
+                  <span className="mr-1.5">Join</span>
+                  <span className="uppercase mr-1.5">FGCEOSA</span>
+                  <span>Now</span>
+                </span>
               </LinkButton>
               
               <LinkButton

@@ -74,7 +74,11 @@ const ConnectionBanner = () => {
               {/* RHS - CTA Button */}
               <div className="lg:col-span-3 flex justify-center lg:justify-end w-full">
                 <Link href="#" className="group relative flex items-center justify-center gap-4 bg-white text-[#3F0606] px-8 py-5 rounded-[16px] font-black text-base md:text-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 whitespace-nowrap w-full sm:w-auto text-center">
-                  Join FGCEOSA Today
+                  <span className="inline-flex items-center">
+                    <span className="mr-1.5 font-black">Join</span>
+                    <span className="uppercase font-black mr-1.5">FGCEOSA</span>
+                    <span className="font-black">Today</span>
+                  </span>
                   <div className="flex items-center justify-center size-8 bg-[#3F0606] text-white rounded-full group-hover:translate-x-2 transition-transform duration-500 shadow-lg shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-4">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />

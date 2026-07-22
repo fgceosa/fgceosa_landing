@@ -29,7 +29,10 @@ const FinalLeadershipCTA = () => {
                 insideSpan={false}
                 className="w-full sm:w-auto btn bg-[#d4af37] text-white hover:bg-white hover:text-secondary btn-lg rounded-xl font-bold px-8 shadow-xl transition-all duration-300"
               >
-                Join FGCEOSA
+                <span className="!normal-case !first-letter:normal-case inline-flex items-center">
+                  <span className="mr-1.5">Join</span>
+                  <span className="uppercase">FGCEOSA</span>
+                </span>
               </LinkButton>
               
               <LinkButton

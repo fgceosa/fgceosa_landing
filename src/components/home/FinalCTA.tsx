@@ -39,7 +39,11 @@ const FinalCTA = () => {
                   href="https://portal.allfgcealumni.org/sign-up"
                   target="_blank"
                   className="group relative flex items-center justify-center gap-3 bg-white text-[#3F0606] px-6 py-4 rounded-[16px] font-black text-sm hover:shadow-2xl hover:scale-105 transition-all duration-300 whitespace-nowrap text-center">
-                  Join FGCEOSA Today
+                  <span className="inline-flex items-center">
+                    <span className="mr-1.5 font-black">Join</span>
+                    <span className="uppercase font-black mr-1.5">FGCEOSA</span>
+                    <span className="font-black">Today</span>
+                  </span>
                   <div className="flex items-center justify-center size-6 bg-[#3F0606] text-white rounded-full group-hover:translate-x-1 transition-transform duration-300 shadow-md shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-3">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />

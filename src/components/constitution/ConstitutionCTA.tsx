@@ -29,7 +29,10 @@ const ConstitutionCTA = () => {
                 insideSpan={false}
                 className="w-full sm:w-auto btn bg-white text-secondary font-bold px-8 py-3 rounded-xl btn-lg hover:bg-gray-100 shadow-xl transition-all"
               >
-                Join FGCEOSA
+                <span className="!normal-case !first-letter:normal-case inline-flex items-center">
+                  <span className="mr-1.5">Join</span>
+                  <span className="uppercase">FGCEOSA</span>
+                </span>
               </LinkButton>
               <LinkButton
                 href="/affiliates"

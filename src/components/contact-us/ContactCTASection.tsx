@@ -20,7 +20,11 @@ const ContactCTASection = () => {
                 target="_blank"
                 className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold bg-secondary text-white hover:bg-secondary/90 transition-all text-sm text-center shadow-lg"
               >
-                Join FGCEOSA Today
+                <span className="!normal-case !first-letter:normal-case inline-flex items-center">
+                  <span className="mr-1.5">Join</span>
+                  <span className="uppercase mr-1.5">FGCEOSA</span>
+                  <span>Today</span>
+                </span>
               </LinkButton>
               <LinkButton
                 href="/about"

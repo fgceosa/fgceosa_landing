@@ -25,7 +25,7 @@ const Hero = () => {
 
                   <RevealAnimation delay={0.3}>
                     <p className="mx-auto max-w-[550px] text-sm text-black/75 dark:text-white/85 md:mx-0 md:text-base">
-                      FGCEOSA connects thousands of alumni worldwide through networking, mentorship, scholarships, development projects, and lifelong community.
+                      FGCEOSA unites Federal Government College Enugu alumni across generations and continents — fostering networking, mentorship, scholarships, development projects, and a lifelong sense of community.
                     </p>
                   </RevealAnimation>
                 </div>
@@ -51,7 +51,10 @@ const Hero = () => {
                           d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a5.97 5.97 0 0 0-.942 3.197M12 10.5a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75ZM12 10.5a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75Zm-5.625 2.625a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75Zm11.25 0a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75Z"
                         />
                       </svg>
-                      <span>Join FGCEOSA</span>
+                      <span className="!normal-case !first-letter:normal-case inline-flex items-center">
+                        <span className="mr-1.5">Join</span>
+                        <span className="uppercase">FGCEOSA</span>
+                      </span>
                     </div>
                   </LinkButton>
                   <LinkButton

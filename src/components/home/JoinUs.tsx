@@ -121,7 +121,10 @@ const JoinUs = () => {
                   href="https://portal.allfgcealumni.org/sign-up"
                   target="_blank"
                   className="group relative flex w-full items-center justify-center gap-4 rounded-[16px] bg-white px-8 py-5 text-center text-base font-black whitespace-nowrap text-[#3F0606] transition-all duration-500 hover:scale-105 hover:shadow-2xl sm:w-auto md:text-lg">
-                  Join FGCEOSA
+                  <span className="inline-flex items-center">
+                    <span className="mr-1.5 font-black">Join</span>
+                    <span className="uppercase font-black">FGCEOSA</span>
+                  </span>
                   <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-[#3F0606] text-white shadow-lg transition-transform duration-500 group-hover:translate-x-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
